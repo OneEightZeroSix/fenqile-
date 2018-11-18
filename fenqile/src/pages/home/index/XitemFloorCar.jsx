@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-// import { Tabs } from 'antd-mobile';
 import '../antd-mobile.css'
-import { Tabs, WhiteSpace, Badge } from 'antd-mobile';
+import { Tabs, Badge } from 'antd-mobile';
 
 // 页面组件 容器组件
 
@@ -51,43 +50,50 @@ class XitemFloorCar extends Component {
             _change: 1,
             list: [],
         }
+        // this.getRow = this.getRow.bind(this)
+        this.getRowDraw = this.getRowDraw.bind(this)
     }
 
     loadMore() {
         React.axios.get("itemFloorCar.json").then((response) => {
-            console.log(response.data.data.result_rows);
-            this.setState({
-                list: this.state.list.concat(response.data.data.result_rows)
-            })
+                this.setState({
+                    list: this.state.list.concat(response.data.data.result_rows)
+                })
+            
+           
         }).catch(function (error) {
             console.log(error);
         });
     }
-    // getRowDraw() {
-    //     return (
-    //         this.state.list.map((item, index) => {
-    //             <li className="swiper-slide js-nav-sku-list-PRFL201811050042004 swiper-slide-active">
-    //                 <a className="item" href="https://channel.m.fenqile.com/car/confirm.html?si=1798&amp;mi=118428">
-    //                     <div className="item-img">
-    //                         <img src={`${item.floor_list["0"].item_list["0"].sku_list.sku_pic}`} className="imgauto" />
-    //                     </div>
-    //                     <div className="item-info">
-    //                         <div className="item-car-pay">首付0.87万</div>
-    //                         <div className="item-car-price">月供2226元</div>
-    //                         <div className="item-car-brand">POLO</div>
-    //                     </div>
-    //                 </a>
-    //             </li>
-    //         })
-
-    //     )
-    // }
-
-    callback(key) {
-        console.log(key);
-        this.setState({ _change: key })
+    getRowDraw(arr) {
+        let data = {...arr}
+        let bart= {...data.list};
+        let brr = {...bart.item_list}
+        if(brr.sku_list==undefined){
+            return
+        }
+        return (
+            brr.sku_list.map((item, index) => {
+                return(
+                        <li key={index} className="swiper-slide js-nav-sku-list-PRFL201811050042004 swiper-slide-active">
+                            <a className="item" href="https://channel.m.fenqile.com/car/confirm.html?si=1798&amp;mi=118428">
+                                <div className="item-img">
+                                    <img src={`${item.sku_pic[0]}`} className="imgauto" />
+                                </div>
+                                <div className="item-info">
+                                    <div className="item-car-pay">{item.amount}</div>
+                                    <div className="item-car-price">{item.mon_pay_str}</div>
+                                    <div className="item-car-brand">{item.product_name}</div>
+                                </div>
+                            </a>
+                        </li>
+                    )
+                
+            })
+        )
     }
     render() {
+         let data = {...this.state.list}
         return (
             <div>
                 <div className="title-wrap">
@@ -96,48 +102,66 @@ class XitemFloorCar extends Component {
                 </div>
                 <Tabs tabs={tabs}
                     initialPage={1}
-                    onChange={(tab, index) => { console.log('onChange', index, tab); }}
-                    onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
+                    swipeable={false}
+                    onChange={(tab, index) => {}}
+                    onTabClick={(tab, index) => {}}
                 >
-                    <div className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        <ul className="lists-pro swiper-wrapper js-nav-body-PRFL201811050042004">
-                            {this.getRowDraw}
-                        </ul>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        Content of second tab
-              </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        Content of third tab
-              </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        Content of fourth tab
-              </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        Content of fifth tab
-              </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        Content of sixth tab
-              </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        Content of seventh tab
-              </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        Content of eighth tab
-              </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        Content of ninth tab
-              </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        Content of tenth tab
-              </div>
+                <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
+                       {this.getRowDraw(data[0])}
+                   </ul>
+               </div>
+               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
+                       {this.getRowDraw(data[1])}
+                   </ul>
+               </div>
+               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
+                      {this.getRowDraw(data[2])}
+                   </ul>
+               </div>
+               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
+                         {this.getRowDraw(data[3])}
+                   </ul>
+               </div>
+               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
+                         {this.getRowDraw(data[4])}
+                   </ul>
+               </div>
+               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
+                         {this.getRowDraw(data[5])}
+                   </ul>
+               </div>
+               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
+                         {this.getRowDraw(data[6])}
+                   </ul>
+               </div>
+               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
+                         {this.getRowDraw(data[7])}
+                   </ul>
+               </div>
+               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
+                         {this.getRowDraw(data[8])}
+                   </ul>
+               </div>
+               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
+                        {this.getRowDraw(data[9])}
+                   </ul>
+               </div>
                 </Tabs>
-                {/* <WhiteSpace /> */}
+
             </div>
         )
     }
-
-    componentDidMount() {
+    componentWillMount () {
         this.loadMore()
     }
 }

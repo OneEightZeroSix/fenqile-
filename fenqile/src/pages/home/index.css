@@ -792,15 +792,15 @@ a {
 }
 
 .slider-seckill .lists-pro .item {
-    padding-top: 12px;
-    padding-bottom: 20px;
+    padding-top:5px;
+    padding-bottom: 3px;
     position: relative
 }
 
 .slider-seckill .lists-pro .item-img {
     width: 78px;
     height: 78px;
-    margin: 0 auto 12px;
+    margin: 0 auto;
     overflow: hidden
 }
 
@@ -894,7 +894,7 @@ a {
 }
 
 .item-car-brand {
-    margin-top: 8px;
+    margin-top: 2px;
     font-size: 10px;
     color: #969daa
 }
