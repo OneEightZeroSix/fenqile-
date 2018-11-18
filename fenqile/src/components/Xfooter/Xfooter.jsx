@@ -11,7 +11,7 @@ class Xfooter extends Component {
             tab:0,
             tabs:[{
                 title:"首页",
-                href:"indexbody",
+                href:"mainPage1",
                 dot:true,
                 backgroundImage:`url(//cres.fenqile.cn/mobile/img/nav/list/consume_on.png)`,
                 backgroundImage1:`url(//cres.fenqile.cn/mobile/img/nav/list/consume.png)`

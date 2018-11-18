@@ -40,7 +40,7 @@ class choiceness extends Component {
                                             return (
                                                     <li key={index}>
                                                         <a href="javascript:void(0)" >
-                                                            <img src={`${item}`} className="imgauto" style={{opacity: 1}}/>
+                                                            <img src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
                                                         </a>
                                                     </li>
                                                 )
@@ -62,7 +62,7 @@ class choiceness extends Component {
                                             return (
                                                     <li key={index}>
                                                         <a href="javascript:void(0)" >
-                                                            <img src={`${item}`} className="imgauto" style={{opacity: 1}}/>
+                                                            <img src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
                                                         </a>
                                                     </li>
                                                 )

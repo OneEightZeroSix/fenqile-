@@ -1001,17 +1001,18 @@ html {
 }
 
 .nav ul li a {
-   
     color: #969696;
     height: 49px;
     text-align: center;
     display: block;
     position: relative;
     /* autoprefixer: off */
-  -webkit-box-orient: vertical;
-  /* autoprefixer: on */
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
     -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     display: box;
     display: -webkit-box;
@@ -1020,6 +1021,7 @@ html {
     -moz-box-pack: center;
     -webkit-box-align: center;
     -moz-box-align: center
+    /* autoprefixer: on */
 }
 
 .nav ul li a .red-d {

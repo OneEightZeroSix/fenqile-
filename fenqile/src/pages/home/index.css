@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 a {
@@ -1850,14 +1851,18 @@ a {
     -ms-flex: 1;
     flex: 1;
     display: -webkit-box;
+    /* autoprefixer: off */
     -webkit-box-pack: center;
-    -webkit-box-orient: vertical
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
 }
 
 .lists-pro-brand .item-info .info-top {
+    /* autoprefixer: off */
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
+     /* autoprefixer: on */
     flex: 1
 }
 
@@ -1922,6 +1927,7 @@ a {
 }
 
 .lists-pro-brand .leka {
+    margin: 0;
     color: #25324e
 }
 

@@ -42,7 +42,7 @@ class gift extends Component {
                         return this.state.gift.Aimg.map((item,index)=> {
                             return (<li key={index}>
                                         <a href="javascript:void(0)" >
-                                            <img className="imgauto" src={`${item}`}  style={{opacity: 1}}/>
+                                            <img className="imgauto" src={`${item}`} alt="#"  style={{opacity: 1}}/>
                                         </a>
                                     </li>
                                     )
@@ -57,7 +57,7 @@ class gift extends Component {
                                     <li key={index}>
                                         <a className="item" href="javascript:void(0)" >
                                             <div className="item-img">
-                                            <img src={`${item.Image}`}  className="imgauto" style={{opacity: 1}}/>
+                                            <img src={`${item.Image}`} alt="#"  className="imgauto" style={{opacity: 1}}/>
                                             </div>
                                             <div className="item-info">
                                                 <div className="info-top">
@@ -89,17 +89,17 @@ class gift extends Component {
                     <ul className="banner-three clear js-need-handle">
                         <li>
                             <a href="javascript:void(0)" >
-                                <img src="https://cimgs1.fenqile.com/ibanner2/M00/32/5B/jqgHAFvpOU-AWjvNAAAuEss-iLg041_436x352.jpg" className="imgauto" style={{opacity: 1}}/>
+                                <img src="https://cimgs1.fenqile.com/ibanner2/M00/32/5B/jqgHAFvpOU-AWjvNAAAuEss-iLg041_436x352.jpg" alt="#" className="imgauto" style={{opacity: 1}}/>
                             </a>
                         </li>
                         <li>
                             <a href="javascript:void(0)" >
-                                <img src="https://cimgs1.fenqile.com/ibanner2/M00/00/10/j6gHAFtMclaAM2s7AABXZ0m--nI193_436x352.jpg"  className="imgauto" style={{opacity: 1}}/>
+                                <img src="https://cimgs1.fenqile.com/ibanner2/M00/00/10/j6gHAFtMclaAM2s7AABXZ0m--nI193_436x352.jpg" alt="#"  className="imgauto" style={{opacity: 1}}/>
                             </a>
                         </li>
                         <li>
                             <a href="javascript:void(0)">
-                                <img src="https://cimgs1.fenqile.com/ibanner2/M00/32/13/jagHAFsLwVSAc8VDAAAmgDW-lqc031_436x352.png" className="imgauto" style={{opacity: 1}}/>
+                                <img src="https://cimgs1.fenqile.com/ibanner2/M00/32/13/jagHAFsLwVSAc8VDAAAmgDW-lqc031_436x352.png" alt="#" className="imgauto" style={{opacity: 1}}/>
                             </a>
                         </li>
                     </ul>

@@ -52,7 +52,7 @@ class mappege extends Component {
                 </div>
                 <div className="sale-wrap">
                     <a href="javascript:void(0)"  className="sale-brand">
-                        <img className="imgauto" src={`${this.state.libox.Aimg}`} style={{opacity: 1}}/>
+                        <img className="imgauto" alt="#" src={`${this.state.libox.Aimg}`} style={{opacity: 1}}/>
                         <div className="active-time"> 距离结束还剩<span  >1</span>天  </div>
                     </a>
                     <ul className="lists-pro-three">
@@ -62,7 +62,7 @@ class mappege extends Component {
                                         <li key={index} data-guid={`${item.id}`}>
                                             <a className="item" href="javascript:void(0)">
                                               <div className="item-img">
-                                                <img className="imgauto" src={item.Image}/>
+                                                <img className="imgauto" alt="#" src={item.Image}/>
                                               </div>
                                               <div className="item-info">
                                                 <div className="off-tag-wp">

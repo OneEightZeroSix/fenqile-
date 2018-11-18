@@ -31,7 +31,7 @@ class recommend extends Component {
                                     <li key={index} className="shop-item">
                                       <a className="item js-recommend-sku" href="javascript:void(0)" data-guid={`${item.id}`}>
                                             <div className="item-img">
-                                                <img className="imgauto" src={`${item.fe_sku_pic}`}  style={{opacity: 1}}/>
+                                                <img className="imgauto" alt="#" src={`${item.fe_sku_pic}`}  style={{opacity: 1}}/>
                                             </div>
                                             <p className="item-title">{item.product_name}</p>
                                             <div className="item-price">

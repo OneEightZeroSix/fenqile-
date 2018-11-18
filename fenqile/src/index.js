@@ -59,7 +59,7 @@ ReactDOM.render(
         <Router >
             <Switch>
                 <Route path="/home/" component={Home} />
-                <Redirect from="/" exact to="/home/indexbody" />
+                <Redirect from="/" exact to="/home/mainPage1" />
             </Switch>
         </Router>
     </Provider>
