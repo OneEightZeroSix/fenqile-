@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
+import { SearchBar, Button, WhiteSpace, WingBlank } from 'antd-mobile';
 
 // 页面组件 容器组件
 
-class indexbody extends Component {
+class XsearchBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -12,10 +13,10 @@ class indexbody extends Component {
     render() {
         return (
             <div>
-                首页
+                 <SearchBar placeholder="搜索" />
             </div>
         )
     }
 }
 
-export default indexbody;
+export default XsearchBar;

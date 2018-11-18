@@ -1,9 +1,12 @@
 import React, { Component } from "react";
-import "./home.css";
+import "./global.css";
+import "./index.css";
+import './antd-mobile.css';
+import './antd.css';
 import { Route } from "react-router-dom";
 
 // 页面组件 容器组件
-import indexbody from './index/indexbody.jsx';
+import mainPage1 from './index/mainPage1.jsx';
 
 class Home extends Component {
     constructor(props) {
@@ -14,7 +17,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Route path="/home/index" component={indexbody} />
+                <Route path="/home/mainPage1" component={mainPage1} />
             </div>
         )
     }
