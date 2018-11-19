@@ -1,0 +1,14 @@
+#Lcarousel_container .slick-dots .slick-active button{
+    background:#666 !important;
+    width:8px !important;
+    border-radius:50% !important;
+}
+#Lcarousel_container .slick-dots li button {
+    background:#AAA !important;
+    width:5px !important;
+    border-radius:50% !important;
+}
+
+#Lcarousel_container .slick-dots{
+    margin-bottom: 100px;
+}

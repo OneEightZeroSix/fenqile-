@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import Lheader from './Lheader.jsx';
+import Lcarousel from './Lcarousel.jsx';
+import Lad from './Lad.jsx';
+import Lsev from './Lsev.jsx';
+import Lrights from './Lrights.jsx';
+import Lbottom from './Lbottom.jsx';
 
 // 页面组件 容器组件
 
@@ -11,9 +16,16 @@ class cal extends Component {
     }
     render() {
         return (
+        <div>
             <div>
-                乐卡
+                <Lheader/>
+                <Lcarousel/>
+                <Lad/>
+                <Lsev/>
+                <Lrights/>
+                <Lbottom/>
             </div>
+        </div>
         )
     }
 }
