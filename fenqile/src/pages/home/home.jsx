@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./global.css";
 import "./index.css";
+import "./app.css";
 import './antd-mobile.css';
 import './antd.css';
 import { Route } from "react-router-dom";
