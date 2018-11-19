@@ -21,12 +21,13 @@ class mainPage1 extends Component {
         }
     }
     render() {
+            
         return (
             <div>
                 <XsearchBar />
                 <a href="javascript:void(0)" className="tips-wrap">
-                        <p>乐卡额度最高50000元</p>
-                        <div className="tips-handle">立即开通<i className="iconfont wf-arrow-down"></i></div>
+                    <p>乐卡额度最高50000元</p>
+                    <div className="tips-handle">立即开通<i className="iconfont wf-arrow-down"></i></div>
                 </a>
                 <XimgList />
                 <Xcarousel/>
