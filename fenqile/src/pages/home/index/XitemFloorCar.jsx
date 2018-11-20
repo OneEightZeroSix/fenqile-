@@ -10,8 +10,12 @@ const tabs = [
             <img src="https://cimgs1.fenqile.com/ibanner2/M00/00/CD/j6gHAFvrx9mAG904AAApWNBHhz8528_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '1'
     },
-    { title: <img src="https://cimgs1.fenqile.com/ibanner2/M00/33/39/jagHAFvrx-OANFPHAAAXlfycWT0347_144x88.png" alt="#" className="imgauto" width="60" height="60" />, sub: '2' },
-    { title: <img src="https://cimgs1.fenqile.com/ibanner2/M00/00/CD/j6gHAFvrx-6AFRceAAAbWCOh2Mo858_144x88.png" alt="#" className="imgauto" width="60" height="60" />, sub: '3' },
+    { title: 
+            <img src="https://cimgs1.fenqile.com/ibanner2/M00/33/39/jagHAFvrx-OANFPHAAAXlfycWT0347_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+        , sub: '2' },
+    { title: 
+            <img src="https://cimgs1.fenqile.com/ibanner2/M00/00/CD/j6gHAFvrx-6AFRceAAAbWCOh2Mo858_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+        , sub: '3' },
     {
         title:
             <img src="https://cimgs1.fenqile.com/ibanner2/M00/33/39/jagHAFvrx_eAd2UPAAAYEfc4hPU464_144x88.png" alt="#" className="imgauto" width="60" height="60" />
@@ -76,7 +80,7 @@ class XitemFloorCar extends Component {
             brr.sku_list.map((item, index) => {
                 return(
                         <li key={index} className="swiper-slide js-nav-sku-list-PRFL201811050042004 swiper-slide-active">
-                            <a className="item" href="https://channel.m.fenqile.com/car/confirm.html?si=1798&amp;mi=118428">
+                            <a className="item" href="javascript:void(0)">
                                 <div className="item-img">
                                     <img src={`${item.sku_pic[0]}`} className="imgauto" />
                                 </div>
@@ -98,70 +102,38 @@ class XitemFloorCar extends Component {
             <div>
                 <div className="title-wrap">
                     <p className="detail-title">汽车分期</p>
-                    <a className="title-more" href="https://channel.m.fenqile.com/car/index.html">更多车型</a>
+                    <a className="title-more" href="javascript:void(0)">更多车型</a>
                 </div>
                 <Tabs tabs={tabs}
-                    initialPage={1}
+                    initialPage={0}
                     swipeable={false}
                     onChange={(tab, index) => {}}
                     onTabClick={(tab, index) => {}}
                 >
-                <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
-                       {this.getRowDraw(data[0])}
-                   </ul>
-               </div>
-               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
-                       {this.getRowDraw(data[1])}
-                   </ul>
-               </div>
-               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
-                      {this.getRowDraw(data[2])}
-                   </ul>
-               </div>
-               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
-                         {this.getRowDraw(data[3])}
-                   </ul>
-               </div>
-               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
-                         {this.getRowDraw(data[4])}
-                   </ul>
-               </div>
-               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
-                         {this.getRowDraw(data[5])}
-                   </ul>
-               </div>
-               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
-                         {this.getRowDraw(data[6])}
-                   </ul>
-               </div>
-               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
-                         {this.getRowDraw(data[7])}
-                   </ul>
-               </div>
-               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
-                         {this.getRowDraw(data[8])}
-                   </ul>
-               </div>
-               <div  className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
-                        {this.getRowDraw(data[9])}
-                   </ul>
-               </div>
+                {
+                    (()=>{
+                        return (
+                                [0,1,2,3,4,5,6,7,8,9].map((item,index)=>{
+                                        return(
+                                                <div key={index} className="swiper-container slider-seckill js-slider-car swiper-container-horizontal swiper-container-free-mode swiper-container-android" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                                                   <ul className="lists-pro swiper-wrapper " style={{'overflowX':'auto'}}>
+                                                       {this.getRowDraw(data[index])}
+                                                   </ul>
+                                               </div>
+                                            )
+                                    })
+                            )
+                    }
+                    )()
+                }
+               
+               
                 </Tabs>
 
             </div>
         )
     }
-    componentWillMount () {
+    componentDidMount  () {
         this.loadMore()
     }
 }

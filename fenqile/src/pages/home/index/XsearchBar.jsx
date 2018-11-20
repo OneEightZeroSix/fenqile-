@@ -9,16 +9,17 @@ class XsearchBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
+           
         }
     }
-    render() {
+    render() {   
         return (
             <div>
- 					        <SearchBar placeholder="搜索" />
-                 
+ 				<SearchBar placeholder="搜索" />
             </div>
               
         )
     }
+
 }
 export default XsearchBar;

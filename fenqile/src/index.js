@@ -26,28 +26,13 @@ import Home from './pages/home/home.jsx';
 React.axios = axios;
 // 创建仓库  试验 可删除
 const store = createStore(function(state={
-    name:"laoyao",
-    text:"取消了",
-    isShowActionSheet:false
+    tab:0,
 }, action){
-    const count = state.count
     switch (action.type) {
-      case 'increase':
-        return {
-          ...state,
-          count: count + 2
-        }
-      case 'multi':
-        return Object.assign({}, state, {name: action.name});
-      case 'editText':
+      case 'toggleTab':
         return {
             ...state,
-            text:action.text
-        }
-      case 'toggleSheet':
-        return {
-            ...state,
-            isShowActionSheet:action.isShowActionSheet
+            tab:action.tab
         }
       default:
         return state

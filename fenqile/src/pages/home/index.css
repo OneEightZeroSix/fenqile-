@@ -654,7 +654,9 @@ a {
 }
 
 .time-wrap {
+    align-items: center;
     color: #e3e4e8;
+    line-height: 0;
     display: -webkit-flex;
     display: -webkit-box;
     display: -ms-flexbox;

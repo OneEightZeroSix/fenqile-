@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import './Xfooter.css';
+import {Provider, connect} from 'react-redux';
 // 页面组件 容器组件
 
 class Xfooter extends Component {
     constructor(props) {
         super(props);
+        this.props=props;
         this.state = {
-            tab:0,
+            tab:props.pathname,
             tabs:[{
                 title:"首页",
                 href:"mainPage1",
@@ -47,11 +49,7 @@ class Xfooter extends Component {
         }
     }
     
-    toggleTab(index,e){
-        this.setState({
-            tab:index
-        })
-    }
+  
     render() {
         return (
            <div className="bottompd" id="bottom_sidebar">
@@ -59,22 +57,35 @@ class Xfooter extends Component {
                     <ul>
                         {(()=>{
                             return  this.state.tabs.map((item,index)=>{
-                                return  (<li onClick={this.toggleTab.bind(this,index)} key={index}>
-                                            <Link to={ {pathname:`/home/${item.href}` }}  replace style={{color: this.state.tab===index? '#3B9BFF':'#666666'}} >
-                                                 <span className="" style={{backgroundImage: this.state.tab===index? `${item.backgroundImage}`:`${item.backgroundImage1}`}}></span>
+                                return  (<li onClick={this.props.toggleTab.bind(this,index)} key={index}>
+                                            <Link to={ {pathname:`/home/${item.href}` }}  replace style={{color: this.state.tab==index? '#3B9BFF':'#666666'}} >
+                                                 <span className="" style={{backgroundImage: this.state.tab==index? `${item.backgroundImage}`:`${item.backgroundImage1}`}}></span>
                                                  {item.title}                      
                                             </Link>
                                         </li>)
                             })
-
                         })()}
-                        
-                        
                     </ul>
                 </div>
             </div>
         )
     }
+
+
+
 }
 
-export default Xfooter;
+export default connect((state)=>{
+    return state
+},(dispatch)=>{
+    return {
+          toggleTab(index,e){
+            this.state.tab =index;
+            console.log(index)
+                dispatch({
+                    type:"toggleTab",
+                    tab:index
+                })
+        }
+    }
+}) (Xfooter);
