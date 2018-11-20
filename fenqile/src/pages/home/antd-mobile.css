@@ -6733,10 +6733,6 @@ a {
   height: 100%;
   width: 100%;
 }
-.am-tabs * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 .am-tabs-content-wrap {
   display: -webkit-box;
   display: -webkit-flex;

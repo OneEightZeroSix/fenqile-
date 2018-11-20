@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Tabs, Select } from 'antd';
+import "./classify.css"
+import { Tabs } from 'antd';
 const TabPane = Tabs.TabPane;
-const Option = Select.Option;
-
 // 页面组件 容器组件
 const tabs = [
     { title: 'First Tab', sub: '1' },
@@ -32,58 +31,70 @@ const tabs = [
 
 ];
 
+
+
+
 class classify extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            tabPosition: 'top'
+            list:[],
+            tabs : ['推荐','手机','电脑','充值','平板数码','旅游/票务','运动户外','名表','美妆','时尚鞋服','家电','珠宝首饰','箱包奢品','乐器','食品保健','礼品','教育','汽车','租房']
         }
         this.changeTabPosition = (tabPosition) => {
             this.setState({ tabPosition });
           }
     }
+    loadMore() {
+        React.axios.get("/api").then((response) => {
+            console.log(response)
+                // this.setState({
+                //     list: this.state.list.concat(response.data.data.result_rows)
+                // })
+        }).catch(function (error) {
+            console.log(error);
+        });
+    }
     render() {
         return (
-            <div>
-        <div style={{ marginBottom: 16 }}>
-          Tab position：
-          <Select value={this.state.tabPosition} onChange={this.changeTabPosition}
-            dropdownMatchSelectWidth={false}
-          >
-            <Option value="top">top</Option>
-            <Option value="bottom">bottom</Option>
-            <Option value="left">left</Option>
-            <Option value="right">right</Option>
-          </Select>
-        </div>
-        <Tabs tabPosition={this.state.tabPosition}>
-          <TabPane tab="Tab 1" key="1">Content of Tab 1</TabPane>
-          <TabPane tab="Tab 2" key="2">Content of Tab 2</TabPane>
-          <TabPane tab="Tab 3" key="3">Content of Tab 3</TabPane>
-          <TabPane tab="Tab 4" key="4">Content of Tab 4</TabPane>
-          <TabPane tab="Tab 5" key="5">Content of Tab 5</TabPane>
-          <TabPane tab="Tab 6" key="6">Content of Tab 6</TabPane>
-          <TabPane tab="Tab 7" key="7">Content of Tab 7</TabPane>
-          <TabPane tab="Tab 8" key="8">Content of Tab 8</TabPane>
-          <TabPane tab="Tab 9" key="9">Content of Tab 9</TabPane>
-          <TabPane tab="Tab 10" key="10">Content of Tab 10</TabPane>
-          <TabPane tab="Tab 11" key="11">Content of Tab 11</TabPane>
-          <TabPane tab="Tab 12" key="12">Content of Tab 12</TabPane>
-          <TabPane tab="Tab 13" key="13">Content of Tab 1</TabPane>
-          <TabPane tab="Tab 14" key="14">Content of Tab 2</TabPane>
-          <TabPane tab="Tab 15" key="15">Content of Tab 3</TabPane>
-          <TabPane tab="Tab 16" key="16">Content of Tab 4</TabPane>
-          <TabPane tab="Tab 17" key="17">Content of Tab 5</TabPane>
-          <TabPane tab="Tab 18" key="18">Content of Tab 6</TabPane>
-          <TabPane tab="Tab 19" key="19">Content of Tab 7</TabPane>
-          <TabPane tab="Tab 20" key="20">Content of Tab 8</TabPane>
-          <TabPane tab="Tab 21" key="21">Content of Tab 9</TabPane>
-          <TabPane tab="Tab 22" key="22">Content of Tab 10</TabPane>
-          <TabPane tab="Tab 23" key="23">Content of Tab 11</TabPane>
-          <TabPane tab="Tab 24" key="24">Content of Tab 12</TabPane>
-        </Tabs>
-      </div>
+            <div className="main-wrap">
+                <Tabs tabPosition={'left'} size={'small'} tabBarStyle={{'.ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab': 'text-align: center;'}}>
+                    {(()=>{
+                           return( this.state.tabs.map((item, index)=> {
+                            return (
+                                 <TabPane tab={item} key={index}>
+                                        <div className="nav-channel" id="sub_category_list">
+                                            <div className="channel-banner">
+                                                <a href="javascript:void(0)">
+                                                <img src="https://cimg1.fenqile.com/ibanner2/M00/33/34/jagHAFvpIHiAG-P5AAB6SgRMbGY218.jpg"  className="imgauto" style={{opacity: 1}}/>
+                                                </a>
+                                            </div>
+                                            <section className="category-floor">
+                                                <div className="floor-title">
+                                                    <p className="item-title">数码畅销榜</p>
+                                                </div>
+                                                <ul className="floor-nav-three">
+                                                <li>
+                                                    <a href="javascript:void">
+                                                    <img src="https://cimg1.fenqile.com/ibanner2/M00/00/28/jagHAFow1eCAMFZaAAAOhQ3etoE844.png" className="imgauto" width="52" height="52" style={{opacity: 1}}/>
+                                                    <p>苹果</p>
+                                                    </a>
+                                                </li>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                 </TabPane>
+                                )
+                        }))
+                    })()
+                    }
+                 
+                </Tabs>
+            </div>
         )
+    }
+     componentDidMount  () {
+        this.loadMore()
     }
 }
 
