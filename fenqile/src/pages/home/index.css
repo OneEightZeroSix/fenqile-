@@ -1758,6 +1758,7 @@ a {
 }
 
 .lists-pro-brand li {
+    box-sizing: content-box;
     height: 104px;
     padding-left: 8px;
     padding-top: 20px;
