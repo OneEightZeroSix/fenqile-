@@ -81,7 +81,6 @@ export default connect((state)=>{
     return {
           toggleTab(index,e){
             this.state.tab =index;
-            console.log(index)
                 dispatch({
                     type:"toggleTab",
                     tab:index

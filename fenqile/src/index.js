@@ -27,12 +27,18 @@ React.axios = axios;
 // 创建仓库  试验 可删除
 const store = createStore(function(state={
     tab:0,
+    isshow:false
 }, action){
     switch (action.type) {
       case 'toggleTab':
         return {
             ...state,
             tab:action.tab
+        }
+      case 'show':
+        return {
+            ...state,
+            isshow:action.isshow
         }
       default:
         return state
