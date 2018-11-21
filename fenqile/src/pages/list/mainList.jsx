@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Mheader from './Mheader.jsx';
 import Mlist from './Mlist.jsx';
 import Mcomponents from './Mcomponents.jsx';
+import Incal from './incal.jsx';
+import './incal.css';
 
 
 // 页面组件 容器组件
@@ -16,9 +18,10 @@ class mainList extends Component {
         return (
         <div>
             <div>
-                <Mheader/>
-                <Mlist/>
-                <Mcomponents/>
+                {/* <Mheader/> */}
+                <Incal/>
+                {/* <Mlist/>
+                <Mcomponents/> */}
             </div>
         </div>
         )
