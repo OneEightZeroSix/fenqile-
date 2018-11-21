@@ -26,7 +26,7 @@ a {
     background: #fff
 }
 
-.go-top {
+/* .go-top {
     position: fixed;
     right: 16px;
     bottom: 2px;
@@ -35,7 +35,7 @@ a {
     z-index: 20;
     background: url(//cres1.fenqile.cn/fenqile_m/img/app/search/go_top_icon--b7316fb9a4.png) no-repeat center;
     background-size: contain
-}
+} */
 
 @font-face {
     font-family: iconfont;

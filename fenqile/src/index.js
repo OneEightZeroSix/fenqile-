@@ -21,6 +21,7 @@ import {createStore} from 'redux';
 // 子组件 复用组件
 // import App from './App';
 import Home from './pages/home/home.jsx';
+import List from './pages/list/mainList.jsx';
 
 
 React.axios = axios;
@@ -44,6 +45,7 @@ ReactDOM.render(
         <Router >
             <Switch>
                 <Route path="/home/" component={Home} />
+                <Route path="/list" component={List}/>
                 <Redirect from="/" exact to="/home/mainPage1" />
             </Switch>
         </Router>

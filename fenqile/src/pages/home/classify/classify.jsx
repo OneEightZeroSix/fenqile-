@@ -31,9 +31,6 @@ const tabs = [
 
 ];
 
-
-
-
 class classify extends Component {
     constructor(props) {
         super(props);

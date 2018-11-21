@@ -5,6 +5,7 @@ import Lad from './Lad.jsx';
 import Lsev from './Lsev.jsx';
 import Lrights from './Lrights.jsx';
 import Lbottom from './Lbottom.jsx';
+import Ltest from './Ltest.jsx';
 // import './cal.css';
 
 // 页面组件 容器组件
@@ -19,12 +20,13 @@ class cal extends Component {
         return (
         <div>
             <div>
-                <Lheader/>
+                {/* <Lheader/>
                 <Lcarousel/>
                 <Lad/>
                 <Lsev/>
                 <Lrights/>
-                <Lbottom/>
+                <Lbottom/> */}
+                <Ltest/>
             </div>
         </div>
         )

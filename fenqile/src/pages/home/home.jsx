@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./search.css";
 import "./global.css";
 import "./index.css";
 import "./app.css";

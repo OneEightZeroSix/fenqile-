@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Swiper from "../../../../node_modules/swiper/dist/js/swiper.js";
-import "../../../../node_modules/swiper/dist/css/swiper.css";
+
 
 
 // 页面组件 容器组件
