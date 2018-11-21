@@ -50,7 +50,6 @@ class Home extends Component {
                 this.state.pathname=0;
                 this.props.toggleTab(0)
         }
-        console.log(this.state.pathname)
     }
     render() {
         return (

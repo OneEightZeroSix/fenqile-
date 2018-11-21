@@ -34,14 +34,6 @@ class mappege extends Component {
             
         }
     }
-    tag(arr){
-        let html="";
-        for (var i = 0; i < arr.length; i++) {
-            html+=`<span className="shop-tag">${arr[i]}</span>`
-        }
-        return html;
-    }
-
 
     render() {
         return (
