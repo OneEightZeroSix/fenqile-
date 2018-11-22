@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import CountDown from 'ant-design-pro/lib/CountDown';
 
-
+const targetTime = new Date().getTime() + 390000;
 
 // 页面组件 容器组件
 
@@ -16,11 +17,12 @@ class XitemFloor extends Component {
                  <section className="spacing" id="floor__wrap">
 	<div className="title-wrap">
 		<div className="detail-title">乐疯抢</div>
-		<div className="time-wrap js-floor js-count-down-PRFL201710240024504" id="floor__title_wrap" style={{marginLeft: '33vw'}}>
+		<div className="time-wrap js-floor js-count-down-PRFL201710240024504" id="floor__title_wrap" style={{marginLeft: '43vw'}}>
 			<span className="time-tip">距离本场结束</span>
-			<span className="time-hour" role="timer">01</span> :
+			{/* <span className="time-hour" role="timer">01</span> :
 			<span className="time-min" role="timer">23</span> :
-			<span className="time-sec" role="timer">48</span>
+			<span className="time-sec" role="timer">48</span> */}
+			<CountDown style={{ fontSize: '20',color:'#555',fontWeight:'bold' }} target={targetTime} />
 		</div>
 	</div>
 	<div style={{overflow:'auto'}} className="swiper-container slider-seckill js-floor js-slider-PRFL201710240024504 swiper-container-horizontal swiper-container-free-mode" id="floor__sku_wrap">

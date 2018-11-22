@@ -612,9 +612,9 @@ a {
 }
 
 .title-wrap {
-	line-height: 64px;
+	/* line-height: 64px; */
     padding: 0 16px;
-    height: 64px;
+    height: 64px; 
     background: #fff;
     position: relative;
     display: flex;
