@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
 // 路由功能
 import {
@@ -25,6 +24,7 @@ import {
 	WhiteSpace,
 	Badge
 } from 'antd-mobile';
+import '../node_modules/swiper/dist/css/swiper.min.css'
 import '../node_modules/antd-mobile/dist/antd-mobile.css';
 
 
@@ -32,13 +32,14 @@ import '../node_modules/antd-mobile/dist/antd-mobile.css';
 // import App from './App';
 import Home from './pages/home/home.jsx';
 import Detail from './pages/Detail/Detail.jsx';
+import Param from './pages/Param/Param.jsx';
+import Comment from './pages/Comment/Comment.jsx';
+import Mine from './pages/Mine/Mine.jsx';
 
-
+import * as serviceWorker from './serviceWorker';
 React.axios = axios;
 // 创建仓库  试验 可删除
 const store = createStore(function(state = {
-	name: "laoyao",
-	text: "取消了",
 	isShowActionSheet: false,
 	isShowFenqi: false,
 	isShowSales: false,
@@ -67,15 +68,6 @@ const store = createStore(function(state = {
 }, action) {
 	const count = state.count
 	switch (action.type) {
-		case 'increase':
-			return {
-				...state,
-				count: count + 2
-			}
-		case 'multi':
-			return Object.assign({}, state, {
-				name: action.name
-			});
 		case 'editText':
 			return {
 				...state,
@@ -136,6 +128,9 @@ ReactDOM.render(
 			<div>
 				<Route path="/home/" component={Home} />
                 <Route path="/detail/" component={Detail} />
+                <Route path="/param/" component={Param} /> 
+                <Route path="/comment/" component={Comment} /> 
+                <Route path="/mine/" component={Mine} /> 
 			</div>
 		</Router>
 	</Provider>,
