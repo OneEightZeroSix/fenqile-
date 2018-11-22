@@ -35,7 +35,6 @@ class XdetailMainAdress extends Component {
 		this.setState({
 			addressTab:0
 		})
-        console.log(this)
         React.axios.get("provinces.json")
         .then((response) => {
             
@@ -48,7 +47,6 @@ class XdetailMainAdress extends Component {
         });
     }
     setCurrentTab(index){
-    	console.log(index)
     	let isShowAreas=false;
 		let	isShowStreets=false;
 		let	isShowCities=false;
@@ -92,7 +90,6 @@ class XdetailMainAdress extends Component {
 	}
 	setCurrentProvinces(index,currentProvince){
 		document.getElementById("citiesList").innerHTML=""
-		console.log(currentProvince)
 		let addressTabs=this.state.addressTabs
 		addressTabs[0].currentTab=currentProvince.name
 		this.setState({
@@ -101,11 +98,9 @@ class XdetailMainAdress extends Component {
     	})
     	React.axios.get("cities.json")
         .then((response) => {
-            console.log(response.data)
             let citiesArr = response.data;
             let cities = citiesArr.filter((x) => x.provinceCode === currentProvince.code)
             localStorage.currentProvince=this.state.currentProvince
-            console.log(cities)
             this.setState({
                 cities: this.state.cities.concat(cities),
                 isShowCities:true,
@@ -120,7 +115,6 @@ class XdetailMainAdress extends Component {
 	}
 	setCurrentCities(index,currentCity){
 		document.getElementById("areasList").innerHTML=""
-		console.log(currentCity)
 		let addressTabs=this.state.addressTabs
 		addressTabs[1].currentTab=currentCity.name
 		this.setState({
@@ -129,11 +123,9 @@ class XdetailMainAdress extends Component {
     	})
     	React.axios.get("areas.json")
         .then((response) => {
-            console.log(response.data)
             let areasArr = response.data;
             let areas = areasArr.filter((x) => x.cityCode === currentCity.code)
             localStorage.currentCity=this.state.currentCity
-            console.log(areas)
             this.setState({
                 areas: this.state.areas.concat(areas),
                 isShowAreas:true,
@@ -149,7 +141,6 @@ class XdetailMainAdress extends Component {
 	}
 	setCurrentArea(index,currentArea){
 		document.getElementById("streetsList").innerHTML=""
-		console.log(currentArea)
 		let addressTabs=this.state.addressTabs
 		addressTabs[2].currentTab=currentArea.name
 		this.setState({
@@ -158,11 +149,9 @@ class XdetailMainAdress extends Component {
     	})
     	React.axios.get("streets.json")
         .then((response) => {
-            console.log(response)
             let streetsArr = response.data;
             let streets = streetsArr.filter((x) => x.areaCode === currentArea.code)
             localStorage.currentArea=this.state.currentArea
-            console.log(streets)
             this.setState({
                 streets: this.state.streets.concat(streets),
                 isShowStreets:true,
@@ -178,11 +167,9 @@ class XdetailMainAdress extends Component {
   
 	}
 	setCurrentStreet(index,currentStreet){
-
 		document.getElementById("citiesList").innerHTML=""
 		document.getElementById("areasList").innerHTML=""
 		document.getElementById("streetsList").innerHTML=""
-		console.log(currentStreet)
 		localStorage.currentStreet=this.state.currentStreet
 		this.setState({
       		addressTabs: [
@@ -231,7 +218,6 @@ class XdetailMainAdress extends Component {
 										<h3>送至</h3>
 										<div className="select-area">
 											{(()=>{
-												
 						                        return this.state.addressTabs.map((item,index)=>{
 						                            return (
 														<a onClick={this.setCurrentTab.bind(this,index)} key={index} href="javascript:;" className={this.state.addressTab === index? "js-address-top on":"js-address-top"} data-type="1">{item.currentTab}</a>

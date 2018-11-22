@@ -1,0 +1,109 @@
+{
+    "result": 0,
+    "system":
+    {
+        "new_version": "3.1.0",
+        "uid": "",
+        "auth_status": 0,
+        "session_id": "02otf94qa8p9pmi2qiot5hib44",
+        "need_login": 0,
+        "email": "",
+        "redirect": 0,
+        "controller": "",
+        "token_id": "",
+        "time_stamp": 1542883039
+    },
+    "data":
+    {
+        "result": 0,
+        "result_rows":
+        {
+            "0":
+            {
+                "amount": "-1",
+                "real_amount": "12799",
+                "style_type": 0,
+                "tag": [],
+                "user_guide":
+                {
+                    "icon": "https://cimg1.fenqile.com/product/M00/F1/BC/hRoGAFqzdX2ANPS_AAAFjmyUyZ0955.png",
+                    "guide_link": "https://vip.m.fenqile.com/lecard/index.html",
+                    "need_guide": true,
+                    "hot_tag": "",
+                    "tip_arr": [
+                    {
+                        "content": "乐卡分期，最高支持36期，每月仅529.42元",
+                        "color": "#394050"
+                    }],
+                    "privilege_desc":
+                    {
+                        "intro": ""
+                    },
+                    "guide_desc": "立即开通"
+
+                },
+                "sku_pic":"https://cimg1.fenqile.com/product3/M00/35/14/RrQHAFuZjLmAJnUhAAD5rlh2Nms712.jpg",
+                "fq_num": "36",
+                "mon_pay": "529.42",
+                "gift_qualify_type": 0
+            },
+            "1":
+            {
+                "amount": "10999",
+                "real_amount": "10299",
+                "style_type": 0,
+                "tag": [],
+                "user_guide":
+                {
+                    "icon": "https://cimg1.fenqile.com/product/M00/F1/BC/hRoGAFqzdX2ANPS_AAAFjmyUyZ0955.png",
+                    "guide_link": "https://vip.m.fenqile.com/lecard/index.html",
+                    "need_guide": true,
+                    "hot_tag": "",
+                    "tip_arr": [
+                    {
+                        "content": "乐卡分期，最高支持36期，每月仅426.01元",
+                        "color": "#394050"
+                    }],
+                    "privilege_desc":
+                    {
+                        "intro": ""
+                    },
+                    "guide_desc": "立即开通"
+                },
+                "sku_pic":"https://cimg1.fenqile.com/product3/M00/35/79/RbQHAFuZjLaAZD6yAAD6SRDtLYA406.jpg",
+                "fq_num": "36",
+                "mon_pay": "426.01",
+                "gift_qualify_type": 0
+            },
+            "2":
+            {
+                "amount": "9599",
+                "real_amount": "9199",
+                "style_type": 0,
+                "tag": [],
+                "user_guide":
+                {
+                    "icon": "https://cimg1.fenqile.com/product/M00/F1/BC/hRoGAFqzdX2ANPS_AAAFjmyUyZ0955.png",
+                    "guide_link": "https://vip.m.fenqile.com/lecard/index.html",
+                    "need_guide": true,
+                    "hot_tag": "",
+                    "tip_arr": [
+                    {
+                        "content": "乐卡分期，最高支持36期，每月仅380.51元",
+                        "color": "#394050"
+                    }],
+                    "privilege_desc":
+                    {
+                        "intro": ""
+                    },
+                    "guide_desc": "立即开通"
+                },
+                "sku_pic":"https://cimg1.fenqile.com/product3/M00/35/14/RrQHAFuZjMSAV3TCAAETEvXkxVU258.jpg",
+                "fq_num": "36",
+                "mon_pay": "380.51",
+                "gift_qualify_type": 0
+            }
+        },
+        "res_info": "ok"
+    }
+}

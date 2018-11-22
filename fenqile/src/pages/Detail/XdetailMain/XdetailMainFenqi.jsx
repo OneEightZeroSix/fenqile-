@@ -57,7 +57,7 @@ class XdetailMainFenqi extends Component {
 					
 					<div onClick={this.toggleFenqi.bind(this)} className="fui-mask"></div>
 					<div id="fragment_box_154262008172451105_content" className="js-g-fragment-content  fui-f-ov" style={{height: '525px'}}>
-						<div className="slide-main">
+						<div className="slide-main" style={{zIndex:"100000"}}>
 							<div className="swiper-wrapper">
 								
 								<div className={this.state.isShowMonPayGuess? "main swiper-slide js-mon-pay-popup js-mon-pay-page":"main swiper-slide js-mon-pay-popup js-mon-pay-page hide"}>
@@ -165,12 +165,10 @@ export default connect((state)=>{
 },(dispatch)=>{
 	return {
 		setCurrentDownpayment(index,currentSf){
-			console.log(this)
 			React.axios.get("fenqi.json")
 	        .then((response) => {
 	            let fenqiArr=response.data.data.result_rows.fee_info_list;
 	            let fenqi = fenqiArr.filter((x) => x.sf === currentSf&&x.fq === this.state.currentFq)
-	            console.log(this.state.currentPlan)
 	            this.setState({
 	                currentPlan: fenqi[0],
 	                currentSf: currentSf,
@@ -192,7 +190,6 @@ export default connect((state)=>{
 	        .then((response) => {
 	            let fenqiArr=response.data.data.result_rows.fee_info_list;
 	            let fenqi = fenqiArr.filter((x) => x.fq === currentFq&&x.sf === this.state.currentSf)
-	            console.log(this.state.currentPlan)
 	            this.setState({
 	                currentPlan: fenqi[0],
 	                currentFq: currentFq,

@@ -14,7 +14,6 @@ class Xcomment  extends Component {
 	constructor(props) {
 		super(props);
 		this.props = props;
-		console.log(this.props.toggleSheet)
 		this.state = {
 			userComment: [],
 			userImpormation: [],
