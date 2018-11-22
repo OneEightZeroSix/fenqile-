@@ -201,12 +201,28 @@ class XdetailMainAdress extends Component {
     	this.props.toggleAdress(this.state.currentProvince,this.state.currentCity,this.state.currentArea,currentStreet.name);
     
 	}
+	toggleA(){
+		this.setState({
+			addressTabs: [
+      			{currentTab:"请选择"},
+				{currentTab:"请选择"},
+				{currentTab:"请选择"},
+				{currentTab:"请选择"}
+			],
+			addressTab:0,
+			isShowAreas:false,
+			isShowStreets:false,
+			isShowCities:false,
+			isShowProvinces:true,
+		})
+		this.props.toggleA()
+	}
 	render(){
 		return (
             <div className="side-slide option-slide" id="address_wrap_1542716711769a307947744020106600">
 				<div id="fragment_box_154271671176915009_layer" className={this.props.isShowAdress? "js-g-fragment-layer fui-mask-fadein":"js-g-fragment-layer hide"} style={{width: '100%'}}>
 				
-					<div onClick={this.props.toggleA.bind(this)} className="fui-mask"></div>
+					<div onClick={this.toggleA.bind(this)} className="fui-mask"></div>
 					<div  id="fragment_box_154271671176915009_content" className="js-g-fragment-content  fui-f-ov" style={{height: '525px'}}>
 			
 							<div className="pop-b-con pop-address-con js-popup-body">
