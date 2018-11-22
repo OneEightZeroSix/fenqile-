@@ -102,7 +102,6 @@ class incal extends Component {
         let intcrr=document.querySelectorAll(".js-second-filter-item-list");
         let intbrr=document.querySelectorAll(".js-filter-selected-text")
         let intdrr=document.querySelectorAll(".js-second-filter-selected")
-        console.log(intarr)
         for (let i = 0; i < intarr.length; i++) {
              intarr[i].classList.remove("on");
          }
