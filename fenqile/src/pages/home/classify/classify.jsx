@@ -3,33 +3,6 @@ import "./classify.css"
 import { Tabs } from 'antd';
 const TabPane = Tabs.TabPane;
 // 页面组件 容器组件
-const tabs = [
-    { title: 'First Tab', sub: '1' },
-    { title: 'Second Tab', sub: '2' },
-    { title: 'Third Tab', sub: '3' },
-    { title: 'Third Tab', sub: '4' },
-    { title: 'Third Tab', sub: '5' },
-    { title: 'Third Tab', sub: '6' },
-    { title: 'Third Tab', sub: '7' },
-    { title: 'Third Tab', sub: '8' },
-    { title: 'Third Tab', sub: '9' },
-    { title: 'Third Tab', sub: '10' },
-    { title: 'Third Tab', sub: '11' },
-    { title: 'Third Tab', sub: '12' },
-    { title: 'First Tab', sub: '13' },
-    { title: 'Second Tab', sub: '14' },
-    { title: 'Third Tab', sub: '15' },
-    { title: 'Third Tab', sub: '16' },
-    { title: 'Third Tab', sub: '17' },
-    { title: 'Third Tab', sub: '18' },
-    { title: 'Third Tab', sub: '19' },
-    { title: 'Third Tab', sub: '20' },
-    { title: 'Third Tab', sub: '21' },
-    { title: 'Third Tab', sub: '22' },
-    { title: 'Third Tab', sub: '23' },
-    { title: 'Third Tab', sub: '24' },
-
-];
 
 class classify extends Component {
     constructor(props) {
@@ -43,11 +16,11 @@ class classify extends Component {
           }
     }
     loadMore() {
-        React.axios.get("/api").then((response) => {
-            console.log(response)
-                // this.setState({
-                //     list: this.state.list.concat(response.data.data.result_rows)
-                // })
+        React.axios.get("classify0.json").then((response) => {
+            console.log(response.data.result_rows)
+                this.setState({
+                    list: this.state.list.concat(response.data.result_rows)
+                })
         }).catch(function (error) {
             console.log(error);
         });
@@ -55,11 +28,11 @@ class classify extends Component {
     render() {
         return (
             <div className="main-wrap">
-                <Tabs tabPosition={'left'} size={'small'} tabBarStyle={{'.ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab': 'text-align: center;'}}>
+                <Tabs tabPosition={'left'} size={'small'} >
                     {(()=>{
                            return( this.state.tabs.map((item, index)=> {
                             return (
-                                 <TabPane tab={item} key={index}>
+                                 <TabPane tab={item} key={index}  onTabClick={(tab, index) => { console.log('onTabClick', index, tab)}}>
                                         <div className="nav-channel" id="sub_category_list">
                                             <div className="channel-banner">
                                                 <a href="javascript:void(0)">

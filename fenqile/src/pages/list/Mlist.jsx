@@ -133,17 +133,7 @@ class Mlist extends React.Component {
                         backgroundColor: 'white',
                     }}
                 >
-                    {/* <div style={{ height: '50px', lineHeight: '50px', color: '#888', fontSize: '18px', borderBottom: '1px solid #ddd' }}>
-              {obj.title}
-            </div>
-            <div style={{ display: '-webkit-box', display: 'flex', padding: '15px' }}>
-              <img style={{ height: '63px', width: '63px', marginRight: '15px' }} src={obj.img} alt="" />
-              <div style={{ display: 'inline-block' }}>
-                <div style={{ marginBottom: '8px', color: '#000', fontSize: '16px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '250px' }}>{obj.des}-{rowData}</div>
-                <div style={{ fontSize: '16px' }}><span style={{ fontSize: '30px', color: '#FF6E27' }}>{rowID}</span> 元/任务</div>
-              </div>
-            </div> */}
-                    <ul class="shop-list" id="sku_list">
+                    <ul className="shop-list" id="sku_list">
                         <li className="shop-item js-sku-item">
                             <a href="javascript:;">
                                 <div className="item-img" style={{background:'url(https://cres.fenqile.com/res/mobile/res/img/app/imgbg.png) no-repeat',backgroundPositionX:'40%',backgroundPositionY:'30%'}}>
@@ -185,37 +175,30 @@ class Mlist extends React.Component {
             );
         };
         return (<div>
-            {/* <Button
-          style={{ margin: '30px 15px' }}
-          inline
-          onClick={() => this.setState({ useBodyScroll: !this.state.useBodyScroll })}
-        >
-          {this.state.useBodyScroll ? 'useBodyScroll' : 'partial scroll'}
-        </Button> */}
-            <ListView
-                key={this.state.useBodyScroll ? '0' : '1'}
-                ref={el => this.lv = el}
-                dataSource={this.state.dataSource}
-                renderHeader={() => <span></span>}
-                renderFooter={() => (<div style={{ padding: 30, textAlign: 'center' }}>
-                    {this.state.isLoading ? 'Loading...' : 'Loaded'}
-                </div>)}
-                renderRow={row}
-                renderSeparator={separator}
-                useBodyScroll={this.state.useBodyScroll}
-                style={this.state.useBodyScroll ? {} : {
-                    height: this.state.height,
-                    border: '1px solid #ddd',
-                    margin: '5px 0',
-                }}
-                pullToRefresh={<PullToRefresh
-                    refreshing={this.state.refreshing}
-                    onRefresh={this.onRefresh}
-                />}
-                onEndReached={this.onEndReached}
-                pageSize={5}
-            />
-        </div>);
+                <ListView
+                    key={this.state.useBodyScroll ? '0' : '1'}
+                    ref={el => this.lv = el}
+                    dataSource={this.state.dataSource}
+                    renderHeader={() => <span></span>}
+                    renderFooter={() => (<div style={{ padding: 30, textAlign: 'center' }}>
+                        {this.state.isLoading ? 'Loading...' : 'Loaded'}
+                    </div>)}
+                    renderRow={row}
+                    renderSeparator={separator}
+                    useBodyScroll={this.state.useBodyScroll}
+                    style={this.state.useBodyScroll ? {} : {
+                        height: this.state.height,
+                        border: '1px solid #ddd',
+                        margin: '5px 0',
+                    }}
+                    pullToRefresh={<PullToRefresh
+                        refreshing={this.state.refreshing}
+                        onRefresh={this.onRefresh}
+                    />}
+                    onEndReached={this.onEndReached}
+                    pageSize={5}
+                />
+            </div>);
     }
 }
 

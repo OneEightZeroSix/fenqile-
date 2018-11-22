@@ -1,4 +1,7 @@
-@charset "UTF-8";
+
+
+.a{
+    
 
 .justify {
     display: -webkit-box;
@@ -6,7 +9,10 @@
     -webkit-box-pack: justify;
     justify-content: space-between
 }
-
+.item-list li dt, .classify-list-wrap li dt {
+    position: relative;
+    padding: 0 5%;
+}
 .line-clamp {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -113,9 +119,7 @@
     display: flex;
     display: -webkit-box;
     display: box;
-    /* autoprefixer: off */
     -webkit-box-align: center;
-    /* autoprefixer: on */
     box-align: center;
     background: #fff;
     padding: 0 0 0 12px;
@@ -123,9 +127,7 @@
 }
 
 .search-header .search-wrap {
-    /* autoprefixer: off */
     -webkit-box-flex: 1;
-  /* autoprefixer: on */
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -225,7 +227,7 @@
 }
 
 .title-wrap {
-    /* height: 1.4rem; */
+    height: 3.4rem;
     display: box;
     box-align: center;
     display: -webkit-box;
@@ -1325,7 +1327,7 @@
 }
 
 .choose-list {
-    height: 100%;
+    height: 93%;
     width: 80%;
     min-width: 256px;
     max-width: 600px;
@@ -1396,7 +1398,9 @@
     -ms-transform-origin: 0 0;
     transform-origin: 0 0
 }
-
+.item-list{
+    margin: 0;
+}
 .item-list li:last-child,
 .classify-list-wrap li:last-child {
     padding-bottom: 9.6rem
@@ -1481,7 +1485,9 @@
 
 .item-list li dl,
 .classify-list-wrap li dl {
-    position: relative
+    position: relative;
+    margin: 0;
+
 }
 
 .item-list li dl:after,
@@ -1596,9 +1602,6 @@
     display: inline-block
 }
 
-.item-list .choose-list {
-    width: 100%
-}
 
 .classify-list-wrap li dt:before {
     display: block
@@ -1671,8 +1674,10 @@
     position: relative;
     display: -webkit-box;
     display: box;
+    /* autoprefixer: off */
     -webkit-box-align: center;
     box-align: center;
+    /* autoprefixer: on */
     padding: 0 5%;
     height: 4.8rem
 }
@@ -1682,13 +1687,15 @@
 }
 
 .all-classify p {
+    margin: 0;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
     font-size: 1.4rem;
     color: rgba(48, 64, 80, .6);
-    text-align: center
+    text-align: center;
+    margin-left: 30.5vw;
 }
 
 .all-classify:after {
@@ -1873,7 +1880,6 @@
 }
 
 .shop-num {
-    font-size:13px;
     position: fixed;
     right: 1.6rem;
     bottom: 7rem;
@@ -2255,4 +2261,217 @@
         -ms-transform: translateX(0);
         transform: translateX(0)
     }
+}
+
+
+
+.fui-f-ov {
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.fui-fragment-bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    top: 0;
+    background-color: #f5f7f6;
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    box-sizing: border-box
+}
+
+.fui-frg-content {
+    display: block
+}
+
+.fui-frg-show,
+.fui-frg-show body {
+    height: 100%;
+    overflow: hidden
+}
+
+.fui-frg-no-scroll,
+.fui-frg-no-scroll body {
+    overflow: visible;
+    height: 100%
+}
+
+.fui-frg-no-scroll body {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0
+}
+
+.fui-mask {
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000
+}
+
+.fui-mask-fadein,
+.fui-mask-fadeinright {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0
+}
+
+.fui-mask-fadein .fui-mask {
+    -webkit-animation: fuiFadeIn .5s .2s ease both;
+    -moz-animation: fuiFadeIn .5s .2s ease both
+}
+
+.fui-mask-fadein .fui-f-ov>div {
+    z-index: 1000;
+    -webkit-animation: fuiFadeInUpBig .5s .2s ease both;
+    -moz-animation: fuiFadeInUpBig .5s .2s ease both
+}
+
+.fui-mask-fadeinright {
+    bottom: 0
+}
+
+.fui-mask-fadeinright .fui-mask {
+    -webkit-animation: fuiFadeIn .5s .2s ease both;
+    -moz-animation: fuiFadeIn .5s .2s ease both
+}
+
+.fui-mask-fadeinright .fui-f-ov>div {
+    z-index: 1000;
+    -webkit-animation: fuiFadeInRight .5s .2s ease both;
+    -moz-animation: fuiFadeInRight .5s .2s ease both
+}
+
+.fui-mask-fadeout .fui-mask {
+    -webkit-animation: fuiMaskout .5s .4s ease both;
+    -moz-animation: fuiMaskout .5s .4s ease both
+}
+
+.fui-mask-fadeout .fui-f-ov>div {
+    -webkit-animation: fuiMaskdivout .5s .2s ease both;
+    -moz-animation: fuiMaskdivout .5s .2s ease both
+}
+
+@-webkit-keyframes fuiMaskout {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes fuiMaskout {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes fuiMaskdivout {
+    0% {
+        -webkit-transform: translateY(0)
+    }
+
+    100% {
+        -webkit-transform: translateY(1000px);
+        display: none
+    }
+}
+
+@-moz-keyframes fuiMaskdivout {
+    0% {
+        -moz-transform: translateY(0)
+    }
+
+    100% {
+        -moz-transform: translateY(1000px);
+        display: none
+    }
+}
+
+@-webkit-keyframes fuiFadeIn {
+    0% {
+        -webkit-transform: translateY(5px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes fuiFadeIn {
+    0% {
+        transform: translateY(5px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fuiFadeInRight {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@keyframes fuiFadeInRight {
+    0% {
+        transform: translate3d(100%, 0, 0);
+        opacity: 0
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fuiFadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(500px)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0)
+    }
+}
+
+@keyframes fuiFadeInUpBig {
+    0% {
+        opacity: 0;
+        transform: translateY(500px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
 }

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import "./incal.css"
+import "./incal.scss"
+import {Provider, connect} from 'react-redux';
 // 页面组件 容器组件
 
 class incal extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isshow:false,
             listshow:false,
             list:[],
             textlist:[]
@@ -21,11 +21,7 @@ class incal extends Component {
             console.log(error);
         });
     }
-    show(){
-        this.setState({
-                isshow: !this.state.isshow
-            })
-    }
+    
     listshow(){
         this.setState({
             listshow: !this.state.listshow
@@ -36,7 +32,7 @@ class incal extends Component {
      let balist = [];
      for(var key in obj){
         balist.push(
-                   <div key={key} className={key>2? 'more-title':''}><a onClick={this.oncli.bind(this)} href="javascript:;" className="list-title js-filter-item ">{obj[key].name}</a></div> 
+            <div key={key} className={key>2? 'more-title':''}><a onClick={this.oncli.bind(this)} href="javascript:;" className="list-title js-filter-item ">{obj[key].name}</a></div> 
             )
      }
         return balist;
@@ -119,7 +115,7 @@ class incal extends Component {
           for (let i = 0; i < intdrr.length; i++) {
              intdrr[i].innerText="";
          }
-         this.show()
+         this.props.incalshow(false)
           this.setState({
                 textlist: []
             })
@@ -133,7 +129,7 @@ class incal extends Component {
                 num.push(intarr[i].innerText)
             }
         }
-        this.show()
+        this.props.incalshow(false)
          this.setState({
                 textlist: num
             })
@@ -141,10 +137,9 @@ class incal extends Component {
     }
     render() {
         return (
-            <section className="side-slide option-slide" id="filtrate_wrap">
-                <button onClick={this.show.bind(this)}>显示</button>
-                <div  className={this.state.isshow? "js-g-fragment-layer":"js-g-fragment-layer hide"} style={{width: '100%'}}>
-                    <div onClick={this.show.bind(this)} className="fui-mask js-mask"></div>
+            <section className="side-slide option-slide a" id="filtrate_wrap">
+                <div  className={this.props.calshow? "js-g-fragment-layer":"js-g-fragment-layer hide"} style={{width: '100%'}}>
+                    <div onClick={this.props.incalshow.bind(this,false)} className="fui-mask js-mask"></div>
                     <div  className="js-g-fragment-content  fui-f-ov" style={{height: '693px'}}>
                         <div className="choose-list">
                             <ul className="item-list" >
@@ -227,4 +222,21 @@ class incal extends Component {
     }
 }
 
-export default incal;
+export default connect((state)=>{
+    return state
+},(dispatch)=>{
+    return {
+        incalshow(bol){
+            dispatch({
+                    type:"calshow",
+                    calshow:bol
+                })
+        },
+         toggleTab(index){
+                dispatch({
+                    type:"toggleTab",
+                    tab:index
+                })
+        }
+    }
+})(incal);

@@ -6,6 +6,7 @@
     "ant-design-pro": "^2.1.1",
     "antd": "^3.10.8",
     "antd-mobile": "^2.2.6",
+    "node-sass": "^4.10.0",
     "r-img-lazyload": "^1.1.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
@@ -31,6 +32,7 @@
   ],
   "devDependencies": {
     "axios": "^0.18.0",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "sass-loader": "^7.1.0"
   }
 }

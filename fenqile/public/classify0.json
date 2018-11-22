@@ -1,0 +1,345 @@
+{
+    "retcode": 0,
+    "retmsg": "ok",
+    "result_rows":
+    {
+        "floor_list": [
+        {
+            "template": "1",
+            "page_id": "PRPG201712130015004",
+            "floor_id": "PRFL201712130026507",
+            "item_id": "PRIM201811210058214",
+            "active_url": "https:\/\/sale.fenqile.com\/VlVdTUhTVVhFSVVSWURB\/index.html?is_auto=1",
+            "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/D7\/j6gHAFv0_TKAHvJYAACks3gEpqo202.jpg"
+        },
+        {
+            "template": "7",
+            "page_id": "PRPG201712130015004",
+            "name": "\u6570\u7801\u7545\u9500\u699c",
+            "floor_id": "PRFL201712130026505",
+            "item_list": [
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040071",
+                "name": "\u82f9\u679c",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E8%8B%B9%E6%9E%9C",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jagHAFow1eCAMFZaAAAOhQ3etoE844.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039795",
+                "name": "\u5c0f\u7c73",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E5%B0%8F%E7%B1%B3",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jagHAFow1iKAUTj3AAAUe8J2pL8478.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039796",
+                "name": "vivo",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=vivo",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow1kOASzS8AAAQrX7FsBc084.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040072",
+                "name": "OPPO",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=oppo",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow1mSAc7VzAAASV0QUFW4979.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040073",
+                "name": "\u4e09\u661f",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E4%B8%89%E6%98%9F",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow1oeAQwylAAATHdFgg4I474.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039797",
+                "name": "\u8363\u8000",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?ci1=66&amp;kw=%E8%8D%A3%E8%80%80",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow1rOAM2LZAAAPJhN1dMA876.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039798",
+                "name": "\u534e\u4e3a",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E5%8D%8E%E4%B8%BA",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow1s6AGT9PAAAUuXpXero701.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040075",
+                "name": "\u96f7\u795e",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=ThundeRobot",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jagHAFow1vOAECfCAAAbXtY2P3w605.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039799",
+                "name": "\u534e\u7855",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E5%8D%8E%E7%A1%95",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jagHAFow1xCAOv7oAAAaEFDK5q0180.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040076",
+                "name": "\u673a\u68b0\u5e08",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E6%9C%BA%E6%A2%B0%E5%B8%88",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow1ymABuWIAAAlughtfmQ349.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039800",
+                "name": "\u4f73\u80fd",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E4%BD%B3%E8%83%BD",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow10yAejL1AAAUvl85jhA256.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040077",
+                "name": "beats",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=beats",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow12KAUs_WAAAP5e2utmc497.png"
+            }]
+        },
+        {
+            "template": "7",
+            "page_id": "PRPG201712130015004",
+            "name": "\u66f4\u591a\u54c1\u724c",
+            "floor_id": "PRFL201712130026506",
+            "item_list": [
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040078",
+                "name": "\u8010\u514b",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=nike",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow2ZaAbRLxAAAOWWX23SQ549.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039803",
+                "name": "\u963f\u8fea\u8fbe\u65af",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=adidas",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jagHAFow2a2ALO1mAAAT3QRRLmY039.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040079",
+                "name": "New Balance",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E6%96%B0%E7%99%BE%E4%BC%A6",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow2ceAE2euAAAUZ7lspU8096.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039804",
+                "name": "\u4e07\u65af",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=vans",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow2fmAKwsVAAAVoFidahc642.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040080",
+                "name": "lilbetter",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=lilbetter",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow2h-AMouYAAAV3lF42Ww824.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040081",
+                "name": "\u5929\u68ad",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E5%A4%A9%E6%A2%AD",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow2zGAFkERAAATFcVjVC0496.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040082",
+                "name": "\u4e39\u5c3c\u5c14\u60e0\u7075\u987f",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=dw",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow21qAe0-QAAATeAXs8W8342.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039808",
+                "name": "\u5361\u897f\u6b27",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E5%8D%A1%E8%A5%BF%E6%AC%A7",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/29\/jagHAFow26SALCsCAAARDIs00WY026.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040083",
+                "name": "\u5468\u5927\u798f",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E5%91%A8%E5%A4%A7%E7%A6%8F",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/2D\/jqgHAFoyFXmASdrqAAAZpQLLP44616.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040084",
+                "name": "\u8fea\u5965",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=dior",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow2-eAMt76AAAXl0VWstg588.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039809",
+                "name": "\u4f0a\u592b.\u5723\u7f57\u5170",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=ysl",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/29\/jagHAFow3AGAUhDAAAAZP-8EFoA891.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040085",
+                "name": "\u7f8e\u7684",
+                "active_url": "https:\/\/m.fenqile.com\/search\/list.html?kw=%E7%BE%8E%E7%9A%84",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/28\/jqgHAFow3C2AUWNsAAAStm4vp3c141.png"
+            }]
+        },
+        {
+            "template": "7",
+            "page_id": "PRPG201712130015004",
+            "name": "\u4fbf\u6c11\u751f\u6d3b",
+            "floor_id": "PRFL201712130028002",
+            "item_list": [
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039810",
+                "name": "\u624b\u673a\u5145\u503c",
+                "active_url": "http:\/\/fenqile.365haoyou.com\/fenqile\/#\/",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/05\/49\/jqgHAFpz4dqAEBppAAAUGkomfq0440.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201810090056908",
+                "name": "\u8bdd\u8d39\u9884\u5b58",
+                "active_url": "https:\/\/sale.fenqile.com\/VlVdTUhVVVhFSFxcWUBK\/index.html",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/32\/0F\/jqgHAFu8dRyAWcbcAAAVpAQ_Dsg893.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201808280057136",
+                "name": "\u9ec4\u91d1\u63d0\u8d27\u5361",
+                "active_url": "https:\/\/sale.fenqile.com\/VlVdTUhdV1tFSVZQWUZJ\/index.html",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/46\/j6gHAFuEu6OAXn9pAAAe4qP42Mo423.jpg"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039811",
+                "name": "\u6e38\u620f\u5145\u503c",
+                "active_url": "https:\/\/chong.m.fenqile.com\/game\/list.html",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/05\/49\/jqgHAFpz4eeADNCXAAAW2rXSF98830.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201810110057393",
+                "name": "\u7f8e\u5973\u966a\u73a9",
+                "active_url": "http:\/\/fenqile.wzpeilian.com",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/33\/36\/jagHAFvqSEGAXP1JAAAc2fPm4AM571.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040086",
+                "name": "\u5a31\u4e50\u4f1a\u5458\u5145\u503c",
+                "active_url": "https:\/\/chong.m.fenqile.com\/game\/list.html?page_id=PRPG201707190008001",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/05\/49\/jqgHAFpz4Q6AYRbMAAAT3LPX1Ic974.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201811100057679",
+                "name": "\u4f4e\u4ef7\u62fc\u56e2",
+                "active_url": "http:\/\/www.liunn.com\/h5_business\/indexGroup\/73f2fe24e5e6be67b02730deaddb411d",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/32\/56\/jqgHAFvmkDGAceRAAAANR84sApM569.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201809280056863",
+                "name": "\u7ffc\u5149\u901a\u5151\u5238",
+                "active_url": "https:\/\/sale.fenqile.com\/VlVdTUhdV1pFSVZQWUZI\/index.html",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/32\/F5\/jagHAFvEecOAX5GfAAAYfPnUOSg884.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201805290051014",
+                "name": "\u9a74\u5988\u5988\u65c5\u6e38",
+                "active_url": "https:\/\/union.lvmama.com\/tnt_cps\/cps\/newRedirect2.do?source=48662&amp;lvmamakey=48QM&amp;isNew=new",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/32\/FF\/jagHAFvNMNWAR-pAAAAYXb8OSfI123.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039813",
+                "name": "\u706b\u8f66\u7968",
+                "active_url": "https:\/\/sale.fenqile.com\/201803220105501\/index.html",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/32\/25\/jqgHAFvNMO-Afj5bAAAUuk7crIU633.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040089",
+                "name": "\u7279\u4ef7\u673a\u7968",
+                "active_url": "https:\/\/travelyh.com\/yhh5\/flight_home.html",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/00\/93\/j6gHAFvNMPuAdPxdAAATw2x2lJ4694.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201805180049633",
+                "name": "\u9152\u5e97\u9884\u8ba2",
+                "active_url": "https:\/\/travelyh.com\/yhh5\/hotel_home.html",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/32\/25\/jqgHAFvNMQiAPQZ7AAAZW6RbizY044.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130039820",
+                "name": "\u7535\u5b50\u793c\u54c1\u5361",
+                "active_url": "https:\/\/sale.fenqile.com\/VlVdTUhRVFtFSVVXXERO\/index.html",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/05\/64\/jagHAFpz4gmAR9rJAAAUY6EQuz4567.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201801290043007",
+                "name": "\u5361\u5238\u56de\u6536",
+                "active_url": "https:\/\/sale.fenqile.com\/VlVdTUhRVVtFSVVWXEVJ\/index.html",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/02\/9E\/jagHAFpugeCANuHDAAAe21-t9nA022.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040090",
+                "name": "\u53d6\u73b0",
+                "active_url": "https:\/\/cash.m.fenqile.com\/cash\/introduce.html?_OSC=14NNU2G-F3RS3LF&amp;_DTAG=14NNU2G-F3RS3LF",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/05\/65\/jagHAFpz4sKATnhoAAAVM7QXxUQ977.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201712130040098",
+                "name": "\u52a0\u6cb9\u5361\u5145\u503c",
+                "active_url": "https:\/\/chong.m.fenqile.com\/game\/charge\/S201703100503577.html",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/05\/49\/jqgHAFpz4hGAMx0RAAAQtmfU0Ns978.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201809260056850",
+                "name": "\u7279\u4ef7\u5a31\u4e50\u5145\u503c",
+                "active_url": "http:\/\/www.liunn.com\/h5_business\/indexFQL\/73f2fe24e5e6be67b02730deaddb411d",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/32\/00\/jqgHAFurW22APee2AAATZ6yREY4771.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201810250058016",
+                "name": "\u7cbe\u54c1\u5145\u503c",
+                "active_url": "http:\/\/fenqile.h5.fulu.com\/Charge\/Index",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/33\/05\/jagHAFvRIMKAX9b6AAAVAGnV4sc485.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201801100042016",
+                "name": "\u7535\u5f71\u9009\u5ea7",
+                "active_url": "https:\/\/sale.fenqile.com\/VlVdTUhVVVRFSFxcWUBN\/index.html",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/05\/49\/jqgHAFpz4ViAenCsAAAYm2FBRd4632.png"
+            },
+            {
+                "fe_is_show": 1,
+                "item_id": "PRIM201806110053020",
+                "name": "\u7279\u4ef7\u6d41\u91cf\u5145\u503c",
+                "active_url": "http:\/\/fenqile.365haoyou.com\/fenqile",
+                "fe_pic_url": "https:\/\/cimg1.fenqile.com\/ibanner2\/M00\/31\/9A\/jqgHAFtDEJSAMMqbAAAU91-mctQ214.png"
+            }]
+        }]
+    }
+}

@@ -3,7 +3,7 @@ import Mheader from './Mheader.jsx';
 import Mlist from './Mlist.jsx';
 import Mcomponents from './Mcomponents.jsx';
 import Incal from './incal.jsx';
-import './incal.css';
+// import './incal.scss';
 
 
 // 页面组件 容器组件
@@ -16,14 +16,12 @@ class mainList extends Component {
     }
     render() {
         return (
-        <div>
-            <div>
-                {/* <Mheader/> */}
+            <div className="a">
+                <Mheader/> 
                 <Incal/>
-                {/* <Mlist/>
-                <Mcomponents/> */}
+                <Mlist/>
+                <Mcomponents/> 
             </div>
-        </div>
         )
     }
 }
