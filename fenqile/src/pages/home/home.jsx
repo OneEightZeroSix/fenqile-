@@ -14,7 +14,6 @@ import mainPage1 from './index/mainPage1.jsx';
 import classify from './classify/classify.jsx';
 import cal from './cal/cal.jsx';
 import creditCard from './creditCard/creditCard.jsx';
-import mine from './mine/mine.jsx';
 import Xfooter from '../../components/Xfooter/Xfooter.jsx';
 
 class Home extends Component {
@@ -42,7 +41,7 @@ class Home extends Component {
                 this.state.pathname=3;
                 this.props.toggleTab(3)
              break;
-             case "/home/mine" :
+             case "/mine" :
                 this.state.pathname=4;
                 this.props.toggleTab(4)
              break;
@@ -59,7 +58,6 @@ class Home extends Component {
                     <Route path="/home/classify" component={classify} />
                     <Route path="/home/cal" component={cal} />
                     <Route path="/home/creditCard" component={creditCard} />
-                    <Route path="/home/mine" component={mine} />
                     <Xfooter pathname={this.state.pathname}/>
             </div>
         )
