@@ -33,6 +33,10 @@
   "devDependencies": {
     "axios": "^0.18.0",
     "react-router-dom": "^4.3.1",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "react-app-rewired": "^1.6.2",
+    "react-swipe": "^5.1.1",
+    "swipe-js-iso": "^2.0.4",
+    "swiper": "^4.4.2"
   }
 }

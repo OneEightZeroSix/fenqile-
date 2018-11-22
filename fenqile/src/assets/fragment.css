@@ -1,0 +1,209 @@
+.fui-f-ov {
+	overflow-y: auto;
+	overflow-x: hidden
+}
+
+.fui-fragment-bg {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	top: 0;
+	background-color: #f5f7f6;
+	min-width: 320px;
+	max-width: 750px;
+	margin: 0 auto;
+	box-sizing: border-box
+}
+
+.fui-frg-content {
+	display: block
+}
+
+.fui-frg-show,
+.fui-frg-show body {
+	height: 100%;
+	overflow: hidden
+}
+
+.fui-frg-no-scroll,
+.fui-frg-no-scroll body {
+	overflow: visible;
+	height: 100%
+}
+
+.fui-frg-no-scroll body {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	right: 0
+}
+
+.fui-mask {
+	background-color: rgba(0, 0, 0, .5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000
+}
+
+.fui-mask-fadein,
+.fui-mask-fadeinright {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0
+}
+
+.fui-mask-fadein .fui-mask {
+	-webkit-animation: fuiFadeIn .5s .2s ease both;
+	-moz-animation: fuiFadeIn .5s .2s ease both
+}
+
+.fui-mask-fadein .fui-f-ov>div {
+	z-index: 1000;
+	-webkit-animation: fuiFadeInUpBig .5s .2s ease both;
+	-moz-animation: fuiFadeInUpBig .5s .2s ease both
+}
+
+.fui-mask-fadeinright {
+	bottom: 0
+}
+
+.fui-mask-fadeinright .fui-mask {
+	-webkit-animation: fuiFadeIn .5s .2s ease both;
+	-moz-animation: fuiFadeIn .5s .2s ease both
+}
+
+.fui-mask-fadeinright .fui-f-ov>div {
+	z-index: 1000;
+	-webkit-animation: fuiFadeInRight .5s .2s ease both;
+	-moz-animation: fuiFadeInRight .5s .2s ease both
+}
+
+.fui-mask-fadeout .fui-mask {
+	-webkit-animation: fuiMaskout .5s .4s ease both;
+	-moz-animation: fuiMaskout .5s .4s ease both
+}
+
+.fui-mask-fadeout .fui-f-ov>div {
+	-webkit-animation: fuiMaskdivout .5s .2s ease both;
+	-moz-animation: fuiMaskdivout .5s .2s ease both
+}
+
+@-webkit-keyframes fuiMaskout {
+	0% {
+		opacity: 1
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@-moz-keyframes fuiMaskout {
+	0% {
+		opacity: 1
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@-webkit-keyframes fuiMaskdivout {
+	0% {
+		-webkit-transform: translateY(0)
+	}
+
+	100% {
+		-webkit-transform: translateY(1000px);
+		display: none
+	}
+}
+
+@-moz-keyframes fuiMaskdivout {
+	0% {
+		-moz-transform: translateY(0)
+	}
+
+	100% {
+		-moz-transform: translateY(1000px);
+		display: none
+	}
+}
+
+@-webkit-keyframes fuiFadeIn {
+	0% {
+		-webkit-transform: translateY(5px);
+		opacity: 0
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		opacity: 1
+	}
+}
+
+@keyframes fuiFadeIn {
+	0% {
+		transform: translateY(5px);
+		opacity: 0
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes fuiFadeInRight {
+	0% {
+		-webkit-transform: translate3d(100%, 0, 0);
+		opacity: 0
+	}
+
+	100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		opacity: 1
+	}
+}
+
+@keyframes fuiFadeInRight {
+	0% {
+		transform: translate3d(100%, 0, 0);
+		opacity: 0
+	}
+
+	100% {
+		transform: translate3d(0, 0, 0);
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes fuiFadeInUpBig {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(500px)
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0)
+	}
+}
+
+@keyframes fuiFadeInUpBig {
+	0% {
+		opacity: 0;
+		transform: translateY(500px)
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0)
+	}
+}

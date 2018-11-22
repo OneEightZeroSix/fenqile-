@@ -1,0 +1,1285 @@
+/* autoprefixer: off */
+@charset "UTF-8";
+.account-info .email,
+.like-item-box .part-ul li a h4,
+.line-clamp {
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.justify {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between
+}
+
+.line-clamp {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical
+}
+
+.slider-imgs {
+	position: relative
+}
+
+.slider-imgs .top-i-v {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	text-align: center
+}
+
+.slider-imgs .top-i-v span {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #FFF;
+	margin: 0 3px
+}
+
+.slider-imgs .top-i-v span.on {
+	background-color: #fed158
+}
+
+.header .set-up {
+	color: #fff
+}
+
+.header .red-d {
+	top: -.3rem;
+	right: -.3rem
+}
+
+.header .i-mail {
+	display: inline-block;
+	margin-right: 15px;
+	top: 2px
+}
+
+.day-span {
+	color: #3b9bff
+}
+
+.i-account-asset {
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.7rem;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 0 1rem 0 0;
+	vertical-align: middle;
+	background-image: url(//cres.fenqile.cn/mobile/img/app/my_set/zc_bg.png)
+}
+
+.account-body .header {
+	background: url(//cres.fenqile.cn/mobile/img/app/my_set/top_hd.png) no-repeat;
+	background-size: 100% 4.9rem
+}
+
+.account-body .header h1 {
+	height: 4.9rem;
+	line-height: 4.9rem
+}
+
+.account-body .account-top-con {
+	position: relative;
+	background: url(//cres.fenqile.cn/mobile/img/app/my_set/top_bd.png) no-repeat;
+	background-size: 100% 16rem
+}
+
+.account-body .account-top-con .my-item {
+	background: rgba(255, 255, 255, .2)
+}
+
+.account-body .account-top-con .my-item .item-bd li {
+	margin: .4rem 0
+}
+
+.account-body .account-top-con .my-item .item-bd a {
+	color: #fff;
+	padding: 0;
+	height: 40px;
+    line-height: 20px;
+}
+
+.account-body .account-top-con .my-item .item-bd .info-num {
+	color: #fff;
+	margin-bottom: 0
+}
+
+.account-body .account-top-con .account-info {
+	padding: 2rem 1.5rem 4rem
+}
+
+.account-body .account-top-con .account-info:after {
+	background: 0 0
+}
+
+.account-body .account-top-con .account-info img {
+	width: 4rem;
+	height: 4rem;
+	display: inline-block;
+}
+
+.account-body .account-top-con .account-info img.i-badge {
+	display: inline-block;
+	position: absolute;
+	right: -.2rem;
+	bottom: -.2rem;
+	width: 1.6rem;
+	height: auto;
+	vertical-align: middle;
+	background: 0 0;
+	border-radius: 0
+}
+
+.account-body .account-top-con:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background: #2c81d9;
+	-webkit-transform: scale(1, .5);
+	transform: scale(1, .5);
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom
+}
+
+.account-info {
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	position: relative;
+	padding: .5rem 1.5rem 2rem;
+	font-size: 1.4rem
+}
+
+.account-info .amount,
+.account-info .email {
+	display: block;
+	color: #fff
+}
+
+.account-info img {
+	border-radius: 50%;
+	margin-right: 1rem;
+	vertical-align: middle
+}
+
+.account-info .email {
+	white-space: nowrap
+}
+
+.account-info .amount .i-limit {
+	display: inline-block;
+	width: 13px;
+	height: 15px;
+	margin-right: 5px;
+	background: url(//cres.fenqile.cn/www/mobile/res/img/app/global.png?v=20151126) 0 -85px no-repeat;
+	background-size: 100px 100px;
+	vertical-align: text-bottom
+}
+
+.account-info .amount:after {
+	content: ' ';
+	display: inline-block;
+	width: .8rem;
+	height: .8rem;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	margin-left: .5rem;
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.account-info:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background: #2c81d9;
+	-webkit-transform: scale(1, .5);
+	transform: scale(1, .5);
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom
+}
+
+.account-info .account-img {
+	display: inline-block;
+	position: relative
+}
+
+.account-info .i-account-badge {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	vertical-align: middle;
+	background: url(//cres.fenqile.cn/mobile/img/app/wallet_index/i_badge.png) no-repeat;
+	background-size: 100%
+}
+
+.i-account-bcard,
+.i-account-bill,
+.i-account-book,
+.i-account-cart,
+.i-account-consult,
+.i-account-favor,
+.i-account-order {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-right: 1rem;
+	position: relative;
+	top: .5rem
+}
+
+.i-account-bill {
+	background-image: url(//cres.fenqile.cn/mobile/img/app/wallet_index/i_bill.png)
+}
+
+.i-account-order {
+	background-image: url(//cres.fenqile.cn/mobile/img/app/wallet_index/i_order.png)
+}
+
+.i-account-book {
+	background-image: url(//res.fenqile.com/res/app/img/wallet/safe.png)
+}
+
+.i-account-consult {
+	background-image: url(/res/img/app/my_set/date_bg.png)
+}
+
+.i-account-cart {
+	background-image: url(/res/img/app/my_set/i_cart.png)
+}
+
+.i-account-bcard {
+	background-image: url(/res/img/app/my_set/i_bcard.png)
+}
+
+.i-order-check,
+.i-order-evaluate,
+.i-order-notpaid,
+.i-order-receive {
+	display: block;
+	margin: 0 auto 4px;
+	width: 20px;
+	height: 18px;
+	background: url(//cres.fenqile.cn/mobile/img/app/account/index/order_state.png) no-repeat;
+	background-size: 20px auto
+}
+
+.i-order-receive {
+	background-position: 0 -18px
+}
+
+.i-order-evaluate {
+	background-position: 0 -36px
+}
+
+.i-order-notpaid {
+	background-position: 0 -56px
+}
+
+.i-account-favor .red-d {
+	right: -.4rem;
+	-moz-opacity: 1;
+	opacity: 1
+}
+
+.my-item {
+	position: relative;
+	background-color: #fff
+}
+
+.my-item .item-hd {
+	margin-top: 1.5rem
+}
+
+.my-item .item-hd li {
+	position: relative
+}
+
+.my-item .item-hd li a {
+	display: block;
+	color: #929292;
+	font-size: 1.4rem;
+	padding: 0 1.5rem;
+	position: relative;
+	height: 5rem;
+	line-height: 5rem
+}
+
+.my-item .item-hd li a strong {
+	font-size: 1.6rem;
+	color: #191919;
+	font-weight: 400
+}
+
+.my-item .item-hd li a .note {
+	position: absolute;
+	right: 3rem;
+	top: .2rem
+}
+
+.my-item .item-hd li a:after {
+	content: '';
+	position: absolute;
+	right: 1.5rem;
+	top: 50%;
+	display: inline-block;
+	width: .8rem;
+	height: .8rem;
+	margin-top: -.3rem;
+	border-top: 1px solid #b9b9b9;
+	border-right: 1px solid #b9b9b9;
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.my-item .item-hd li:first-child:after,
+.my-item .item-hd li:last-child:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #dfdfdf;
+	-webkit-transform: scale(1, .5);
+	transform: scale(1, .5)
+}
+
+.my-item .item-hd li:first-child:after {
+	top: 0;
+	-webkit-transform-origin: center top;
+	transform-origin: center top
+}
+
+.my-item .item-hd li:last-child:after {
+	bottom: 0;
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom
+}
+
+.my-item .item-tip {
+	position: relative;
+	top: .1rem;
+	padding-right: 1rem;
+	font-size: 1.4rem;
+	color: #999
+}
+
+.my-item .item-bd {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-box-align: center;
+	-moz-box-align: center
+}
+
+.my-item .item-bd li {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	position: relative
+}
+
+.my-item .item-bd li a {
+	display: block;
+	color: #929292;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 1.5rem 0
+}
+
+.my-item .item-bd li a .info-num {
+	font-size: 1.6rem;
+	color: #3b9bff;
+	margin-bottom: .4rem
+}
+
+.my-item .item-bd li:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	background: url(//cres.fenqile.cn/mobile/img/app/my_set/line.png) no-repeat;
+	background-size: 100% 100%
+}
+
+.my-item .item-bd .tag-num {
+	position: absolute;
+	width: 1.4rem;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	background-color: #ff4b78;
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	left: 50%;
+	top: 1rem;
+	margin-left: 1.2rem;
+	font-size: 1.1rem
+}
+
+.my-item .bill-box {
+	position: relative
+}
+
+.like-item-box:before,
+.my-item .bill-box:after,
+.my-item-box .item-hd li a:before {
+	position: absolute;
+	left: 0;
+	content: ""
+}
+
+.my-item .bill-box li a .info-num {
+	font-size: 1.7rem
+}
+
+.my-item .bill-box li:last-child .info-num {
+	color: #292929
+}
+
+.my-item .bill-box li:after {
+	background: 0 0
+}
+
+.my-item .bill-box:after {
+	top: 0;
+	width: 100%;
+	height: 1px;
+	background: #efefef;
+	-webkit-transform: scale(1, .5);
+	transform: scale(1, .5);
+	-webkit-transform-origin: center top;
+	transform-origin: center top
+}
+
+.my-item-box .item-hd li a {
+	margin-left: 1.5rem;
+	padding-left: 0
+}
+
+.my-item-box .item-hd li a:before {
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background: #dfdfdf;
+	-webkit-transform: scale(1, .5);
+	transform: scale(1, .5);
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom
+}
+
+.logout-btn {
+	padding: 1.5rem;
+	margin: 1rem 0 3rem
+}
+
+.like-item-box {
+	margin: 1.5rem 0
+}
+
+.like-item-box h3 {
+	color: #191919;
+	font-size: 1.6rem;
+	padding: 1.5rem 1.5rem .7rem
+}
+
+.like-item-box .part-ul {
+	overflow: hidden;
+	float: left;
+	position: relative
+}
+
+.like-item-box .part-ul li {
+	position: relative;
+	float: left;
+	width: 33.3%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.like-item-box .part-ul li a {
+	display: block;
+	padding: 1rem;
+	text-align: center
+}
+
+.like-item-box .part-ul li a h4 {
+	white-space: nowrap;
+	color: #666;
+	font-size: 1.2rem;
+	width: 100%;
+	margin: 1rem 0 0
+}
+
+.like-item-box .part-ul li a .part-price {
+	background: #fe4979;
+	color: #fff;
+	font-size: 1rem;
+	white-space: nowrap
+}
+
+.like-item-box .part-ul li a .like-pic {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto
+}
+
+.like-item-box .part-ul li a .like-pic img {
+	max-height: 100%;
+	background: 0 0
+}
+
+.like-item-box .slide-ol {
+	text-align: center;
+	padding-bottom: .8rem
+}
+
+.like-item-box .slide-ol span {
+	display: inline-block;
+	height: .2rem;
+	width: 2rem;
+	background: #dfdfdf;
+	margin: 0 .3rem
+}
+
+.like-item-box .slide-ol span.on {
+	background: #ff6d8e
+}
+
+.like-item-box:before {
+	top: 0;
+	width: 100%;
+	height: 1px;
+	background: #dfdfdf;
+	-webkit-transform: scale(1, .5);
+	transform: scale(1, .5);
+	-webkit-transform-origin: center top;
+	transform-origin: center top
+}
+
+.mod-main .abolish,
+.mod-main .change,
+.mod-main .refer {
+	display: inline-block;
+	margin: 2rem 0 3.5rem;
+	width: 12rem;
+	height: 3rem;
+	font-size: 1.4rem;
+	line-height: 3rem
+}
+
+.mod-main {
+	background: #fff
+}
+
+.mod-main h4 {
+	padding-top: 1rem
+}
+
+.mod-main h4.col {
+	color: #ff4b78
+}
+
+.mod-main .refer {
+	border: 1px solid #3b9bff;
+	border-radius: 4px;
+	color: #3b9bff
+}
+
+.mod-main .abolish {
+	border: 1px solid #a4a4a4;
+	border-radius: 4px;
+	color: #292929
+}
+
+.mod-main .change {
+	border: 1px solid #3b9bff;
+	border-radius: 4px;
+	color: #3b9bff
+}
+
+.m-info {
+	padding: 1.5rem 3rem 0 0
+}
+
+.m-info .m-info-title {
+	padding-left: 2rem;
+	color: #ababab;
+	font-size: 1.2rem
+}
+
+.car-step ul {
+	border-left: 1px solid #e8e8e8;
+	margin: 1.5rem 0 0 3rem
+}
+
+.car-step ul li {
+	padding-left: 3rem;
+	margin-top: 12px;
+	position: relative
+}
+
+.car-step ul li p {
+	border-bottom: 1px solid #e8e8e8;
+	padding-bottom: 1rem;
+	color: #bdbdbd
+}
+
+.car-step ul li .c-text {
+	color: #979797;
+	line-height: 19px
+}
+
+.car-step ul li .c-text u,
+.car-step ul li.on .c-text {
+	color: #3b9bff
+}
+
+.car-step ul li .spanc {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	display: block;
+	background-color: #e8e8e8;
+	position: absolute;
+	top: 0;
+	left: -5px
+}
+
+.car-step ul li.on .spanc {
+	background-color: #3b9bff;
+	width: 13px;
+	height: 13px;
+	border: 5px solid #c5e0fb;
+	left: -13px
+}
+
+.car-step ul li a {
+	text-decoration: underline
+}
+
+.car-step ul li:last-child p {
+	border-bottom: 0
+}
+
+.credit-body .item-hd {
+	margin: 0 0 2rem
+}
+
+.credit-info {
+	background: #46a1ff;
+	overflow: hidden
+}
+
+.credit-info .credit-box {
+	color: #fff;
+	font-size: 1.4rem;
+	text-align: center;
+	padding-top: 3rem;
+	position: relative;
+	z-index: 2
+}
+
+.credit-info .credit-box .txt {
+	color: #bdddff
+}
+
+.credit-info .credit-box .num {
+	font-weight: 400;
+	font-size: 6rem;
+	display: block
+}
+
+.credit-info .credit-box .num b {
+	font-size: 4rem;
+	font-weight: 400
+}
+
+.credit-info .credit-box .con {
+	padding: .3rem 0 4rem
+}
+
+.credit-info .credit-box .con span {
+	display: inline-block;
+	line-height: 1.4rem
+}
+
+.credit-info .credit-box .con span:first-child {
+	border-right: 1px solid #a3d0ff;
+	padding-right: 1rem;
+	margin-right: .6rem
+}
+
+.credit-info .credit-box .con span .i-qna {
+	background: url(//cres.fenqile.cn/mobile/img/app/my_set/i-con-qna.png) no-repeat;
+	background-size: 1.5rem auto;
+	vertical-align: middle;
+	margin-left: .4rem
+}
+
+.credit-info .credit-bg-box {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+.credit-info .credit-bg-box .cre-lt,
+.credit-info .credit-bg-box .cre-rt {
+	bottom: 100%;
+	animation-duration: 10s;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear
+}
+
+.credit-info .credit-bg-box .cre-lt {
+	height: 6.6rem;
+	background: url(//cres.fenqile.cn/mobile/img/app/my_set/left_bg.png) no-repeat;
+	background-size: 100% 100%;
+	animation-name: move
+}
+
+.credit-info .credit-bg-box .cre-rt {
+	height: 6.4rem;
+	background: url(//cres.fenqile.cn/mobile/img/app/my_set/right_bg.png) no-repeat;
+	background-size: 100% 100%;
+	animation-name: slide
+}
+
+.credit-info .credit-bg-box .cre-all {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(255, 255, 255, .18);
+	width: 100%;
+	height: 0
+}
+
+.credit-info .fu-progress {
+	position: absolute;
+	left: 0;
+	bottom: -5rem;
+	z-index: 1;
+	width: 100%;
+	height: 36px
+}
+
+.credit-info .left-bg {
+	position: absolute;
+	background: #fff;
+	opacity: .1;
+	width: 200%;
+	height: 200%;
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+	transition: all .8s ease!important;
+	-webkit-transition: all .8s ease!important;
+	top: -20%;
+	left: -50%;
+	border: 1px solid transparent;
+	border-radius: 40%!important;
+	animation-duration: 12s;
+	animation-name: spin;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear
+}
+
+.my-item-box .item-hd .justify {
+	display: -webkit-box
+}
+
+.my-item-box .item-hd .justify h4 {
+	color: #292929;
+	font-size: 1.4rem
+}
+
+.my-item-box .item-hd .justify h4 .ico-red {
+	padding: .1rem .3rem;
+	font-style: normal;
+	position: relative;
+	left: .4rem;
+	top: -2.5rem;
+	border-radius: 1px;
+	font-size: .7rem;
+	color: #fff;
+	background: #ff7195;
+	vertical-align: text-top
+}
+
+.happy-pay-box,
+.new-pop,
+.new-pop .new-pop-top,
+.promote-box {
+	border-radius: 4px
+}
+
+.my-item-box .item-hd .justify h4 .ico-red:before {
+	content: "";
+	width: 0;
+	height: 0;
+	font-size: 0;
+	position: absolute;
+	bottom: -.2rem;
+	left: -.3rem;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #ff7195 transparent transparent;
+	-webkit-transform: rotate(135deg)
+}
+
+.my-item-box .item-hd .justify .temporary {
+	padding: .2rem 1.5rem 0 0
+}
+
+.my-item-box .item-hd .justify .temporary span {
+	color: #3b9bff
+}
+
+.check-h3 {
+	margin: 0 0 .5rem 1.5rem;
+	font-size: 1.3rem;
+	color: #929292
+}
+
+.goto-intro {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin-bottom: 20px
+}
+
+.happy-pay-box {
+	overflow: hidden;
+	background: #fff
+}
+
+.happy-pay-box .happy-top {
+	height: 14rem;
+	text-align: center;
+	background: #3b9bff;
+	position: relative;
+	color: #fff;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-box-align: center;
+	-moz-box-align: center
+}
+
+.happy-pay-box .happy-top .txt {
+	font-size: 12px;
+	margin-bottom: .5rem
+}
+
+.happy-pay-box .happy-top .max-mon {
+	position: relative;
+	display: inline-block;
+	line-height: 3rem;
+	font-size: 3rem
+}
+
+.happy-pay-box .happy-top .max-mon em {
+	position: absolute;
+	top: 0;
+	left: -1.4rem;
+	font-size: 2rem;
+	line-height: 2.1rem
+}
+
+.happy-pay-box .happy-top .wave_bg {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0
+}
+
+.happy-pay-box .happy-bottom {
+	padding: 2.4rem 2.6rem
+}
+
+.happy-pay-box .happy-bottom ul {
+	padding-left: 2.5rem
+}
+
+.happy-pay-box .happy-bottom .advantage01,
+.happy-pay-box .happy-bottom .advantage02,
+.happy-pay-box .happy-bottom .advantage03 {
+	margin-bottom: 2.4rem;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.happy-pay-box .happy-bottom .advantage01 .i-icon,
+.happy-pay-box .happy-bottom .advantage02 .i-icon,
+.happy-pay-box .happy-bottom .advantage03 .i-icon {
+	width: 4.8rem;
+	height: 4.8rem;
+	background: url(/res/img/app/wallet/i_advantage.png) no-repeat;
+	background-size: 4.6rem auto;
+	margin-right: 1.7rem
+}
+
+.happy-pay-box .happy-bottom .advantage01 .txt,
+.happy-pay-box .happy-bottom .advantage02 .txt,
+.happy-pay-box .happy-bottom .advantage03 .txt {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.happy-pay-box .happy-bottom .advantage01 .txt p,
+.happy-pay-box .happy-bottom .advantage02 .txt p,
+.happy-pay-box .happy-bottom .advantage03 .txt p {
+	font-size: 16px;
+	color: #3b9bff
+}
+
+.happy-pay-box .happy-bottom .advantage01 .txt p:last-child,
+.happy-pay-box .happy-bottom .advantage02 .txt p:last-child,
+.happy-pay-box .happy-bottom .advantage03 .txt p:last-child {
+	color: #b5bbc4;
+	font-size: 13px;
+	margin-top: .5rem
+}
+
+.happy-pay-box .happy-bottom .advantage02 .i-icon {
+	background-position: 0 -5.1rem
+}
+
+.happy-pay-box .happy-bottom .advantage03 .i-icon {
+	background-position: 0 -10.1rem
+}
+
+.happy-close-a,
+.i-close-a {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	height: 3.2rem;
+	width: 3.2rem;
+	line-height: 3.2rem
+}
+
+.happy-close-a:after,
+.happy-close-a:before,
+.i-close-a:after,
+.i-close-a:before {
+	position: absolute;
+	top: 15px;
+	left: 9px;
+	display: block;
+	content: "";
+	width: 1.5rem;
+	height: 2px;
+	background: #e8eaee;
+	font-size: 0;
+	line-height: 0
+}
+
+.happy-close-a:before,
+.i-close-a:before {
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.happy-close-a:after,
+.i-close-a:after {
+	-ms-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}
+
+.promote-box {
+	background: #fff
+}
+
+.promote-box .promote-top {
+	position: relative;
+	height: 15rem;
+	border-radius: 4px
+}
+
+.promote-box .promote-top img {
+	position: absolute;
+	top: -28px
+}
+
+.promote-box .promote-bottom {
+	padding: 2.4rem 2.6rem;
+	text-align: center;
+	font-size: 13px;
+	color: #566272
+}
+
+.promote-box .promote-bottom p:first-child {
+	font-size: 16px;
+	color: #1c2838;
+	margin-bottom: 1.8rem
+}
+
+.promote-box .promote-bottom p:nth-child(2) {
+	margin-bottom: 4.2rem
+}
+
+.promote-box .promote-bottom p.mb-txt {
+	margin-bottom: 3rem
+}
+
+.new-pop .new-pop-top {
+	text-align: center;
+	position: relative;
+	font-size: 14px;
+	color: #394050
+}
+
+.new-pop .new-pop-top .txt {
+	font-size: 14px;
+	margin-bottom: .5rem;
+	color: #394050
+}
+
+.new-pop .new-pop-top .max-mon {
+	position: relative;
+	display: inline-block;
+	line-height: 3rem;
+	font-size: 27px;
+	text-align: .5em;
+	color: #165198
+}
+
+.new-pop .new-pop-top .max-mon em {
+	position: absolute;
+	top: 0;
+	left: -1.4rem;
+	font-size: 34px;
+	line-height: 2.1rem
+}
+
+.new-pop .new-pop-txt {
+	position: absolute;
+	top: 20px;
+	z-index: 0;
+	left: 0;
+	right: 0;
+	text-align: center
+}
+
+.new-pop-bottom {
+	padding: 2.4rem 2.6rem
+}
+
+.new-pop-bottom ul {
+	padding-left: 0
+}
+
+.new-pop-bottom .advantage01,
+.new-pop-bottom .advantage02,
+.new-pop-bottom .advantage03 {
+	margin-bottom: 2.4rem;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.new-pop-bottom .advantage01 .i-icon,
+.new-pop-bottom .advantage02 .i-icon,
+.new-pop-bottom .advantage03 .i-icon {
+	width: 4.8rem;
+	height: 4.8rem;
+	background: url(/res/img/app/wallet/i_credit.png) no-repeat;
+	background-size: 4.6rem auto;
+	margin-right: 1.5rem
+}
+
+.new-pop-bottom .advantage01 .txt,
+.new-pop-bottom .advantage02 .txt,
+.new-pop-bottom .advantage03 .txt {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.new-pop-bottom .advantage01 .txt p,
+.new-pop-bottom .advantage02 .txt p,
+.new-pop-bottom .advantage03 .txt p {
+	font-size: 14px;
+	color: #394050
+}
+
+.new-pop-bottom .advantage01 .txt p:last-child,
+.new-pop-bottom .advantage02 .txt p:last-child,
+.new-pop-bottom .advantage03 .txt p:last-child {
+	font-size: 12px;
+	color: rgba(57, 64, 80, .6);
+	margin-top: .5rem
+}
+
+.new-pop-bottom .advantage02 .i-icon {
+	background-position: 0 -5rem
+}
+
+.new-pop-bottom .advantage03 .i-icon {
+	background-position: 0 -10rem
+}
+
+.anti-cheat {
+	overflow: visible!important
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0)
+	}
+	to {
+		transform: rotate(360deg)
+	}
+}
+
+.overdue-col {
+	color: #fe4979!important
+}
+
+.rec-load-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 180px;
+	height: 46px;
+	margin: -23px 0 0 -90px;
+	background: #3b9bff;
+	border-radius: 32px;
+	-webkit-animation: inherit!important;
+	-moz-animation: inherit!important;
+	animation: inherit!important
+}
+
+.rec-load-box img {
+	margin: 7px 0 0 10px;
+	vertical-align: middle;
+	background: 0 0
+}
+
+.rec-load-box span {
+	position: relative;
+	top: 6px;
+	left: 6px;
+	color: #fff;
+	font-size: 14px
+}
+
+.mask-fadeinright .mask {
+	-webkit-animation: inherit!important;
+	-moz-animation: inherit!important;
+	animation: inherit!important
+}
+
+.pro-floating {
+	right: 0;
+	-webkit-animation: jump 4s linear infinite;
+	-moz-animation: jump 4s linear infinite;
+	-o-animation: jump 4s linear infinite;
+	animation: jump 4s linear infinite
+}
+
+.pro-floating .pro-floating-img a {
+	width: 100px;
+	height: 100px
+}
+
+@-webkit-keyframes jump {
+	0%,
+	100% {
+		-webkit-transform: translateY(0);
+		animation-timing-function: ease-in
+	}
+	50% {
+		-webkit-transform: translateY(20px);
+		animation-timing-function: ease-out
+	}
+	65% {
+		-webkit-transform: translateY(10px);
+		animation-timing-function: ease-out
+	}
+	99% {
+		-webkit-transform: translateY(1px);
+		animation-timing-function: ease-in
+	}
+}
+
+@keyframes jump {
+	0%,
+	100% {
+		-webkit-transform: translateY(0);
+		animation-timing-function: ease-in
+	}
+	50% {
+		-webkit-transform: translateY(20px);
+		animation-timing-function: ease-out
+	}
+	65% {
+		-webkit-transform: translateY(10px);
+		animation-timing-function: ease-out
+	}
+	99% {
+		-webkit-transform: translateY(1px);
+		animation-timing-function: ease-in
+	}
+}
+
+
+/* autoprefixer: on */
