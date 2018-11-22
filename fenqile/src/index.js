@@ -28,7 +28,8 @@ React.axios = axios;
 // 创建仓库  试验 可删除
 const store = createStore(function(state={
     tab:0,
-    isshow:false
+    isshow:false,
+    calshow:false
 }, action){
     switch (action.type) {
       case 'toggleTab':
@@ -40,6 +41,11 @@ const store = createStore(function(state={
         return {
             ...state,
             isshow:action.isshow
+        }
+      case 'calshow':
+        return {
+            ...state,
+            calshow:action.calshow
         }
       default:
         return state

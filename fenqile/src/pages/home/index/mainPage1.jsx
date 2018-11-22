@@ -24,7 +24,6 @@ class mainPage1 extends Component {
             
         return (
             <div>
-                
                 <a href="javascript:void(0)" className="tips-wrap">
                     <p>乐卡额度最高50000元</p>
                     <div className="tips-handle">立即开通<i className="iconfont wf-arrow-down"></i></div>
