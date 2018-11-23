@@ -42,7 +42,7 @@ class Xcomment  extends Component {
 			<section className="assessment">
 	                <div className="floor-head ">
 	                    <h2 className="floor-title">{this.state.userComment.title}</h2>
-	                    <Link className="floor-link js-data-report"  to={`${this.state.userComment.url}`}>{this.state.userComment.url_name}</Link>
+	                    <Link className="floor-link js-data-report"  to='comment'>{this.state.userComment.url_name}</Link>
 	                </div>
 	                <div className="assess-list">
 	                    <ul>  

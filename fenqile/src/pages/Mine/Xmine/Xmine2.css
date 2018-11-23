@@ -3663,26 +3663,50 @@ span.free-bg {
 	background-color: #ffce35
 }
 
-.slider-frame{
-	height: 180px;
-	 width: 375px;
-    background: #Fff;
-    margin: auto!important;
+
+
+#newgoodslist .slider-list{
+	position: absolute;
+    left: 375px;	
 }
-.slider-frame .slider-list{
+
+
+#newgoodslist .slider-slide{
+	text-align: center;
+	width: 100%;
+}
+
+
+#newgoodslist .slider-frame{
+	height:100% !important;
+	width: 100% !important;
+    background: #Fff;
+}
+#newgoodslist .slider-frame .slider-list{
 	height: 180px;
 }
 
-.am-carousel-wrap-dot{
+#newgoodslist .am-carousel-wrap-dot{
 	padding-bottom: 8px;
 }
-
-.am-carousel-wrap-dot span{
+#newgoodslist .am-carousel-wrap {
+    position: absolute;
+    bottom: -30px;	
+}
+#newgoodslist .am-carousel-wrap .am-carousel-wrap-dot span{
 	width: 20px;
     height: 3px;
     border-radius: 0;
+
 }
 
-
+#newgoodslist .am-carousel-wrap .on span{
+	width: 20px;
+    height: 3px;
+    border-radius: 2%;
+}
+#newgoodslist .am-carousel-wrap-dot-active > span{
+	background: #ff6d8e;
+}
 
 /* autoprefixer: on */
