@@ -22,31 +22,24 @@ class Home extends Component {
         this.props=props;
         this.state = {
             props:props.location.pathname,
-            pathname: 0 ,
         }
        switch(this.state.props){
             case "/home/mainPage1" :
-                this.state.pathname=0;
                 this.props.toggleTab(0)
                 break;
             case "/home/classify" :
-                this.state.pathname=1;
                 this.props.toggleTab(1)
              break;
              case "/home/cal" :
-                this.state.pathname=2;
                 this.props.toggleTab(2)
              break;
              case "/home/creditCard" :
-                this.state.pathname=3;
                 this.props.toggleTab(3)
              break;
              case "/mine" :
-                this.state.pathname=4;
                 this.props.toggleTab(4)
              break;
              default :
-                this.state.pathname=0;
                 this.props.toggleTab(0)
         }
     }
@@ -58,7 +51,7 @@ class Home extends Component {
                     <Route path="/home/classify" component={classify} />
                     <Route path="/home/cal" component={cal} />
                     <Route path="/home/creditCard" component={creditCard} />
-                    <Xfooter pathname={this.state.pathname}/>
+                    <Xfooter/>
             </div>
         )
     }
