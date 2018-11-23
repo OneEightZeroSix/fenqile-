@@ -12,10 +12,10 @@ class CapplyList extends Component {
         return (
             <div className="apply-creditcard">
                 <div className="apply-list">
-                    <a  href="javascript:;" className="">
+                    <li  href="javascript:;" className="">
                         <h2  className="tab-title">免费办卡<span  className="apply-more">查看更多<i ></i></span></h2>
-                    </a>
-                    <a  target="_blank" href="javascript:;">
+                    </li>
+                    <li  target="_blank" href="javascript:;">
                         <div className="creditcard-list no-border-top">
                             <div  className="card-student-tag" style={{ background: 'rgb(84, 199, 72)' }}>
                             校园学生卡<i  style={{ borderTopColor: 'rgb(84, 199, 72)', borderLeftColor: 'rgb(84, 199, 72)' }}></i>
@@ -34,8 +34,8 @@ class CapplyList extends Component {
                                 </a>
                             </div>
                         </div>
-                    </a>
-                    <a  target="_blank" href="javascript:;">
+                    </li>
+                    <li  target="_blank" href="javascript:;">
                         <div className="creditcard-list">
                             <div className="card-student-tag" style={{ background: 'rgb(84, 199, 72)' }}>
                             校园学生卡<i  style={{ borderTopColor: 'rgb(84, 199, 72)', borderLeftColor: 'rgb(84, 199, 72)' }}></i>
@@ -53,8 +53,8 @@ class CapplyList extends Component {
                                 <a  target="_blank" href="javascript:;" className="creditcard-btn"><span>双倍积分</span></a>
                             </div>
                         </div>
-                    </a>
-                    <a target="_blank" href="javascript:;">
+                    </li>
+                    <li target="_blank" href="javascript:;">
                         <div className="creditcard-list">
                             <div className="creditcard-bg"><img src="https://cimg1.fenqile.com/product3/M00/01/DD/RbQHAFrMqJ-AIkoBAAOkiBp0XAQ799.png" className="creditcard-img" /></div>
                             <div  className="creditcard-info">
@@ -67,7 +67,7 @@ class CapplyList extends Component {
                                 <a  target="_blank" href="javascript:;" className="creditcard-btn"><span >双倍积分</span></a>
                             </div>
                         </div>
-                    </a>
+                    </li>
                 </div>
             </div>
         )

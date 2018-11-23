@@ -29,38 +29,40 @@ class classify extends Component {
         return (
         	<div className="cc">
             <div className="main-wrap">
-                <Tabs tabPosition={'left'} size={'small'} >
-                    {(()=>{
-                           return( this.state.tabs.map((item, index)=> {
-                            return (
-                                 <TabPane tab={item} key={index}  onTabClick={(tab, index) => { console.log('onTabClick', index, tab)}}>
-                                        <div className="nav-channel" id="sub_category_list">
-                                            <div className="channel-banner">
-                                                <a href="javascript:void(0)">
-                                                <img src="https://cimg1.fenqile.com/ibanner2/M00/33/34/jagHAFvpIHiAG-P5AAB6SgRMbGY218.jpg"  className="imgauto" style={{opacity: 1}}/>
-                                                </a>
-                                            </div>
-                                            <section className="category-floor">
-                                                <div className="floor-title">
-                                                    <p className="item-title">数码畅销榜</p>
-                                                </div>
-                                                <ul className="floor-nav-three">
-                                                <li>
-                                                    <a href="javascript:void">
-                                                    <img src="https://cimg1.fenqile.com/ibanner2/M00/00/28/jagHAFow1eCAMFZaAAAOhQ3etoE844.png" className="imgauto" width="52" height="52" style={{opacity: 1}}/>
-                                                    <p>苹果</p>
+                
+                    <Tabs tabPosition={'left'} size={'small'} useOnPan={true} >
+                        {(()=>{
+                               return( this.state.tabs.map((item, index)=> {
+                                return (
+                                     <TabPane tab={item} key={index}  onTabClick={(tab, index) => { console.log('onTabClick', index, tab)}}>
+                                            <div className="nav-channel" id="sub_category_list">
+                                                <div className="channel-banner">
+                                                    <a href="javascript:void(0)">
+                                                    <img src="https://cimg1.fenqile.com/ibanner2/M00/33/34/jagHAFvpIHiAG-P5AAB6SgRMbGY218.jpg"  className="imgauto" style={{opacity: 1}}/>
                                                     </a>
-                                                </li>
-                                                </ul>
-                                            </section>
-                                        </div>
-                                 </TabPane>
-                                )
-                        }))
-                    })()
-                    }
-                 
-                </Tabs>
+                                                </div>
+                                                <section className="category-floor">
+                                                    <div className="floor-title">
+                                                        <p className="item-title">数码畅销榜</p>
+                                                    </div>
+                                                    <ul className="floor-nav-three">
+                                                    <li>
+                                                        <a href="javascript:void">
+                                                        <img src="https://cimg1.fenqile.com/ibanner2/M00/00/28/jagHAFow1eCAMFZaAAAOhQ3etoE844.png" className="imgauto" width="52" height="52" style={{opacity: 1}}/>
+                                                        <p>苹果</p>
+                                                        </a>
+                                                    </li>
+                                                    </ul>
+                                                </section>
+                                            </div>
+                                     </TabPane>
+                                    )
+                            }))
+                        })()
+                        }
+                     
+                    </Tabs>
+               
             </div>
            	</div>
         )
