@@ -48,7 +48,9 @@ class Xfooter extends Component {
             },]  
         }
     }
-    
+    componentDidMount(){
+       console.log(this.props)
+    }
   
     render() {
         return (

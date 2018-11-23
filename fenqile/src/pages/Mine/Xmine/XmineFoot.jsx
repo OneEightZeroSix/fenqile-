@@ -24,7 +24,6 @@ class XmainFoot extends Component {
 
 	getGood() {
 		React.axios.get("goods.json").then((response) => {
-			console.log(response.data)
 			var newgoods = response.data;
 			var j = 0;
 			var res = [];
@@ -38,7 +37,6 @@ class XmainFoot extends Component {
 				goods: res,
 				news: cos
 			})
-			console.log(this.state.goods)
 			return this.state.result
 		}).catch(function(error) {
 			console.log(error);
