@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./incal.scss"
 import {Provider, connect} from 'react-redux';
+
 // 页面组件 容器组件
 
 class incal extends Component {

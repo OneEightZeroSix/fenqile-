@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Tabs, Badge } from 'antd-mobile';
+import Lazyload from 'r-img-lazyload';
 
 // 页面组件 容器组件
 const tabs = [
