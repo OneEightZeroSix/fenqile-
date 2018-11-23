@@ -32,7 +32,7 @@ class XmineHead extends Component {
 			    	<div className="account-top-con">
 					    <section className="account-info">
 					        <div className="fx1 justify">
-					            <Link to="//passport.fenqile.com/" className="email">
+					            <Link to="/login" className="email">
 					                <img alt="" src="/res/img/app/wallet_index/avt_default1.png" width="40" height="40" style={{backgroundSize:'48px 48px'}}/>
 					                <span>立即登录</span>
 					            </Link> 

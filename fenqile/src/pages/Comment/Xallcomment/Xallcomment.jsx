@@ -69,7 +69,7 @@ class Xcomment  extends Component {
             default:
         }
     }
-    //触摸点和离开点连线与[x轴角度][3]
+    //触摸点和离开点
     getAngle(angx,angy) {
         return Math.atan2(angy, angx) * 180 / Math.PI;
     }
@@ -106,24 +106,24 @@ class Xcomment  extends Component {
 			if(this.state.page>1){
 				var sallitem = this.state.allcomment;
 				for(var i=0;i<this.state.page;i++){
-					for(var i=0;i<10*this.state.page;i++){
+					for(var i=0;i<10;i++){
 						sallitem.push(this.state.allcomment[i]);
 					}
 				}
-				console.log(sallitem)
 				this.setState({
 					allcomment:sallitem,
 					content:"上拉加载更多"
 				})
 			}else{
 				var allitem = response.data.data;
-				console.log(allitem.result_rows);
 				this.setState({
 					allcount:allitem,
 					allcomment:allitem.result_rows
 				})
-				localStorage.setItem('comment',this.state.allcomment);
-				console.log(localStorage.getItem("comment"));
+				console.log(allitem.result_rows);
+				var aa = JSON.stringify(this.state.allcomment);
+				window.localStorage.comment = aa;
+				console.log(window.localStorage.comment = aa);
 			}
 		}).catch(function(error) {
 			console.log(error);
@@ -147,12 +147,11 @@ class Xcomment  extends Component {
 				var newarr = [];
 				for(var i=0;i<allcomment.length;i++){
 					var hasimg = allcomment[i].image_list;
-					console.log(hasimg);
 						if(hasimg.length!==0){
-							console.log(allcomment[i],6666)
 							newarr.push(allcomment[i]) 
 						}
 				}
+				console.log(allcomment[i],6666)
 				this.setState({
 					allcomment:newarr
 				})
@@ -160,11 +159,11 @@ class Xcomment  extends Component {
 				console.log(error);
 			})
 		}else{
-			var a3 = localStorage.getItem('comment');//获取a的值
-			console.log(a3);
+			var bb = JSON.parse(localStorage.comment);
+			console.log(bb);
 			this.setState({
-				allcomment:a3
-			})
+					allcomment:bb
+				})
 		}
 	}
 

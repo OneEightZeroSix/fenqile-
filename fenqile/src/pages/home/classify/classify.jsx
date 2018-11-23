@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./classify.css"
+import "./classify.scss"
 import { Tabs } from 'antd';
 const TabPane = Tabs.TabPane;
 // 页面组件 容器组件
@@ -27,6 +27,7 @@ class classify extends Component {
     }
     render() {
         return (
+        	<div className="cc">
             <div className="main-wrap">
                 
                     <Tabs tabPosition={'left'} size={'small'} useOnPan={true} >
@@ -63,6 +64,7 @@ class classify extends Component {
                     </Tabs>
                
             </div>
+           	</div>
         )
     }
      componentDidMount  () {

@@ -26,6 +26,8 @@ import Detail from './pages/Detail/Detail.jsx';
 import Param from './pages/Param/Param.jsx';
 import Comment from './pages/Comment/Comment.jsx';
 import Mine from './pages/Mine/Mine.jsx';
+import Login from './pages/Login/Login.jsx';
+import Registe from './pages/Registe/Registe.jsx';
 
 
 React.axios = axios;
@@ -156,6 +158,8 @@ ReactDOM.render(
                 <Route path="/comment/" component={Comment} /> 
                 <Route path="/mine/" component={Mine} />
                 <Route path="/list" component={List}/>
+                <Route path="/login" component={Login}/>
+                <Route path="/registe" component={Registe}/>
                 <Redirect from="/" exact to="/home/mainPage1" />
             </Switch>
         </Router>
