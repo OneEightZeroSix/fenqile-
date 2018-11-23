@@ -11,26 +11,21 @@ class XdetailMainPic extends Component {
 		super(props);
 		this.props = props;
 		this.state = {
-		
-
 		 	tabs:[
 			  	{ 
 			  		title: <img src="https://cimg1.fenqile.com/product3/M00/23/8B/R7QHAFuZjKaAR1r7AAD6SRDtLYA535.jpg" alt="" className="imgauto" />,
-			  		price:9918,
 			  		imgSrc:"https://cimg1.fenqile.com/product3/M00/23/8C/R7QHAFuZjOWAUA0gAAD6SRDtLYA789.jpg"
 	  		 	},
 			  	{ 
 			  		title: <img src="https://cimg1.fenqile.com/product3/M00/35/13/RrQHAFuZjKuAPXN2AAD5rlh2Nms887.jpg" alt="" className="imgauto" />,
-			  		price:9919,
 			  		imgSrc:"https://cimg1.fenqile.com/product3/M00/35/14/RrQHAFuZjOmAXefiAAD5rlh2Nms545.jpg"
 	  		 	},
 			  	{ 
 			  		title: <img src="https://cimg1.fenqile.com/product3/M00/23/8B/R7QHAFuZjK6AFFkeAAETEvXkxVU884.jpg" alt="" className="imgauto" />,
-			  		price:9917,
 			  		imgSrc:"https://cimg1.fenqile.com/product3/M00/35/14/RrQHAFuZjOyAKpJ9AAETEvXkxVU996.jpg"
 	  		 	}
 			],
-			price:9919
+			price:this.props.nowprice
 		}
 	}	
 
@@ -41,7 +36,8 @@ class XdetailMainPic extends Component {
 					<section className="proimg-wrap proimg-stage-wrap">
 					<div>
 					    <Tabs style={{width:'20px'}} tabs={this.state.tabs}
-					      initialPage={1}
+					      initialPage={0}
+
 					      tabBarPosition="bottom"
 					      onChange={(tab, index) => { this.setState({price:tab.price}) }}
 					      onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
@@ -52,7 +48,7 @@ class XdetailMainPic extends Component {
 	                    	return this.state.tabs.map((item,index)=>{
 	                    		return(
 	                    			<div key={index} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '320px', backgroundColor: '#fff' }}>
-					        			<img src={item.imgSrc} alt="" className="imgauto js-sku-img" data-index={index} />
+					        			<img src={this.props.isShowSpecification?  this.props.nowpic:item.imgSrc} alt="" className="imgauto js-sku-img" data-index={index} />
 					     	 		</div>
 	                			)
 								
@@ -81,9 +77,9 @@ class XdetailMainPic extends Component {
 								<div className="price-wrap ">
 									
 									<span className="now-price-rmb"><em>¥</em></span>
-									<span className="now-price">{this.state.price}</span>
+									<span className="now-price">{this.props.nowprice}</span>
 									
-										<span className="old-price ">¥9599</span>
+										<span className="old-price ">{Number(this.props.sliceprice)==-1? "":"¥"+this.props.sliceprice}</span>
 									
 									
 								</div>
@@ -205,7 +201,7 @@ class XdetailMainPic extends Component {
 								<div className="info-label">已选</div>
 								<div className="fx1">
 									<div className="form-text">
-										<p className="txt-hide" id="sku_key">深空灰色 64GB </p>
+										<p className="txt-hide" id="sku_key">{this.props.colorText} {this.props.sizeText} </p>
 									</div>
 								</div>
 							</a>

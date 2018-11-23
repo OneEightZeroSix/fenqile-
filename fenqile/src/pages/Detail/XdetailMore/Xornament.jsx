@@ -13,7 +13,6 @@ class Xornament  extends Component {
 	constructor(props) {
 		super(props);
 		this.props = props;
-		console.log(this.props.toggleSheet)
 		this.state = {
 			goodOrnament: [],
 			goods:[]
@@ -22,7 +21,6 @@ class Xornament  extends Component {
 	loadMore() {
 		React.axios.get("getProductModelInfo.json").then((response) => {
 			var allitem = response.data.data.result_rows[4];
-			console.log(allitem.obj_list)
 			this.setState({
 				goodOrnament: allitem,
 				goods:allitem.obj_list

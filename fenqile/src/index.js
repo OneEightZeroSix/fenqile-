@@ -59,7 +59,12 @@ const store = createStore(function(state={
     currentProvince: "广东",
     currentCity: "广州市",
     currentArea: "天河区",
-    currentStreet: "元岗街"
+    currentStreet: "元岗街",
+    nowprice:0,
+    colorText:"",
+    sizeText:"",
+    nowpic:"",
+    sliceprice:""
 }, action){
     switch (action.type) {
       case 'toggleTab':
@@ -124,6 +129,19 @@ const store = createStore(function(state={
                 currentPlan: action.currentPlan,
                 currentSf: action.currentFq,
                 currentDownpayment: action.currentStage
+            }
+         case 'setnowprice':
+            return {
+                ...state,
+                nowprice: action.nowprice,
+                sliceprice: action.sliceprice
+            }
+        case 'istext':
+            return {
+                ...state,
+               colorText: action.colorText,
+                sizeText: action.sizeText,
+                nowpic: action.nowpic
             }
       default:
         return state
