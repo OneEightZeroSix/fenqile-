@@ -48,7 +48,7 @@ class XmainFoot extends Component {
 	render() {
 		return(
 		    <section className="my-item like-item-box" id="newgoodslist" style={{height:'220px'}}>
-                <Carousel autoplay effect="fade" beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)} afterChange={index => console.log('slide to', index)} style={{height:'180px', marginBottom: '50px',background:'#fff',width:'100%',position:'absolute',left:'0'    }}>
+                <Carousel autoplay effect="fade" beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)} style={{height:'180px', marginBottom: '50px',background:'#fff',width:'100%',position:'absolute',left:'0'}}>
                 {this.state.goods.map((item,idx)=>{
                     return (
                         <ul className = "part-ul js-banner-item" key={idx} data-index ={idx} style = {{width: '100%', left: '-375px'}} >
