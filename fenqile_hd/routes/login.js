@@ -1,7 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var db = require('../public/lib/mongodb.js');
+var Cookie = require('../public/lib/cookie.js');
 var res;
+
+
 
 // var mongo = require('../lib/mongo.js')
 
@@ -9,12 +12,12 @@ var res;
 // 查看一条
 router.post('/server', function(req, res, next) {
     // res.send("ok");
-    console.log(req.body);
+//  console.log(req.body);
     var phone = req.body.phonenumber;
-    // console.log(username, password, mobile, beizhu);
-    // console.log(username,password,mobile,beizhu);
+
     db.query(function(db) {
         db.collection("login").find({ phonenumber: phone }).toArray(function(err, docs) {
+      		console.log(docs)
             if (docs.length > 0) {
                 res.send('has');
             } else {
@@ -94,13 +97,22 @@ router.post('/updateuser', function(req, res, next) {
 router.post('/registe', function(req, res, next) {
     // res.send("ok");
     console.log(req.body);
-    var username = req.body.user;
+
+    var phone = req.body.phonenumber;
+    var pass = req.body.password;
     // console.log(username, password, mobile, beizhu);
     // console.log(username,password,mobile,beizhu);
     db.query(function(db) {
-        db.collection("login").find({ user: username }).toArray(function(err, docs) {
+        db.collection("login").find({ phonenumber: phone }).toArray(function(err, docs) {
             if (docs.length > 0) {
-                res.send(docs)
+            	console.log(docs[0].password,pass)
+                if(docs[0].password === pass){
+                	let userinformation = {'username':docs[0].username,'phonenumber':docs[0].phonenumber}
+                	res.send(userinformation);
+                }else{
+                	console.log(99)
+                	res.send("err");
+                }
             } else {
                 res.send("no");
             }

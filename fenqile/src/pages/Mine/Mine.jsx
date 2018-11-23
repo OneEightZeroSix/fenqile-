@@ -43,7 +43,7 @@ class Mine extends Component {
     // html
     render(){
         return (
-        	<div className="account-body" style={{height:"100%"}}>
+        	<div className="account-body" style={{height:"100vh",width:'100vw'}}>
             	<XmineHead />
             	<XmineTab />
             	<XmineFoot />

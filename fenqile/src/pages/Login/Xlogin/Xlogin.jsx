@@ -5,6 +5,9 @@ import React, {
 
 import { message, Button } from 'antd';
 import qs from 'qs';
+import Cookie from "../../../lib/cookie.js"
+
+
 import "./Xlogin.css"
 import "./Xlogin2.scss"
 
@@ -51,16 +54,30 @@ class Xlogin extends Component {
 		}
 	}
 	makeSureuser(e){
-		console.log(789)
 		var nowuser = this.refs.inforphone.value;
 		var nowpass = this.refs.inforpass.value;
-		var data = qs.stringify({
+		var aa = qs.stringify({
 		  'phonenumber': nowuser,
 		  'password': nowpass
 		});
-		React.axios.post("http://localhost:12345/login/server",data)
+		React.axios.post("http://localhost:12345/login/registe",aa,{
+			headers: {
+            	'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'
+          	}
+		})
 		.then((response) => {
-			console.log(response)})
+			if(response.data === 'no'){
+				message.error('该用户不存在，请注册后登陆');
+			}else if(response.data === 'err'){
+				console.log(789)
+				message.error('密码有误');
+				this.refs.inforpass.value = "";
+				this.refs.inforpass.focus();
+			}else{
+				var infor = [{username:response.data.username,phonenumber:response.data.phonenumber}]
+				Cookie.setCookie("userinformation", JSON.stringify(infor));
+				window.location.href="http://localhost:3000/#/mine";
+			}})
 		.catch(function(error) {
 			console.log(error);
 		})
@@ -72,11 +89,13 @@ class Xlogin extends Component {
 			this.makeSurepass.bind(this);
 		}
 	}
-	
+	toRegiste(){
+		window.location.href = "http://localhost:3000/#/registe"
+	}
 	
 	render() {
 		return( 
-			<div className="qq" style={{height:'100%',background:'#fff'}}>
+			<div className="qq" style={{height:'100vh',width:'100vw',background:'#fff'}}>
 			<div id="app" style={{background:'#fff'}}>
 				<div className = "app-header-placeholder" >
 					<div className = "app-header" style = {{backgroundColor: 'rgb(59, 155, 255)',color: 'rgb(255, 255, 255)'}} >
@@ -86,7 +105,7 @@ class Xlogin extends Component {
 						< /div> 
 					</div>
 				</div>
-				<section className = "main-wrap" style = {{minHeight: '692px'}} > 
+				<section className = "main-wrap" > 
 					< div className = "login-banner" > < /div> 
 					<ul className="input-wrap">
 						<li className="input-item">
@@ -108,7 +127,7 @@ class Xlogin extends Component {
 							<span className="button-text">登录</span >
 						< /button>
 					</div>
-					<div className = "link-box" > 没有账号？ 极速注册 < /div>
+					<div className = "link-box" onClick={this.toRegiste.bind(this)}> 没有账号？ 极速注册 < /div>
 				</section >
 			</div>
 			</div>
