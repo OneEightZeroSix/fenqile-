@@ -361,19 +361,19 @@ a img, img, select {
 .apply-creditcard .apply-list{
     background: #fff;
 }
-.apply-creditcard .tab-title{
+ .tab-title{
     padding: 3.467vw 4.267vw;
     font-size: 3.467vw;
     font-weight: 400;
     color: #757c8e;
 }
-.apply-creditcard .apply-more {
+.progress-title .apply-more {
     float: right;
     display: block;
     font-size: 3.467vw;
     color: #b9bdc6;
 }
-.apply-creditcard .apply-more i {
+.progress-title .apply-more i {
     position: relative;
     top: -1px;
     right: .533vw;
@@ -523,7 +523,7 @@ a img, img, select {
     position: relative;
     top: 1px;
 }
-.apply-creditcard .progress-title {
+.progress-title {
     background: #fff;
     margin-top: 2.133vw;
     font-weight: 700;
@@ -631,5 +631,15 @@ a img, img, select {
 }
 .tag-bank .swiper-container-horizontal>.swiper-pagination-bullets {
     bottom: 9.333vw;
+}
+li {
+    text-decoration: none;
+    list-style-type:none
+}
+.tag-bank {
+    background: #fff;
+    margin-bottom: 4.8vw;
+    height: 24vw;
+    width: 100%;
 }
 }

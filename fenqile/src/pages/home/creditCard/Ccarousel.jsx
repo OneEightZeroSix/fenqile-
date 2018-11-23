@@ -11,7 +11,8 @@ class Ccarousel extends Component {
     }
     render() {
         return (
-            <Carousel>
+            <div  className="tag-bank">
+                <Carousel>
                 <div>
                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', paddingBottom: '2vh' }}>
                         <a href="javascript:void(0)" className="tag-link"><img style={{ transform: 'Translate(20%,0%)' }} src="https://cres1.fenqile.cn/creditcard_m/img/v1/banks/pingan_icon.png" width="40" height="40" alt="平安银行" className="tag-img swiper-lazy" />
@@ -62,6 +63,7 @@ class Ccarousel extends Component {
                     </div>
                 </div>
             </Carousel>
+            </div>
         )
     }
 }
