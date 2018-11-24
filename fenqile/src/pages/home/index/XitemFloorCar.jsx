@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import '../antd-mobile.css'
 import { Tabs, Badge } from 'antd-mobile';
-
+import Lazyload from 'r-img-lazyload';
 // 页面组件 容器组件
 
 const tabs = [
@@ -82,7 +82,7 @@ class XitemFloorCar extends Component {
                         <li key={index} className="swiper-slide js-nav-sku-list-PRFL201811050042004 swiper-slide-active">
                             <a className="item" href="javascript:void(0)">
                                 <div className="item-img">
-                                    <img src={`${item.sku_pic[0]}`} className="imgauto" />
+                                    <Lazyload src={`${item.sku_pic[0]}`} className="imgauto" />
                                 </div>
                                 <div className="item-info">
                                     <div className="item-car-pay">{item.amount}</div>

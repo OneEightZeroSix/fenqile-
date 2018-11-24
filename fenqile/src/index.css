@@ -12,3 +12,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/*这里定义整个应用加载时的动画，进场前这里设置了缩放为0，
+进场过程中缩放变为1，也就是100%，持续时间为500ms，
+时间曲是ease-out，一种先快后慢的变化曲线*/
+
+.appAppear-appear{
+  opacity: 0;
+  transform: scale(0);
+}
+
+.appAppear-appear.appAppear-appear-active{
+  opacity: 1;
+  transform: scale(1);
+  transition: 500ms ease-out;
+}
+
+/*设置进场前透明度为0，防缩为0*/
+
+.fade-enter {
+  opacity: 0;
+
+   transform: translate(100%,0px);
+}
+
+
+/*设置进场过程中 透明度为1，防缩为1，放缩的位置为左上角，持续时间为500ms，时间曲是ease-out */
+.fade-enter.fade-enter-active {
+  opacity: 1;
+   transform: translate(0px,0px);
+  transition: 800ms ease-out;
+}
+
+/*设置退场前透明度为1，防缩为1*/
+.fade-exit{
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*设置退场过程中 透明度为0，防缩为0，放缩的位置默认是中间，所以不设置也可以，
+持续时间为500ms，时间曲是ease-out */
+.fade-exit.fade-exit-active{
+   opacity:0;
+  transform: scale(0);
+   transform: translate(-100%,0px);
+  transition: 800ms ease-out;
+}

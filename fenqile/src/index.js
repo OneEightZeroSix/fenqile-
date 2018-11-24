@@ -13,7 +13,7 @@ import * as serviceWorker from './serviceWorker';
 
 // 路由功能
 import { HashRouter as Router, Route , Redirect,Switch } from "react-router-dom";
-
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 // 状态管理
 import {Provider, connect} from 'react-redux';
 import {createStore} from 'redux';
@@ -28,6 +28,7 @@ import Comment from './pages/Comment/Comment.jsx';
 import Mine from './pages/Mine/Mine.jsx';
 import Login from './pages/Login/Login.jsx';
 import Registe from './pages/Registe/Registe.jsx';
+import Cart from './pages/shopping/Xmain.jsx';
 
 
 React.axios = axios;
@@ -149,21 +150,49 @@ const store = createStore(function(state={
 });
 
 ReactDOM.render(
-    <Provider store={store}>
-        <Router >
-            <Switch>
-                <Route path="/home/" component={Home} />
-                <Route path="/detail/" component={Detail} />
-                <Route path="/param/" component={Param} /> 
-                <Route path="/comment/" component={Comment} /> 
-                <Route path="/mine/" component={Mine} />
-                <Route path="/list" component={List}/>
-                <Route path="/login" component={Login}/>
-                <Route path="/registe" component={Registe}/>
-                <Redirect from="/" exact to="/home/mainPage1" />
-            </Switch>
-        </Router>
-    </Provider>
+    
+        <TransitionGroup>
+            <CSSTransition
+              appear={true}
+              classNames="appAppear"
+              timeout={500}
+            >
+                <Provider store={store}>
+                    <Router  >
+                        <Route  render={({ location }) => (
+                                <TransitionGroup>
+                                  <CSSTransition
+                                    // 需要加一个key属性，让react认识每个组件，并进行正确的加载。
+                                    // 这里我改了官方demo的代码， 原来是设置成location.key， 这样的话每次点击同一个路由链接的时候都会渲染。
+                                    key={location.pathname}
+                                    // classNames 就是设置给css动画的标示，记得'classNames'带's'的。
+                                    classNames="fade"
+                                    // 动画时间设置为800ms，和css中的需要一致。
+                                    timeout={800}
+                                  >
+                                    <div style={{position: 'absolute',width:'100%',height:'100%'}}>
+                                        <Switch location={location}>
+                                                <Route path="/home/" component={Home} />
+                                                <Route path="/detail/" component={Detail} />
+                                                <Route path="/param/" component={Param} /> 
+                                                <Route path="/comment/" component={Comment} /> 
+                                                <Route path="/mine/" component={Mine} />
+                                                <Route path="/list" component={List}/>
+                                                <Route path="/login" component={Login}/>
+                                                <Route path="/registe" component={Registe}/>
+                                                <Route path="/cart" component={Cart}/>
+                                                <Redirect from="/" exact to="/home/mainPage1" />
+                                            </Switch>
+                                    </div>
+                                    </CSSTransition>
+                                </TransitionGroup>
+                            )}/>
+                    </Router>
+                </Provider>
+            </CSSTransition>
+        </TransitionGroup>
+    
+    
     , 
     document.getElementById('root')
 );

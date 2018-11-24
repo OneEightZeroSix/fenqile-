@@ -6,7 +6,7 @@ import Xbanner from './Xbanner.jsx'
 import XitemFloor from './XitemFloor.jsx'
 import XitemFloorCar from './XitemFloorCar.jsx'
 import XitemFloorMobile from './XitemFloorMobile.jsx'
-
+import QueueAnim from 'rc-queue-anim';
 
 // 页面组件 容器组件
 import Mappege from './indexpage/mappege.jsx';
@@ -24,6 +24,12 @@ class mainPage1 extends Component {
             
         return (
             <div>
+                <QueueAnim className="demo-content"
+                          animConfig={[
+                            { opacity: [1, 0], translateY: [0, 50] },
+                            { opacity: [1, 0], translateY: [0, -50] }
+                          ]}>
+
                 <a href="javascript:void(0)" className="tips-wrap">
                     <p>乐卡额度最高50000元</p>
                     <div className="tips-handle">立即开通<i className="iconfont wf-arrow-down"></i></div>
@@ -38,7 +44,7 @@ class mainPage1 extends Component {
                   <Mappege />
                   <Gift/>
                   <Recommend/>
-              
+                </QueueAnim>
             </div>
         )
     }

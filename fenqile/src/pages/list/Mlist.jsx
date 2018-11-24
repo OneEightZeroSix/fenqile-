@@ -63,7 +63,9 @@ class Mlist extends React.Component {
             document.body.style.overflow = 'hidden';
         }
     }
-
+    componentWillUnmount(){
+         document.body.style.overflow = 'auto';
+    }
     componentDidMount() {
         const hei = this.state.height - ReactDOM.findDOMNode(this.lv).offsetTop;
 
