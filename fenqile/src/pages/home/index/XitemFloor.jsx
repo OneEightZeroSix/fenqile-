@@ -26,7 +26,7 @@ class XitemFloor extends Component {
 	<div style={{overflow:'auto'}} className="swiper-container slider-seckill js-floor js-slider-PRFL201710240024504 swiper-container-horizontal swiper-container-free-mode" id="floor__sku_wrap">
 		<ul className="lists-pro swiper-wrapper">
 			<li className="swiper-slide swiper-slide-active">
-				<a className="item" href="https://hui.m.fenqile.com?sku_id=MES201706291091813&amp;index=1">
+				<a className="item" href="javascript:void(0)">
 					<div className="item-img">
 						<img src="https://cimgs1.fenqile.com/product3/M00/91/97/RrQHAFvaV5SACPrjAAItPY1kHsA959_156x156.jpg" alt="#" className="imgauto"/>
 					</div>
@@ -40,7 +40,7 @@ class XitemFloor extends Component {
 				</a>
 			</li>
 			<li className="swiper-slide swiper-slide-next">
-				<a className="item" href="https://hui.m.fenqile.com?sku_id=MES201802111669292&amp;index=2">
+				<a className="item" href="javascript:void(0)">
 					<div className="item-img">
 						<img src="https://cimgs1.fenqile.com/product3/M00/91/7A/RrQHAFvZUPCAXOkkAANsbVLRFA8245_156x156.jpg" alt="#" className="imgauto"/>
 					</div>
@@ -53,7 +53,7 @@ class XitemFloor extends Component {
 				</a>
 			</li>
 			<li className="swiper-slide">
-				<a className="item" href="https://hui.m.fenqile.com?sku_id=S201810310021691&amp;index=3">
+				<a className="item" href="javascript:void(0)">
 					<div className="item-img">
 						<img src="https://cimgs1.fenqile.com/product3/M00/91/C1/RbQHAFvZCvaAFe9mAAKfI3zVWps820_156x156.jpg" alt="#" className="imgauto"/>
 					</div>
@@ -66,7 +66,7 @@ class XitemFloor extends Component {
 				</a>
 			</li>
 			<li className="swiper-slide">
-				<a className="item" href="https://hui.m.fenqile.com?sku_id=MES201811132526280&amp;index=4">
+				<a className="item" href="javascript:void(0)">
 					<div className="item-img">
 						<img src="https://cimgs1.fenqile.com/product3/M00/82/BB/R7QHAFvqNxiAfGguAAEq5Vf-xSI150_156x156.jpg" alt="#" className="imgauto"/>
 					</div>
@@ -79,7 +79,7 @@ class XitemFloor extends Component {
 				</a>
 			</li>
 			<li className="swiper-slide">
-				<a className="item" href="https://hui.m.fenqile.com?sku_id=MES201712261565286&amp;index=5">
+				<a className="item" href="javascript:void(0)">
 					<div className="item-img">
 						<img src="//cres2.fenqile.cn/fenqile_m/img/default_bg--6e6b27f0fc.png" alt="#" className="imgauto"/>
 					</div>
@@ -92,7 +92,7 @@ class XitemFloor extends Component {
 				</a>
 			</li>
 			<li className="swiper-slide">
-				<a className="item" href="https://hui.m.fenqile.com?sku_id=MES201808232203591&amp;index=6">
+				<a className="item" href="javascript:void(0)">
 					<div className="item-img">
 						<img src="//cres2.fenqile.cn/fenqile_m/img/default_bg--6e6b27f0fc.png" alt="#" className="imgauto"/>
 					</div>
@@ -105,7 +105,7 @@ class XitemFloor extends Component {
 				</a>
 			</li>
 			<li className="swiper-slide">
-				<a className="item" href="https://hui.m.fenqile.com?sku_id=MES201810302443363&amp;index=7">
+				<a className="item" href="javascript:void(0)">
 					<div className="item-img">
 						<img src="//cres2.fenqile.cn/fenqile_m/img/default_bg--6e6b27f0fc.png" alt="#" className="imgauto"/>
 					</div>
@@ -118,7 +118,7 @@ class XitemFloor extends Component {
 				</a>
 			</li>
 			<li className="swiper-slide">
-				<a className="item" href="https://hui.m.fenqile.com?sku_id=MES201810212403805&amp;index=8">
+				<a className="item" href="javascript:void(0)">
 					<div className="item-img">
 						<img src="//cres2.fenqile.cn/fenqile_m/img/default_bg--6e6b27f0fc.png" alt="#" className="imgauto"/>
 					</div>
@@ -131,7 +131,7 @@ class XitemFloor extends Component {
 				</a>
 			</li>
 			<li className="swiper-slide more-seckill">
-				<a className="more-link" href="https://hui.m.fenqile.com">
+				<a className="more-link" href="javascript:void(0)">
 					<div className="more-txt">
 						<span>MORE</span> 查看更多
 					</div>

@@ -800,6 +800,7 @@ a {
 }
 
 .slider-seckill .lists-pro .item-img {
+    background-image: url(../../assets/images/imgbg.png);
     width: 78px;
     height: 78px;
     margin: 0 auto;
@@ -1835,6 +1836,7 @@ a {
 }
 
 .lists-pro-brand .item-img {
+    background-image: url(../../assets/images/imgbg.png);
     width: 104px;
     height: 104px;
     position: relative;

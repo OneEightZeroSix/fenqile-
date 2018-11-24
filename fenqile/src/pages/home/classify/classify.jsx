@@ -54,8 +54,8 @@ class classify extends Component {
         let arr= item;
         for (let i = 0; i <arr.length; i++) {
             html.push(
-                     <li>
-                        <a key={i} href="javascript:void">
+                     <li key={i}>
+                        <a  href="javascript:void">
                             <img src={`${arr[i].fe_pic_url}`} className="imgauto" width="52" height="52" style={{opacity: 1}}/>
                             <p>{arr[i].name}</p>
                         </a>
