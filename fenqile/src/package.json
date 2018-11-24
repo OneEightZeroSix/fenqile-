@@ -7,12 +7,14 @@
     "antd": "^3.10.8",
     "antd-mobile": "^2.2.6",
     "node-sass": "^4.10.0",
+    "nodemailer": "^4.7.0",
     "r-img-lazyload": "^1.1.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-lazyload": "^2.3.0",
     "react-redux": "^5.1.1",
     "react-scripts": "2.1.1",
+    "react-transition-group": "^2.5.0",
     "redux": "^4.0.1"
   },
   "scripts": {

@@ -1,0 +1,90 @@
+.newhouse{
+	
+	/*main部分*/
+	
+	.ant-radio-button-wrapper{
+		background: #148dea;
+    	color:#fff;
+    	border: 1px solid #d9d9d9;
+    	width: 100px;
+	}
+	.ant-radio-button-wrapper:first-child{
+		border-right: 0 none;
+	}
+	
+	.ant-radio-button-wrapper:last-child{
+		border-left: 0 none;
+	}
+	
+	.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
+		border-color: #d9d9d9;
+		background: #Fff;
+    	color: rgba(0, 0, 0, 0.65);
+	}
+	
+	.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover{
+		border-color: #d9d9d9;
+		background: #Fff;
+    	color: rgba(0, 0, 0, 0.65);
+	}
+	
+	.ant-radio-group{
+		margin-top: 20px;
+	}
+	
+	
+	.allmain{
+		height:250px;
+		width:100vw;
+		background:#148dea;
+		text-align:center;
+	}
+	
+	.monthpay{
+		color: #fff;
+		font-size: 16px;
+		display:block;
+		height:90px;
+		width:100vw;
+		line-height: 30px;
+		text-align: left;
+		padding: 20px 0 20px 20px ;
+		font-weight: 400;
+	}
+	.monthpay p:last-child{
+		font-size: 32px;
+		font-weight: 700;
+	}
+	
+	
+	
+	.money{
+		display:inline-block;
+		height:90px;
+		width:50vw;
+		color: #fff;
+		font-size: 16px;
+		line-height: 30px;
+		text-align: left;
+		padding: 20px 0 20px 20px;
+		font-weight: 400;
+	}
+
+	.money p:last-child{
+		font-size: 26px;
+		font-weight: 700;
+	}
+	
+	.money p:last-child{
+		font-size: 26px;
+		font-weight: 700;
+	}
+	
+	.newmonthpay div:first-child{
+		border-right:1px solid #ccc;
+	}
+	
+	.newmonthpay{
+
+	}
+}

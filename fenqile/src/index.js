@@ -28,7 +28,8 @@ import Comment from './pages/Comment/Comment.jsx';
 import Mine from './pages/Mine/Mine.jsx';
 import Login from './pages/Login/Login.jsx';
 import Registe from './pages/Registe/Registe.jsx';
-
+import House from './pages/House/House.jsx';
+import Tree from './pages/Tree/Tree.jsx';
 
 React.axios = axios;
 // 创建仓库  试验 可删除
@@ -160,6 +161,8 @@ ReactDOM.render(
                 <Route path="/list" component={List}/>
                 <Route path="/login" component={Login}/>
                 <Route path="/registe" component={Registe}/>
+                <Route path="/house" component={House}/>
+                <Route path="/tree" component={Tree}/>
                 <Redirect from="/" exact to="/home/mainPage1" />
             </Switch>
         </Router>

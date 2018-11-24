@@ -3665,10 +3665,10 @@ span.free-bg {
 
 
 
-#newgoodslist .slider-list{
+/*#newgoodslist .slider-list{
 	position: absolute;
     left: 375px;	
-}
+}*/
 
 
 #newgoodslist .slider-slide{
@@ -3709,4 +3709,13 @@ span.free-bg {
 	background: #ff6d8e;
 }
 
+#newgoodslist .slick-dots {
+	margin-top:20px;
+	bottom: -6px;
+	
+}
+#newgoodslist .slick-dots button{
+	background:#ff6d8e;
+	    
+}
 /* autoprefixer: on */

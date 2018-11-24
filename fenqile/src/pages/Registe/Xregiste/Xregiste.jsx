@@ -20,7 +20,11 @@ class Xregiste extends Component {
 			canPress:false,
 			passright:false,
 			nowpassright:'×',
-			isShowErr:false
+			isShowErr:false,
+			nowyzm:'',
+			emailFinish:false,
+			yzmright:'×',
+			isShowyzmErr:false,
 		}
 	}
 	enterPhone(e) {
@@ -72,15 +76,6 @@ class Xregiste extends Component {
 			this.setState({
 				nowpassright:'√'
 			})
-			if(this.refs.inforpassAgain && this.state.phoneFinish && this.refs.inforpass.value.trim() !== ""){
-				this.setState({
-					canPress:true
-				})
-			}else{
-				this.setState({
-					canPress:false
-				})
-			}
 		}
 		
 	}
@@ -90,9 +85,11 @@ class Xregiste extends Component {
 		})
 		var nowuser = this.refs.inforphone.value;
 		var nowpass = this.refs.inforpass.value;
+		var nowemail = this.refs.inforemail.value
 		var aa = qs.stringify({
 		  'phonenumber': nowuser,
-		  'password': nowpass
+		  'password': nowpass,
+		  'email':nowemail
 		});
 		React.axios.post("http://localhost:12345/login/adduser",aa,{
 			headers: {
@@ -110,17 +107,83 @@ class Xregiste extends Component {
 			console.log(error);
 		})
 	}
-	makephone(){
-		if(this.refs.inforphone.value === ""){
-			this.refs.inforphone.focus();
-		}else{
-			this.makeSurepass.bind(this);
+//	makephone(){
+//		if(this.refs.inforphone.value === ""){
+//			this.refs.inforphone.focus();
+//		}else{
+//			this.isShowcanPress();
+//		}
+//	}
+	enteremail(e) {
+		if(this.refs.inforemail.value.trim() === "") {
+			message.error('邮箱不得为空');
+			e.target.focus();
+			this.setState({
+				emailFinish:false
+			})
+		} else if(!(/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/.test(this.refs.inforemail.value))) {
+			message.error('邮箱格式有误');
+			e.target.focus();
+			this.setState({
+				emailFinish:false
+			})
+		} else {
+			var nowemail = this.refs.inforemail.value;
+			var bb = qs.stringify({
+			  'email': nowemail,
+			});
+			React.axios.post("http://localhost:12345/login/email",bb,{
+				headers: {
+	            	'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'
+	          	}
+			})
+			.then((response) => {
+				if(response!==-1){
+					this.setState({
+						nowyzm:response.data
+					})
+					console.log(this.state.nowyzm);
+				}else{
+					message.error('邮箱验证码发送失败');
+				}
+			})
+			.catch(function(error) {
+				console.log(error);
+			})
 		}
 	}
+	makeyzm(){
+		if(this.refs.inforyzm.value!= this.state.nowyzm){
+			this.setState({
+				isShowyzmErr:true,
+				yzmright:'×',
+				canPress:false,
+			})
+		}else{
+			this.setState({
+				yzmright:'√',
+			})
+			var aa = true;
+			this.isShowcanPress(aa);
+		}
+	}
+	isShowcanPress(aa){
+		console.log(this.state.yzmFinish)
+		if(this.refs.inforpassAgain && this.state.phoneFinish && this.refs.inforpass.value.trim() !== "" && aa ){
+			this.setState({
+				canPress:true
+			})
+		}else{
+			this.setState({
+				canPress:false
+			})
+		}
+	}
+	
+	
 	toLogin(){
 		window.location.href = "http://localhost:3000/#/login"
 	}
-	
 	render() {
 		return( 
 			<div className="aa" style={{height:'100vh',width:'100vw',background:'#fff'}}>
@@ -146,9 +209,17 @@ class Xregiste extends Component {
 						</li >
 						<li className="input-item">
 							<i className="i-icon i-sms-code"></i >
-							< input type = "password" placeholder = "请再次输入登录密码"  ref="inforpassAgain" minLength = "6" autoComplete = "off" onInput={this.makeSurepass.bind(this)} onBlur={this.
-							makephone.bind(this)}/>
+							< input type = "password" placeholder = "请再次输入登录密码"  ref="inforpassAgain" minLength = "6" autoComplete = "off" onInput={this.makeSurepass.bind(this)}/>
 							<span style={{fontSize:'16px',color:this.state.nowpassright==='×'?'red':'green',display:this.state.isShowErr?'inline-block':'none'}}>{this.state.nowpassright}</span>
+						</li >
+						<li className="input-item">
+							<i className="i-icon i-sms-code"></i >
+							< input type = "email" placeholder = "请输入邮箱账号"  ref="inforemail" minLength = "6" autoComplete = "off" onBlur={this.enteremail.bind(this)}/>
+						</li >
+						<li className="input-item">
+							<i className="i-icon i-sms-code"></i >
+							< input type = "text" placeholder = "请输入接收到的验证码"  ref="inforyzm" minLength = "6" autoComplete = "off" onInput={this.makeyzm.bind(this)}/>
+							<span style={{fontSize:'16px',color:this.state.yzmright==='×'?'red':'green',display:this.state.isShowyzmErr?'inline-block':'none'}}>{this.state.yzmright}</span>
 						</li >
 						<p className = "wrap protocol-wrap" > 
 							<span className = "agree-text agree" > 同意 < /span> 
