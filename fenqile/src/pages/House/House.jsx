@@ -3,17 +3,13 @@ import React, {
 } from "react";
 
 import { Link } from "react-router-dom";
-import { Carousel, WingBlank } from 'antd-mobile';
-import axios from 'axios';
-import Transition from 'react-transition-group/Transition';
+
+import XhouseHeader from"./Xhouse/XhouseHeader.jsx"
+import XhouseMain from"./Xhouse/XhouseMain.jsx"
+import XhouseFoot from"./Xhouse/XhouseFoot.jsx"
 
 
-import XhouseHeader from"./Xhouse/XhouseHeader"
-import XhouseMain from"./Xhouse/XhouseMain"
-import XhouseFoot from"./Xhouse/XhouseFoot"
-
-
-class Xtest extends Component {
+class House extends Component {
 	constructor(props) {
 		super(props);
 		this.props = props;
@@ -26,15 +22,15 @@ class Xtest extends Component {
 	render() {
 		const { show } = this.state;
 		return(
-			<div className="newhouse">
+			<div className="newhouse" style={{height:'100vh',background:'#fff',width:'100vw'}}>
 				<XhouseHeader />
 				<XhouseMain />
-				<XhouseHeader />
+				<XhouseFoot />
 			</div>
     	)
   	}
 }
 
 
-export default Xtest;
+export default House;
 	

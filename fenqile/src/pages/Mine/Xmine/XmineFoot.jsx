@@ -16,9 +16,7 @@ class XmainFoot extends Component {
 		this.props = props;
 		this.state = {
 			goods: [],
-			imgHeight: '180px',
-			news: [],
-			result: []
+			news: []
 		}
 	}
 
@@ -38,7 +36,7 @@ class XmainFoot extends Component {
 				goods: res,
 				news: cos
 			})
-			return this.state.result
+			return this.state.goods
 		}).catch(function(error) {
 			console.log(error);
 		})
@@ -47,7 +45,7 @@ class XmainFoot extends Component {
 	render() {
 		return(
 		    <section className="my-item like-item-box" id="newgoodslist" style={{height:'220px'}}>
-                <Carousel autoplay='true' infinite='true' passive='true' style={{height:'180px', marginBottom: '50px',background:'#fff',width:'100%',position:'absolute',left:'0'}}>
+                <Carousel autoplay infinite style={{height:'180px', marginBottom: '50px',background:'#fff',width:'100%',position:'absolute',left:'0'}}>
                 {this.state.goods.map((item,idx)=>{
                     return (
                         <ul className = "part-ul js-banner-item" key={idx} data-index ={idx} style = {{width: '100%'}} >
@@ -75,12 +73,7 @@ class XmainFoot extends Component {
 
 	}
 	componentDidMount() {
-		setTimeout(() => {
-			this.getGood()
-			this.setState({
-				news: this.state.goods
-			});
-		}, 100);
+		this.getGood()
 	}
 
 }

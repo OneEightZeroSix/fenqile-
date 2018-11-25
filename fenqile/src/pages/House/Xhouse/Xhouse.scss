@@ -1,7 +1,6 @@
 .newhouse{
 	
 	/*main部分*/
-	
 	.ant-radio-button-wrapper{
 		background: #148dea;
     	color:#fff;
@@ -84,7 +83,46 @@
 		border-right:1px solid #ccc;
 	}
 	
-	.newmonthpay{
-
+	.i-jiantouo-right{
+        content: '';
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        display: inline-block;
+        width: .8rem;
+        vertical-align: middle;
+        height: .8rem;
+        margin-top: -.3rem;
+        border-top: 1px solid #b9b9b9;
+        border-right: 1px solid #b9b9b9;
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
 	}
+	.inputmoney{
+	    float: right;
+        border: 0 none;
+        width: 200px;
+        height: 42px;
+        margin-top: 2px;
+        text-align: right;
+        padding-right: 6px;
+	}
+
+    .am-picker-col-item{
+        color:red;
+        border:1px solid red;
+
+    }
+
+    .am-picker{
+        border:1px solid yellow;
+    }
+
+    .toChooseType{
+        width:100vw;
+        height:300px;
+    }
 }
