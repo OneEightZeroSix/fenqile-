@@ -40,7 +40,7 @@ a {
 @font-face {
     font-family: iconfont;
     src: url(//m.fenqile.com/res/iconfont/fonts.eot?v=20170711);
-    src: url(//m.fenqile.com/res/iconfont/fonts.eot?#iefix) format('embedded-opentype'), url(//m.fenqile.com/res/iconfont/fonts.woff?v=20170711) format('woff'), url(//m.fenqile.com/res/iconfont/fonts.ttf?v=20170711) format('truetype'), url(//m.fenqile.com/res/iconfont/fonts.svg?v=20170711) format('svg')
+    src: url(//m.fenqile.com/res/iconfont/fonts.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts.woff?v=20170711) format('woff'), url(../../assets/fonts.ttf?v=20170711) format('truetype'), url(//m.fenqile.com/res/iconfont/fonts.svg?v=20170711) format('svg')
 }
 
 .iconfont {
@@ -800,6 +800,7 @@ a {
 }
 
 .slider-seckill .lists-pro .item-img {
+    background-image: url(../../assets/images/imgbg.png);
     width: 78px;
     height: 78px;
     margin: 0 auto;
@@ -1835,6 +1836,7 @@ a {
 }
 
 .lists-pro-brand .item-img {
+    background-image: url(../../assets/images/imgbg.png);
     width: 104px;
     height: 104px;
     position: relative;

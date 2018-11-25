@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
+import Lazyload from 'r-img-lazyload';
 // 页面组件 容器组件
 
 class recommend extends Component {
@@ -29,9 +30,9 @@ class recommend extends Component {
                         return this.state.song_list.map((item,index)=> {
                             return (
                                     <li key={index} className="shop-item">
-                                      <a className="item js-recommend-sku" href="javascript:void(0)" data-guid={`${item.id}`}>
+                                      <Link className="item js-recommend-sku"to={`/detail/${item.id}`} data-guid={`${item.id}`}>
                                             <div className="item-img">
-                                                <img className="imgauto" alt="#" src={`${item.fe_sku_pic}`}  style={{opacity: 1}}/>
+                                                <Lazyload className="imgauto" alt="#" src={`${item.fe_sku_pic}`}  style={{opacity: 1}}/>
                                             </div>
                                             <p className="item-title">{item.product_name}</p>
                                             <div className="item-price">
@@ -55,7 +56,7 @@ class recommend extends Component {
                                                     }
                                                 })()}
                                             </div>
-                                        </a>
+                                        </Link>
                                     </li>
                                     )
                         })

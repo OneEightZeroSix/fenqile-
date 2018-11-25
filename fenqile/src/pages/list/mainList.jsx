@@ -3,6 +3,7 @@ import Mheader from './Mheader.jsx';
 import Mlist from './Mlist.jsx';
 import Mcomponents from './Mcomponents.jsx';
 import Incal from './incal.jsx';
+import QueueAnim from 'rc-queue-anim';
 // import './incal.scss';
 
 
@@ -17,8 +18,10 @@ class mainList extends Component {
     render() {
         return (
             <div className="a">
-                <Mheader/> 
-                <Incal/>
+                <Mheader/>
+                <QueueAnim delay={300} className="queue-simple"> 
+                    <Incal/>
+                </QueueAnim>
                 <Mlist/>
                 <Mcomponents/> 
             </div>

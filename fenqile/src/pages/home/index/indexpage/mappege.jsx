@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
+import Lazyload from 'r-img-lazyload';
 // 页面组件 容器组件
 
 class mappege extends Component {
@@ -40,21 +41,21 @@ class mappege extends Component {
             <section className="spacing js-need-handle">
                 <div className="title-wrap">
                     <p className="detail-title">大牌特卖</p>
-                    <a className="title-more" href="javascript:void(0)" >更多大牌</a>
+                    <Link className="title-more" to={`/list`} >更多大牌</Link>
                 </div>
                 <div className="sale-wrap">
-                    <a href="javascript:void(0)"  className="sale-brand">
-                        <img className="imgauto" alt="#" src={`${this.state.libox.Aimg}`} style={{opacity: 1}}/>
+                    <Link to={`/list`}  className="sale-brand">
+                        <Lazyload className="imgauto" alt="#" src={`${this.state.libox.Aimg}`} style={{opacity: 1}}/>
                         <div className="active-time"> 距离结束还剩<span  >1</span>天  </div>
-                    </a>
+                    </Link>
                     <ul className="lists-pro-three">
                     {(()=>{
                             return this.state.libox.list.map((item,index)=>{
                                 return (
                                         <li key={index} data-guid={`${item.id}`}>
-                                            <a className="item" href="javascript:void(0)">
+                                            <Link className="item" to={`/detail/${item.id}`}>
                                               <div className="item-img">
-                                                <img className="imgauto" alt="#" src={item.Image}/>
+                                                <Lazyload className="imgauto" alt="#" src={item.Image}/>
                                               </div>
                                               <div className="item-info">
                                                 <div className="off-tag-wp">
@@ -72,14 +73,14 @@ class mappege extends Component {
                                                   <span className="item-month">x36期</span>
                                                 </div>
                                               </div>
-                                            </a>
+                                            </Link>
                                         </li>
                                     )
                             })
                      })()}
                     </ul>
                 </div>
-                <a href="javascript:void(0)" id="_more_url" className="more"> 查看更多</a>
+                <Link to={`/list`} id="_more_url" className="more"> 查看更多</Link>
             </section>
         )
     }

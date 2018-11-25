@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./incal.scss"
 import {Provider, connect} from 'react-redux';
+
+
 // 页面组件 容器组件
 
 class incal extends Component {
@@ -137,7 +139,7 @@ class incal extends Component {
     render() {
         return (
             <section className="side-slide option-slide a" id="filtrate_wrap">
-                <div  className={this.props.calshow? "js-g-fragment-layer":"js-g-fragment-layer hide"} style={{width: '100%'}}>
+                <div  className={this.props.calshow? "js-g-fragment-layer fui-mask-fadeinright":"js-g-fragment-layer hide"} style={{width: '100%'}}>
                     <div onClick={this.props.incalshow.bind(this,false)} className="fui-mask js-mask"></div>
                     <div  className="js-g-fragment-content  fui-f-ov" style={{height: '693px'}}>
                         <div className="choose-list">

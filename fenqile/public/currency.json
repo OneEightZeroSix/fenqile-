@@ -1,0 +1,201 @@
+[{
+	"value": "1",
+	"label": "人民币",
+	"abbreviate": "CNY",
+	"currency_img_pos": "0px 0px"
+}, {
+	"value": "2",
+	"label": "港币",
+	"abbreviate": "HKD",
+	"currency_img_pos": "-100px 0px"
+}, {
+	"value": "3",
+	"label": "日元",
+	"abbreviate": "JPY",
+	"currency_img_pos": "-200px 0px"
+}, {
+	"value": "4",
+	"label": "泰铢",
+	"abbreviate": "THB",
+	"currency_img_pos": "-300px 0px"
+}, {
+	"value": "5",
+	"label": "美元",
+	"abbreviate": "USD",
+	"currency_img_pos": "0px -80px"
+}, {
+	"value": "6",
+	"label": "英镑",
+	"abbreviate": "GBP",
+	"currency_img_pos": "-100px -80px"
+}, {
+	"value": "7",
+	"label": "欧元",
+	"abbreviate": "EUR",
+	"currency_img_pos": "-200px -80px"
+}, {
+	"value": "8",
+	"label": "澳元",
+	"abbreviate": "AUD",
+	"currency_img_pos": "-300px -80px"
+}, {
+	"value": "9",
+	"label": "新台币",
+	"abbreviate": "TWD",
+	"currency_img_pos": "0px -160px"
+}, {
+	"value": "10",
+	"label": "加拿大元",
+	"abbreviate": "CAD",
+	"currency_img_pos": "-100px -160px"
+}, {
+	"value": "11",
+	"label": "新西兰元",
+	"abbreviate": "NZD",
+	"currency_img_pos": "-200px -160px"
+}, {
+	"value": "12",
+	"label": "亚美尼亚德拉姆",
+	"abbreviate": "AMD",
+	"currency_img_pos": "-300px -160px"
+}, {
+	"value": "13",
+	"label": "阿联酋迪拉姆",
+	"abbreviate": "AED",
+	"currency_img_pos": "0px -240px"
+}, {
+	"value": "14",
+	"label": "阿塞拜疆马纳特",
+	"abbreviate": "AZN",
+	"currency_img_pos": "-100px -240px"
+}, {
+	"value": "15",
+	"label": "巴西雷亚尔",
+	"abbreviate": "BRL",
+	"currency_img_pos": "-200px -240px"
+}, {
+	"value": "16",
+	"label": "瑞士法郎",
+	"abbreviate": "CHF",
+	"currency_img_pos": "-300px -240px"
+}, {
+	"value": "17",
+	"label": "捷克克朗",
+	"abbreviate": "CZK",
+	"currency_img_pos": "0px -320px"
+}, {
+	"value": "18",
+	"label": "丹麦克朗",
+	"abbreviate": "DKK",
+	"currency_img_pos": "-100px -320px"
+}, {
+	"value": "19",
+	"label": "印度卢比",
+	"abbreviate": "INR",
+	"currency_img_pos": "-200px -320px"
+}, {
+	"value": "20",
+	"label": "印尼卢比",
+	"abbreviate": "IDR",
+	"currency_img_pos": "-300px -320px"
+}, {
+	"value": "21",
+	"label": "冰岛克朗",
+	"abbreviate": "ISK",
+	"currency_img_pos": "0px -400px"
+}, {
+	"value": "22",
+	"label": "哈萨克斯坦坚戈",
+	"abbreviate": "KZT",
+	"currency_img_pos": "-100px -400px"
+}, {
+	"value": "23",
+	"label": "韩元",
+	"abbreviate": "KRW",
+	"currency_img_pos": "-200px -400px"
+}, {
+	"value": "24",
+	"label": "柬埔寨瑞尔",
+	"abbreviate": "KHR",
+	"currency_img_pos": "-300px -400px"
+}, {
+	"value": "25",
+	"label": "斯里兰卡卢比",
+	"abbreviate": "LKR",
+	"currency_img_pos": "0px -480px"
+}, {
+	"value": "26",
+	"label": "马来西亚林吉特",
+	"abbreviate": "MYR",
+	"currency_img_pos": "-100px -480px"
+}, {
+	"value": "27",
+	"label": "澳门币",
+	"abbreviate": "MOP",
+	"currency_img_pos": "-200px -480px"
+}, {
+	"value": "28",
+	"label": "尼泊尔卢比",
+	"abbreviate": "NPR",
+	"currency_img_pos": "-300px -480px"
+}, {
+	"value": "29",
+	"label": "挪威克朗",
+	"abbreviate": "NOK",
+	"currency_img_pos": "0px -560px"
+}, {
+	"value": "30",
+	"label": "纳米比亚元",
+	"abbreviate": "NAD",
+	"currency_img_pos": "-100px -560px"
+}, {
+	"value": "31",
+	"label": "波兰兹罗提",
+	"abbreviate": "PLN",
+	"currency_img_pos": "-200px -560px"
+}, {
+	"value": "32",
+	"label": "菲律宾比索",
+	"abbreviate": "PHP",
+	"currency_img_pos": "-300px -560px"
+}, {
+	"value": "33",
+	"label": "卡塔尔里亚尔",
+	"abbreviate": "QAR",
+	"currency_img_pos": "0px -640px"
+}, {
+	"value": "34",
+	"label": "俄罗斯卢布",
+	"abbreviate": "RUB",
+	"currency_img_pos": "-100px -640px"
+}, {
+	"value": "35",
+	"label": "罗马尼亚新列伊",
+	"abbreviate": "RON",
+	"currency_img_pos": "-200px -640px"
+}, {
+	"value": "36",
+	"label": "沙特里亚尔",
+	"abbreviate": "SAR",
+	"currency_img_pos": "-300px -640px"
+}, {
+	"value": "37",
+	"label": "新加坡元",
+	"abbreviate": "SGD",
+	"currency_img_pos": "0px -720px"
+}, {
+	"value": "38",
+	"label": "瑞典克朗",
+	"abbreviate": "SEK",
+	"currency_img_pos": "-100px -720px"
+}, {
+	"value": "39",
+	"label": "越南盾",
+	"abbreviate": "VND",
+	"currency_img_pos": "-200px -720px"
+}, {
+	"value": "40",
+	"label": "南非兰特",
+	"abbreviate": "ZAR",
+	"currency_img_pos": "-300px -720px"
+}]

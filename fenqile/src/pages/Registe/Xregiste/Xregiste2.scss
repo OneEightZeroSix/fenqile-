@@ -1,0 +1,231 @@
+/* autoprefixer: off */
+.aa{
+.wrap {
+	color: #757c8e;
+	font-size: 13px;
+	letter-spacing: 0;
+	line-height: 15px
+}
+
+.wrap .agree-text {
+	padding-left: 24px;
+	position: relative
+}
+
+.wrap .agree-text:before {
+	background: #fff;
+	border: 1px solid #e1e4eb;
+	border-radius: 50%;
+	box-sizing: border-box;
+	content: "";
+	height: 16px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 16px
+}
+
+.wrap .agree-text.agree:before {
+	background: url(https://cres1.fenqile.cn/passport/online/img/a152137a0c8e52d8151fb32e50b049b0.png) no-repeat;
+	background-size: 100%;
+	border: none
+}
+
+.wrap a {
+	color: #3b9bff;
+	display: inline-block;
+}
+
+	
+
+.main-wrap {
+	font-size: 14px;
+	padding-bottom: 70px;
+	position: relative
+}
+
+.main-wrap .login-banner {
+	background: url(https://cres1.fenqile.cn/passport/online/img/68e05730d3e8de226f3fcf3da648dcc6.png) 50%/auto 70px no-repeat #3b9bff;
+	height: 170px;
+	margin-top: -1px;
+	width: 100%;
+}
+
+
+
+
+.main-wrap .input-wrap {
+	background-color: #fff;
+	margin: 10px 0 20px;
+	height: 180px;
+}
+
+.main-wrap .input-item {
+	align-items: center;
+	display: flex;
+	height: 48px;
+	padding: 0 14px 0 18px;
+	position: relative
+}
+
+.main-wrap .input-item .i-icon {
+	background: url(https://cres1.fenqile.cn/passport/online/img/a090da31b2bbd112466936e49455f41d.png) no-repeat;
+	background-size: 42px auto;
+	height: 22px;
+	margin-right: 16px;
+	width: 22px
+}
+
+.main-wrap .input-item .i-phone {
+	background-position: 2px -19px
+}
+
+.main-wrap .input-item .i-sms-code {
+	background-position: -23px -19px
+}
+
+.main-wrap .input-item>input {
+	border: none;
+	color: #535c68;
+	flex-grow: 1;
+	font-size: 14px;
+	line-height: 20px;
+	outline: none
+}
+
+.main-wrap .input-item .sms-code-btn {
+	color: #3b9bff;
+	font-size: 14px;
+	left: 8px;
+	padding: 6px 8px;
+	position: relative
+}
+
+.main-wrap .input-item .sms-code-btn.code-btn-disabled {
+	color: #aaa
+}
+
+.main-wrap .input-item:after,
+.main-wrap .link-box:before {
+	background: #eaeaea;
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	transform: scaleY(.5);
+	width: 100%
+}
+
+.main-wrap .input-item:after {
+	bottom: 0
+}
+
+.main-wrap .link-box:before {
+	top: 0
+}
+
+.main-wrap .protocol-wrap {
+	margin: 16px 0 0 18px
+}
+
+.main-wrap .btn-wrap {
+	padding: 0 18px
+}
+
+.main-wrap .button-disabled {
+	background-color: #78baff;
+	border-color: #78baff;
+	color: #abd4ff
+}
+
+.main-wrap .link-box {
+	background-color: #fff;
+	bottom: 0;
+	color: #3b9bff;
+	font-weight: 700;
+	line-height: 56px;
+	position: fixed;
+	text-align: center;
+	width: 100%
+}
+
+.lego-button {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	background: #3b9bff;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	height: 44px;
+	line-height: 1;
+	outline: none;
+	padding: 0 15px;
+	text-align: center;
+	user-select: none;
+	width: 100%
+}
+
+.lego-button:active {
+	box-shadow: inset 0 0 0 1920px rgba(0, 0, 0, .1)
+}
+
+.lego-button-secondary {
+	background: #fff;
+	border: 1px solid #eaeaea;
+	color: #3b9bff
+}
+
+.lego-button-secondary:active {
+	box-shadow: none;
+	color: #7abbff
+}
+
+.lego-button-text {
+	background: transparent;
+	border: 0;
+	color: #3b9bff;
+	padding: 0
+}
+
+.lego-button-text.button-disabled,
+.lego-button-text.button-disabled:active {
+	background: transparent
+}
+
+.lego-button-text:active {
+	box-shadow: none;
+	color: #7abbff
+}
+
+.lego-button-fixed {
+	border-radius: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	position: fixed
+}
+
+.button-disabled,
+.button-disabled:active {
+	background: #ddd;
+	box-shadow: none;
+	cursor: not-allowed
+}
+
+.button-text {
+	vertical-align: middle
+}
+
+.button-loading,
+.button-loading:active,
+.lego-button-gray,
+.lego-button-gray:active {
+	box-shadow: inset 0 0 0 1920px hsla(0, 0%, 100%, .25);
+	cursor: default
+}
+}
+
+/* autoprefixer: on */

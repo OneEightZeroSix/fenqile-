@@ -10,7 +10,6 @@ class Xfooter extends Component {
         super(props);
         this.props=props;
         this.state = {
-            tab:props.pathname,
             tabs:[{
                 title:"首页",
                 href:"/home/mainPage1",
@@ -48,7 +47,9 @@ class Xfooter extends Component {
             },]  
         }
     }
-    
+    componentDidMount(){
+      
+    }
   
     render() {
         return (
@@ -58,8 +59,8 @@ class Xfooter extends Component {
                         {(()=>{
                             return  this.state.tabs.map((item,index)=>{
                                 return  (<li onClick={this.props.toggleTab.bind(this,index)} key={index}>
-                                            <Link to={ {pathname:`${item.href}` }}  replace style={{color: this.state.tab==index? '#3B9BFF':'#666666'}} >
-                                                 <span className="" style={{backgroundImage: this.state.tab==index? `${item.backgroundImage}`:`${item.backgroundImage1}`}}></span>
+                                            <Link to={ {pathname:`${item.href}` }}  replace style={{color: this.props.tab==index? '#3B9BFF':'#666666'}} >
+                                                 <span className="" style={{backgroundImage: this.props.tab==index? `${item.backgroundImage}`:`${item.backgroundImage1}`}}></span>
                                                  {item.title}                      
                                             </Link>
                                         </li>)
@@ -80,7 +81,6 @@ export default connect((state)=>{
 },(dispatch)=>{
     return {
           toggleTab(index,e){
-            this.state.tab =index;
                 dispatch({
                     type:"toggleTab",
                     tab:index

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
+import Lazyload from 'r-img-lazyload';
 // 页面组件 容器组件
 
 class choiceness extends Component {
@@ -39,9 +40,9 @@ class choiceness extends Component {
                                         this.state.Aimg.map((item,index)=> {
                                             return (
                                                     <li key={index}>
-                                                        <a href="javascript:void(0)" >
-                                                            <img src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
-                                                        </a>
+                                                        <Link to={`/list`}>
+                                                            <Lazyload src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
+                                                        </Link>
                                                     </li>
                                                 )
                                         })
@@ -61,9 +62,9 @@ class choiceness extends Component {
                                         this.state.Bimg.map((item,index)=> {
                                             return (
                                                     <li key={index}>
-                                                        <a href="javascript:void(0)" >
-                                                            <img src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
-                                                        </a>
+                                                        <Link  to={`/list`} >
+                                                            <Lazyload src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
+                                                        </Link>
                                                     </li>
                                                 )
                                         })

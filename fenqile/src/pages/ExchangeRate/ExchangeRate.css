@@ -1,0 +1,40 @@
+.currency .am-navbar-right {
+        display: none !important;
+}
+
+.currency  .am-navbar-left {
+    position: absolute;
+    z-index: 100;
+    width: 40%;
+    height: 45px;
+ 	padding-left: 0; 
+}
+
+.currency .am-list-line>span{
+	width:30px;
+	height:20px;
+	margin-right:5px;
+	border-radius:5px
+}
+
+.currency .am-list-content span{
+    color: rgb(161, 165, 177);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+#exchangeCurrency>div{
+	margin: 0 !important;
+	padding: 0 15px !important;
+}
+#exchangeCurrency .am-navbar-title>div{
+	left:15px !important;
+}
+
+#exchangeMain .ant-alert-success {
+    border: 1px solid #91d5ff;
+    background-color: #e6f7ff;
+}
+#exchangeMain .ant-alert-success .ant-alert-icon {
+    color: #1890ff;
+}

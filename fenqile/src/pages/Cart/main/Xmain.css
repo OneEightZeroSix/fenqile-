@@ -1,0 +1,111 @@
+.weex-ct.weex-div .am-list-item {
+   
+    padding-left: 0;
+}
+.weex-ct.weex-div .am-list-item .am-list-line .am-list-content {
+     overflow: visible;  
+}
+
+.weex-ct.weex-div .am-list-item .am-list-line .am-list-extra {
+     flex-basis: auto; 
+}
+
+.weex-ct.weex-div .am-list-arrow.am-list-arrow-horizontal{
+    display: none;
+}
+.weex-ct.weex-div .product-inner.weex-ct.weex-div{
+    text-align: left;
+}
+.weex-ct.weex-div  .weex-el.weex-text.product-norms{
+    text-align: left;
+}
+.weex-ct.weex-div .am-swipe-btn {
+    flex:1;
+}
+.weex-ct.weex-div .am-swipe-btn:last-child{
+    background: #3b9bff !important;
+}
+.cart .shop-item-detail{
+    padding-right: 0px;
+}
+.mask-wrap.weex-ct.weex-div {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+        width: 100%;
+           
+}
+.mask-wrap.weex-ct.weex-div .mask {
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+       width: 100%;
+}
+.mask-wrap.weex-ct.weex-div .box-wrap{
+        width: 100%;
+    position: fixed;
+    top: 0;
+    left: 1.33333rem;
+    bottom: 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+        z-index: 10000;
+
+}
+.mask-wrap.weex-ct.weex-div .box-module {
+    background-color: #fff;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-radius: 8;
+}
+.mask-wrap.weex-ct.weex-div .box-tips{
+    padding-top: 0.53333rem;
+    padding-bottom: 0.53333rem;
+    padding-left: 0.64rem;
+    padding-right: 0.64rem;
+    text-align: center;
+    font-size: 13px;
+    color: #566272;
+}
+.mask-wrap.weex-ct.weex-div .box-btn-wrap{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    border-style: solid;
+    border-top-width: 1px;
+    border-color: #ebeff2;
+    width: 24.33333rem;
+    bottom: -22%;
+}
+.mask-wrap.weex-ct.weex-div .box-btn {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-style: solid;
+    border-right-width: 1px;
+    border-color: #ebeff2;
+        height: 3.17333rem;
+}
+.mask-wrap.weex-ct.weex-div .no-border {
+    border-right-width: 0;
+}

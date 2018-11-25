@@ -10,21 +10,51 @@ class XdetailMainSpecification extends Component {
 		this.props=props;
 		this.state = {
 			currentColor:0,
-			currentSize:2,
-			isSelectGuarantee:false
+			currentSize:0,
+			isSelectGuarantee:false,
+			list:[],
+			nowprice:0,
+			sliceprice:0,
+			nowpic:"",
+			colorText:"深空灰色",
+			sizeText:"256GB",
+			asing:"",
 		}
 		
-
 	}
-	setCurrentColor(index){
+	setCurrentColor(index,e){
+		let cart= this.state.list[0];
+		let text = e.target.innerText;
 		this.setState({
-      		currentColor: index
+      		currentColor: index,
+      		colorText:text
     	})
+		for(let key in cart){
+				if(key==index){
+					this.setState({
+	                    nowpic: cart[key].sku_pic,
+	                })
+	                this.props.istext(this.state.colorText,this.state.sizeText)
+				}
+		 	}
+		
 	}
-	setCurrentSize(index){
-		this.setState({
-      		currentSize: index
-    	})
+	setCurrentSize(index,e){
+		let cart= this.state.list[0]
+		let text = e.target.innerText;
+			this.setState({
+	      		currentSize: index,
+	      		sizeText:text
+	    	})
+		for(let key in cart){
+				if(key==index){
+					this.setState({
+	                    nowprice: cart[key].real_amount,
+	                    sliceprice:cart[key].amount
+	                })
+				}
+		 	}
+	
 	}
 	setCurrentGuarantee(index){
 		this.setState({
@@ -32,6 +62,35 @@ class XdetailMainSpecification extends Component {
       		isSelectGuarantee:!(this.state.isSelectGuarantee)
     	})
 	}
+	
+	loadMore(){
+		 React.axios.get("getPriceAndStockInfo.json").then((response) => {
+		 	console.log(response.data.data.result_rows)
+		 	let cart = response.data.data.result_rows
+		 	for(let key in cart){
+				if(key==this.state.currentSize){
+					this.setState({
+	                    nowprice: cart[key].real_amount,
+	                    sliceprice:cart[key].amount,
+	                    nowpic:cart[key].sku_pic,
+	                    asing:cart[key].mon_pay
+	                })
+				}
+		 	}
+            this.setState({
+                list: this.state.list.concat(response.data.data.result_rows)
+            })
+        }).catch(function (error) {
+            console.log(error);
+        });
+	}
+	componentWillUpdate(nextProps,nextState) {
+		  this.props.istext(nextState.colorText,nextState.sizeText,nextState.nowpic)	
+		  this.props.isnowprice(nextState.nowprice,nextState.sliceprice)
+	}
+	// componentWillMount(){
+	// 	console.log(4)
+	// }
 	render(){
 		return (
             <section className="item-side-slide item-option-slide" id="item_select_wrap_1542707154201a194321319021619300">
@@ -48,20 +107,24 @@ class XdetailMainSpecification extends Component {
 								<div className="main swiper-slide">
 									<div className="main-top">
 										<div className="top-img">
-											<img id="popup_img" src="https://cimg1.fenqile.com/product3/M00/35/14/RrQHAFuZjLmAJnUhAAD5rlh2Nms712.jpg" className="imgauto js-popup-img" alt="" />
+											<img id="popup_img" src={this.state.nowpic} className="imgauto js-popup-img" alt="" />
 										</div>
 										<div className="top-detail" id="spec_popup_price_wrap">
 									
 											<div className="top-price">
-												<div className="normal-price"><em>¥</em>9199</div>
+												<div className="normal-price"><em>¥</em>
+													{
+														this.state.nowprice
+													}
+												</div>
 												<div className="normal-state">
 													现货
 												</div>
 											</div>
 											<a className="cal-price js-mon-pay-block" href="javascript:;">
 												<i className="cal-icon"></i>
-												<span className="cal-price-num">¥<span className="js-mon-pay">380.51</span></span>
-												<span className="cal-price-month ">x<span className="js-fq-num">36</span>期</span>
+												<span className="cal-price-num">¥<span className="js-mon-pay">{this.state.asing}</span></span>
+												<span className="cal-price-month" onClick={this.props.toggleFenqi.bind(this,true)}>x<span className="js-fq-num" >36</span>期</span>
 											</a>
 
 										</div>
@@ -84,7 +147,7 @@ class XdetailMainSpecification extends Component {
 																		itemlist.push(
 																			<li key={i} className={
 																				this.state.currentColor ===i? "js-select-item js-sku-feature js-feature-颜色 on":"js-select-item js-sku-feature js-feature-颜色"
-																			} onClick={this.setCurrentColor.bind(this,i)} data-feature-type="颜色" data-type-index="1" data-feature-value={colorArr[i]}><a href="javascript:;">{colorArr[i]}</a></li>);
+																			}  data-feature-type="颜色" data-type-index="1" data-feature-value={colorArr[i]}><a href="javascript:;" onClick={this.setCurrentColor.bind(this,i)}>{colorArr[i]}</a></li>);
 																	}
 																	return <ul className="js-feature-ul option-item clear" data-feature-type="颜色">{itemlist}</ul>
 																	
@@ -102,7 +165,7 @@ class XdetailMainSpecification extends Component {
 																		itemlist.push(
 																			<li key={i} className={
 																				this.state.currentSize ===i? "js-select-item js-sku-feature js-feature-内存 on":"js-select-item js-sku-feature js-feature-内存"
-																			} onClick={this.setCurrentSize.bind(this,i)} data-feature-type="内存" data-type-index="2" data-feature-value={sizeArr[i]}><a href="javascript:;">{sizeArr[i]}</a></li>);
+																			} data-feature-type="内存" data-type-index="2" data-feature-value={sizeArr[i]}><a onClick={this.setCurrentSize.bind(this,i)}  href="javascript:;">{sizeArr[i]}</a></li>);
 																	}
 																	return <ul className="js-feature-ul option-item clear" data-feature-type="内存">{itemlist}</ul>
 																	
@@ -115,7 +178,7 @@ class XdetailMainSpecification extends Component {
 													<div className="js-attach-sku-wrap">
 														<dl className="option-sec op-server"><dt className="option-title">
 																<div className="option-main">增值服务</div>
-																<a href="https://sale.fenqile.com/VlVdQkhdV1lFSFNTWU1I/index.html">
+																<a >
 																	<div className="i-screen">
 																		<img src="//cres1.fenqile.cn/item_m/img/product/tip_server--0d308ddf36.png" className="imgauto" />
 																	</div>
@@ -170,6 +233,9 @@ class XdetailMainSpecification extends Component {
 
 		)
 	}
+	 componentDidMount  () {
+        this.loadMore()
+    }
 }
 
 export default connect((state)=>{
@@ -180,6 +246,27 @@ export default connect((state)=>{
 			dispatch({
 				type:"toggleSpecification",
 				isShowSpecification:false
+			})
+		},
+		isnowprice(nowprice,sliceprice){
+			dispatch({
+				type:"setnowprice",
+				nowprice:nowprice,
+				sliceprice:sliceprice
+			})
+		},
+		istext(color,size,pic){
+			dispatch({
+				type:"istext",
+				colorText:color,
+				sizeText:size,
+				nowpic:pic
+			})
+		},
+		toggleFenqi(bol){
+			dispatch({
+				type:"toggleFenqi",
+				isShowFenqi:bol
 			})
 		}
 	}

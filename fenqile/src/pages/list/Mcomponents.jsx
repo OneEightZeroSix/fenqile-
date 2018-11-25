@@ -10,16 +10,23 @@ class Mcomponents extends Component {
         this.state = {
         }
     }
+    goTop(){
+       
+        var timer = setInterval(function(){
+             let el = document.querySelector(".am-list-view-scrollview")
+            var currentTop = el.scrollTop;
+            var speed = -Math.floor((currentTop-0)/5);
+            currentTop += speed;
+            el.scrollTop=currentTop
+            if(currentTop<=5){
+                clearInterval(timer);
+            }
+        },30)
+    }
     render() {
         return (
             <div>
-                {/* <div className="go-top" id="go_top"></div> */}
-                <BackTop>
-                <div className="go-top" id="go_top"></div>
-                </BackTop>
-                Scroll down to see the bottom-right
-    <strong style={{ color: '#1088e9' }}> blue </strong>
-                button.
+                <div onClick={this.goTop.bind(this)} className="go-top" id="go_top"></div>
                 <div className="shop-num" id="page_num">
                     <dl>
                         <dt id="current_page">2</dt>

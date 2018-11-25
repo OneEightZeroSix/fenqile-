@@ -1,6 +1,6 @@
-@charset "UTF-8";
 
-.justify {
+.cc{
+    .justify {
     display: -webkit-box;
     -webkit-box-align: center;
     -webkit-box-pack: justify;
@@ -18,7 +18,7 @@
 @font-face {
     font-family: iconfont;
     src: url(//channel.m.fenqile.com/res/iconfont/fonts.eot?v=20170711);
-    src: url(//channel.m.fenqile.com/res/iconfont/fonts.eot?#iefix) format('embedded-opentype'), url(//channel.m.fenqile.com/res/iconfont/fonts.woff?v=20170711) format('woff'), url(//channel.m.fenqile.com/res/iconfont/fonts.ttf?v=20170711) format('truetype'), url(//channel.m.fenqile.com/res/iconfont/fonts.svg?v=20170711) format('svg')
+    src: url(//channel.m.fenqile.com/res/iconfont/fonts.eot?#iefix) format('embedded-opentype'), url(../../../assets/fonts.woff?v=20170711) format('woff'), url(../../../assets/fonts.ttf?v=20170711) format('truetype'), url(//channel.m.fenqile.com/res/iconfont/fonts.svg?v=20170711) format('svg')
 }
 
 .iconfont {
@@ -339,7 +339,6 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    height: 100%;
     padding: 1.6rem;
     background: #fff
 }
@@ -632,23 +631,9 @@
         width: 13rem
     }
 }
-.main-wrap .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab{
-    text-align: center;
 }
-.main-wrap .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-ink-bar{
-    left: 1px;
-}
-.main-wrap .ant-tabs-tabpane{
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: fixed;
-    width: 75%;
-    height: 100%;
-    left: 110px
-}
-.main-wrap .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar{
-    width: 25%;
-}
-.main-wrap .ant-tabs{
-    width: 100%;
-}
+
+
+
+
+	
