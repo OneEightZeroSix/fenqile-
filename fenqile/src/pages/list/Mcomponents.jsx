@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BackTop } from 'antd';
 
 
 // 页面组件 容器组件
@@ -12,7 +13,13 @@ class Mcomponents extends Component {
     render() {
         return (
             <div>
+                {/* <div className="go-top" id="go_top"></div> */}
+                <BackTop>
                 <div className="go-top" id="go_top"></div>
+                </BackTop>
+                Scroll down to see the bottom-right
+    <strong style={{ color: '#1088e9' }}> blue </strong>
+                button.
                 <div className="shop-num" id="page_num">
                     <dl>
                         <dt id="current_page">2</dt>
