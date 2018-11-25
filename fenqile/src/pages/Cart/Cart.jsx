@@ -5,7 +5,7 @@ import Cartbottom from './Cartbottom/Cartbottom.jsx'
 import Cartheader from './Cartheader/Cartheader.jsx'
 import Cartmain from './main/Xcartmain.jsx'
 
-class Xmain extends Component {
+class Cart extends Component {
 	render() {
 		return (
 			<div className="cart">
@@ -17,4 +17,4 @@ class Xmain extends Component {
 	}
 }
 
-export default Xmain;
+export default Cart;

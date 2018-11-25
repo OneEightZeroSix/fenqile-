@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Lazyload from 'r-img-lazyload';
 // 页面组件 容器组件
 
 class choiceness extends Component {
@@ -40,7 +41,7 @@ class choiceness extends Component {
                                             return (
                                                     <li key={index}>
                                                         <Link to={`/list`}>
-                                                            <img src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
+                                                            <Lazyload src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
                                                         </Link>
                                                     </li>
                                                 )
@@ -62,7 +63,7 @@ class choiceness extends Component {
                                             return (
                                                     <li key={index}>
                                                         <Link  to={`/list`} >
-                                                            <img src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
+                                                            <Lazyload src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
                                                         </Link>
                                                     </li>
                                                 )

@@ -8,42 +8,42 @@ import { Link } from "react-router-dom";
 const tabs = [
     {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/00/CD/j6gHAFvrx9mAG904AAApWNBHhz8528_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/00/CD/j6gHAFvrx9mAG904AAApWNBHhz8528_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '1'
     },
     { title: 
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/33/39/jagHAFvrx-OANFPHAAAXlfycWT0347_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/33/39/jagHAFvrx-OANFPHAAAXlfycWT0347_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '2' },
     { title: 
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/00/CD/j6gHAFvrx-6AFRceAAAbWCOh2Mo858_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/00/CD/j6gHAFvrx-6AFRceAAAbWCOh2Mo858_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '3' },
     {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/33/39/jagHAFvrx_eAd2UPAAAYEfc4hPU464_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/33/39/jagHAFvrx_eAd2UPAAAYEfc4hPU464_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '4'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/32/60/jqgHAFvryJaAI9alAAAYj74JlwQ602_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/32/60/jqgHAFvryJaAI9alAAAYj74JlwQ602_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '5'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/33/39/jagHAFvryJ6AfBN_AAAWQwc1ImE292_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/33/39/jagHAFvryJ6AfBN_AAAWQwc1ImE292_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '6'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/00/CD/j6gHAFvryKWAcUXxAAAVonnLEPM285_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/00/CD/j6gHAFvryKWAcUXxAAAVonnLEPM285_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '7'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/32/60/jqgHAFvryK2AXt2uAAAbhSLCRWA595_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/32/60/jqgHAFvryK2AXt2uAAAbhSLCRWA595_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '8'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/32/60/jqgHAFvryMOAIwMmAAAXu-4OKxw875_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/32/60/jqgHAFvryMOAIwMmAAAXu-4OKxw875_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '9'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/32/60/jqgHAFvryMmAN1kqAAAlLNbFB7c385_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/32/60/jqgHAFvryMmAN1kqAAAlLNbFB7c385_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '10'
     }
 ];

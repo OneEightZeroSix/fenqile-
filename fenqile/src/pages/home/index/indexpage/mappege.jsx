@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Lazyload from 'r-img-lazyload';
 // 页面组件 容器组件
 
 class mappege extends Component {
@@ -44,7 +45,7 @@ class mappege extends Component {
                 </div>
                 <div className="sale-wrap">
                     <Link to={`/list`}  className="sale-brand">
-                        <img className="imgauto" alt="#" src={`${this.state.libox.Aimg}`} style={{opacity: 1}}/>
+                        <Lazyload className="imgauto" alt="#" src={`${this.state.libox.Aimg}`} style={{opacity: 1}}/>
                         <div className="active-time"> 距离结束还剩<span  >1</span>天  </div>
                     </Link>
                     <ul className="lists-pro-three">
@@ -54,7 +55,7 @@ class mappege extends Component {
                                         <li key={index} data-guid={`${item.id}`}>
                                             <Link className="item" to={`/detail/${item.id}`}>
                                               <div className="item-img">
-                                                <img className="imgauto" alt="#" src={item.Image}/>
+                                                <Lazyload className="imgauto" alt="#" src={item.Image}/>
                                               </div>
                                               <div className="item-info">
                                                 <div className="off-tag-wp">

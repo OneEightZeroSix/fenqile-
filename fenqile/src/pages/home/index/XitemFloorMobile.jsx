@@ -6,44 +6,44 @@ import { Link } from "react-router-dom";
 const tabs = [
     {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/03/53/jagHAFpwEj6AX0f2AAAEjHriZFM467_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/03/53/jagHAFpwEj6AX0f2AAAEjHriZFM467_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '1'
     },
     { title: 
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/03/54/jagHAFpwE1eAfSzNAAAHkVbybW0189_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/03/54/jagHAFpwE1eAfSzNAAAHkVbybW0189_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '2' 
     },
     { title: 
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/03/44/jqgHAFpwExOAdXZeAAAR4YRWnzU901_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/03/44/jqgHAFpwExOAdXZeAAAR4YRWnzU901_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '3' 
     },
     {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/03/43/jqgHAFpwEoCAaZzWAAAWATS_Ruo610_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/03/43/jqgHAFpwEoCAaZzWAAAWATS_Ruo610_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '4'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/03/53/jagHAFpwErCAZRVkAAAMmFPbILk093_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/03/53/jagHAFpwErCAZRVkAAAMmFPbILk093_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '5'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/03/53/jagHAFpwEs2AFIzDAAAKfSKE7IA339_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/03/53/jagHAFpwEs2AFIzDAAAKfSKE7IA339_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '6'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/03/53/jagHAFpwEv6ASPpHAAAK7aZu96U906_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/03/53/jagHAFpwEv6ASPpHAAAK7aZu96U906_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '7'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/03/43/jqgHAFpwEpmAPDblAAAEKJE48jM822_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/03/43/jqgHAFpwEpmAPDblAAAEKJE48jM822_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '8'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/03/44/jqgHAFpwEy-AYt94AAAMM_m6VpU538_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/03/44/jqgHAFpwEy-AYt94AAAMM_m6VpU538_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '9'
     }, {
         title:
-            <img src="https://cimgs1.fenqile.com/ibanner2/M00/03/44/jqgHAFpwE0WAPV_3AAAJJ144GZQ327_144x88.png" alt="#" className="imgauto" width="60" height="60" />
+            <Lazyload src="https://cimgs1.fenqile.com/ibanner2/M00/03/44/jqgHAFpwE0WAPV_3AAAJJ144GZQ327_144x88.png" alt="#" className="imgauto" width="60" height="60" />
         , sub: '10'
     }
 ];
@@ -82,7 +82,7 @@ class XitemFloorMobile extends Component {
                        <li key={index} className="js-nav-sku-list-PRFL201801300030002">
 								<Link className="item" to={`/detail/${item.id}`}>
 									<div className="item-img">
-										<img src={`${item.fe_sku_pic}`} alt="#" className="imgauto" />
+										<Lazyload src={`${item.fe_sku_pic}`} alt="#" className="imgauto" />
 									</div>
 									<div className="item-info">
 										<div className="info-top">

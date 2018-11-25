@@ -1,0 +1,142 @@
+.abd{
+	.topsad{
+		margin-top: 6vh;
+	}
+	.floor-wrap {
+    margin-top: .8rem;
+    background: #fff;
+}
+.floor-title {
+    padding: 0 1.5rem;
+    height: 5.8rem;
+    line-height: 5.8rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #394050;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hot-sale {
+    overflow: hidden;
+}
+.clearfix, .clear {
+    zoom: 1;
+}
+.hot-sale li a {
+    display: block;
+    height: 18.25rem;
+}
+.hot-sale li.shop-left .shop-img {
+    float: left;
+}
+.hot-sale li.shop-left .shop-detail {
+    float: right;
+}
+.hot-sale li a .shop-detail {
+    width: 50%;
+    height: 18.25rem;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+     /* autoprefixer: off */
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+     /* autoprefixer: on */
+    text-align: center;
+}
+.hot-sale li a .shop-img img {
+    max-height: 100%;
+}
+.hot-sale li a .shop-img img {
+    max-height: 100%;
+}
+.hot-sale li a .shop-detail h3 {
+    color: #394050;
+    font-size: 1.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+     /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+     /* autoprefixer: on */
+    line-height: 1.8rem;
+    max-height: 3.6rem;
+    text-align: center;
+}
+.hot-sale li a .shop-detail .shop-tip {
+    font-size: 0;
+}
+.hot-sale li a .shop-detail .shop-tip i {
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 10px;
+    color: rgba(48,64,80,.6);
+    display: inline-block;
+    position: relative;
+    padding: 2px .2rem;
+    margin-right: .8rem;
+    margin-top: .8rem;
+}
+.hot-sale li a .shop-detail .shop-tip i:after {
+    display: block;
+    content: ' ';
+    height: 200%;
+    width: 200%;
+    box-sizing: border-box;
+    border: 2px solid rgba(48,64,80,.4);
+    border-radius: .4rem;
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.hot-sale li a .shop-detail .shop-price {
+    margin-top: 1.7rem;
+    color: rgba(48,64,80,.4);
+    font-size: 1.2rem;
+    letter-spacing: -.14px;
+}
+.hot-sale li a .shop-detail .shop-month-price {
+    margin-top: .4rem;
+    color: #579de7;
+    font-size: 1.2rem;
+    letter-spacing: -.14px;
+}
+.clearfix:after, .clear:after {
+    display: block;
+    clear: both;
+    content: '\0020';
+    visibility: hidden;
+    height: 0;
+}
+.hot-sale li a .shop-img {
+    width: 50%;
+    height: 18.25rem;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+     /* autoprefixer: off */
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+     /* autoprefixer: on */
+}
+.hot-sale li.shop-right .shop-img {
+    float: right;
+}
+}

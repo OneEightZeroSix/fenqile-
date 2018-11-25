@@ -89,7 +89,6 @@ class Mlist extends React.Component {
         if (this.state.isLoading && !this.state.hasMore) {
             return;
         }
-        console.log('reach end', event);
         this.setState({ isLoading: true });
         setTimeout(() => {
             this.rData = [...this.rData, ...genData(++pageIndex)];
