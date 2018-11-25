@@ -25,6 +25,7 @@ class Ltest3 extends Component {
     this.openIndex = null;
     this.position = {};
     this.state = {
+      acitveLevel:1,
       activeClassify:'',
       food: 1,
       drink: 1,
@@ -49,28 +50,11 @@ class Ltest3 extends Component {
           text: '本日支出',
           price: '￥100',
           key: 0,
-        },
-        {
-          img: 'http://localhost:3000/images/settings-gift.png',
-          text: 'Senior Product Designer',
-          price: '￥100',
-          key: 1,
-        },
-        {
-          img: 'http://localhost:3000/images/settings-monday.png',
-          text: 'Senior Product Designer',
-          price: '￥100',
-          key: 2,
-        },
-        {
-          img: 'http://localhost:3000/images/settings-unit.png',
-          text: 'Senior Product Designer',
-          price: '￥100',
-          key: 3,
-        },
+        }
       ],
       animation: [],
       style: [],
+      isShowLevelUp:false
     };
   }
 
@@ -105,6 +89,9 @@ class Ltest3 extends Component {
     this.setState({ open: false })
     let value = this.refs.value.value
     let remark = this.refs.value2.value
+    if(remark==""){
+      remark="1"
+    }
     localStorage.activeValue = value
     localStorage.activeRemark = remark
     let key = this.state.key
@@ -113,7 +100,7 @@ class Ltest3 extends Component {
     let activeText = localStorage.activeValue;
     let activeRemark = localStorage.activeRemark;
     let activeClassify = localStorage.activeClassify;
-    this.setState({activeClassify: activeClassify})
+    this.setState({activeClassify: activeClassify,isShowLevelUp:true})
     let obj = {
       img: activeImg,
       text: activeRemark,
@@ -129,81 +116,97 @@ class Ltest3 extends Component {
         let _food = this.state.food
         _food++;
         if (_food >= 6) {
+          this.setState({ food: 5,activeLevel:6 });
           break;
         } else {
-          this.setState({ food: _food });
+          this.setState({ food: _food,activeLevel:_food });
         }
         break;
       case 'drink':
         let _drink = this.state.drink
         _drink++;
         if (_drink >= 6) {
+          this.setState({ drink: 5,activeLevel:6 });
           break;
         } else {
-          this.setState({ drink: _drink });
+          this.setState({ drink: _drink,activeLevel:_drink});
         }
         break;
       case 'tra':
         let _tra = this.state.tra
         _tra++;
         if (_tra >= 6) {
+          this.setState({ tra: 5,activeLevel:6 });
           break;
         } else {
-          this.setState({ tra: _tra });
+          this.setState({ tra: _tra,activeLevel:_tra });
+          localStorage.activeLevel = _tra
         }
         break;
       case 'shopping':
         let _shopping = this.state.shopping
         _shopping++;
         if (_shopping >= 6) {
+          this.setState({ shopping: 5,activeLevel:6 });
           break;
         } else {
-          this.setState({ shopping: _shopping });
+          this.setState({ shopping: _shopping,activeLevel:_shopping });
+          localStorage.activeLevel = _shopping
         }
         break;
       case 'ent':
         let _ent = this.state.ent
         _ent++;
         if (_ent >= 6) {
+          this.setState({ ent: 5,activeLevel:6 });
           break;
         } else {
-          this.setState({ ent: _ent });
+          this.setState({ ent: _ent,activeLevel:_ent });
+          localStorage.activeLevel = _ent
         }
         break;
       case 'housing':
         let _housing = this.state.housing
         _housing++;
         if (_housing >= 6) {
+          this.setState({ housing: 5,activeLevel:6 });
           break;
         } else {
-          this.setState({ housing: _housing });
+          this.setState({ housing: _housing,activeLevel:_housing });
+          localStorage.activeLevel = _housing
         }
         break;
       case 'threeC':
         let _threeC = this.state.threeC
         _threeC++;
         if (_threeC >= 6) {
+          this.setState({ threeC: 5,activeLevel:6 });
           break;
         } else {
-          this.setState({ threeC: _threeC });
+          this.setState({ threeC: _threeC,activeLevel:_threeC });
+          localStorage.activeLevel = _threeC
         }
         break;
       case 'med':
         let _med = this.state.med
         _med++;
         if (_med >= 6) {
+          this.setState({ med: 5,activeLevel:6 });
           break;
         } else {
-          this.setState({ med: _med });
+          this.setState({ med: _med,activeLevel:_med });
+          localStorage.activeLevel = _med
         }
         break;
       case 'misc':
         let _misc = this.state.misc
         _misc++;
         if (_misc >= 6) {
+          this.setState({ misc: 5,activeLevel:6 });
           break;
         } else {
-          this.setState({ misc: _misc });
+          this.setState({ misc: _misc,activeLevel:_misc });
+          localStorage.activeLevel = _misc
         }
         break;
 
@@ -276,6 +279,12 @@ class Ltest3 extends Component {
     delete this.position[this.index];
     this.index = null;
     this.setState({ animation });
+  }
+
+  onCardClose = () => {
+    this.setState({
+      isShowLevelUp:false
+    })
   }
 
   onPanelChange = (value, mode) => {
@@ -375,7 +384,7 @@ class Ltest3 extends Component {
     );
 
     const sidebar3 = (
-      <div style={{ width: '100vw', height: '70vh', background: 'lightcyan', paddingTop: '5vh', paddingLeft: '7vw' }}>
+      <div style={{ width: '100vw', height: '70vh', background: 'skyblue', paddingTop: '5vh', paddingLeft: '7vw' }}>
         <div style={{ height: '70vh', position: 'relative', background: 'url(http://localhost:3000/images/builds/mainground.png)no-repeat' }}>
           <img style={{ position: 'absolute', bottom: '44vh', width: '28vw', height: '28vh' }} src={`http://localhost:3000/images/builds/prefix-food${this.state.food}.png`} alt="" />
           <img style={{ position: 'absolute', bottom: '44vh', left: '28.5vw', width: '28vw', height: '28vh' }} src={`http://localhost:3000/images/builds/prefix-drink${this.state.drink}.png`} width='120' alt="" />
@@ -480,18 +489,41 @@ class Ltest3 extends Component {
       <div onClick={this.onBuildingClose} style={{ position: 'absolute', top: '79%', right: '2%', zIndex: '2' }}>
         <img src='http://localhost:3000/images/settings-lang.png' width='50' height='50' />
       </div>
-      <div style={{ position: 'absolute', top: '70%', right: '2%', zIndex: '2', transform: 'rotate(45deg)' }}>
+      {/* <div style={{ position: 'absolute', top: '70%', right: '2%', zIndex: '2', transform: 'rotate(45deg)' }}>
         <img src='http://localhost:3000/images/vg_close.png' width='50' height='50' />
-      </div>
+      </div> */}
+
+      <div ref="card" onClick={this.onCardClose} className={this.state.isShowLevelUp?"mask-wrap":"mask-wrap hide"}>
+      <div className="mask">
       <Card
-        title="Card title"
+        title=" "
         style={{ width: 300, position: 'absolute', top: '30%', left: '14%', zIndex: '9' }}
       >
-        <p>Card content</p>
-        <img src={`http://localhost:3000/images/builds/prefix-${this.state.activeClassify}1.png`} width='100' alt=""/>
-        <img src="http://localhost:3000/images/arrow.png" alt="" width='50' style={{transform:'translate(0,-5vh)'}}/>
-        <img src={`http://localhost:3000/images/builds/prefix-${this.state.activeClassify}2.png`} width='100' alt=""/>
+        <p></p>
+        {(()=>{
+          console.log(this.state.activeLevel)
+          if(this.state.activeLevel>=6){
+              return(<div>
+              <img style={{marginLeft:'15vw'}} src={`http://localhost:3000/images/builds/prefix-${this.state.activeClassify}${this.state.activeLevel*1-1}.png`} width='150' alt="" />
+                      <p style={{marginLeft:'10vw',fontSize:'18px',fontWeight:'bold'}}>建筑物已到达最高等级！</p>
+                      </div>
+              )
+          }else{
+            return(
+              <div>
+                 <img src={`http://localhost:3000/images/builds/prefix-${this.state.activeClassify}${this.state.activeLevel*1-1}.png`} width='100' alt="" />
+            <img src="http://localhost:3000/images/arrow.png" alt="" width='50' style={{transform:`translate(0,-5vh)`}}/>
+            <img src={`http://localhost:3000/images/builds/prefix-${this.state.activeClassify}${this.state.activeLevel*1}.png`} width='100' alt="" />
+              <p style={{marginLeft:'10vw',fontSize:'18px',fontWeight:'bold'}}>建筑物已到达{this.state.activeLevel*1}级！</p> 
+              </div>
+            )
+          }
+        })()}
+       
       </Card>
+      </div> 
+      </div>
+      
     </div>);
   }
 }
