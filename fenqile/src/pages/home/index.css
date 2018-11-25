@@ -125,7 +125,9 @@ a {
     display: flex;
     display: -webkit-box;
     display: box;
+    /* autoprefixer: off */
     -webkit-box-align: center;
+    /* autoprefixer: on */
     box-align: center;
     z-index: 1000
 }
@@ -220,7 +222,9 @@ a {
     display: flex;
     display: -webkit-box;
     display: box;
+    /* autoprefixer: off */
     -webkit-box-align: center;
+    /* autoprefixer: on  */
     box-align: center;
     padding: 0 12px;
     height: 45px
@@ -238,7 +242,9 @@ a {
     display: flex;
     display: -webkit-box;
     display: box;
+    /* autoprefixer: off */
     -webkit-box-align: center;
+    /* autoprefixer: on */
     box-align: center;
     border-radius: 4px
 }
@@ -461,10 +467,12 @@ a {
     display: box;
     display: -webkit-box;
     display: -moz-box;
+    /* autoprefixer: off */
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -webkit-box-align: center;
     -moz-box-align: center;
+    /* autoprefixer: on */
     text-align: center
 }
 
@@ -612,14 +620,16 @@ a {
 }
 
 .title-wrap {
-	/* line-height: 64px; */
+	line-height: 64px;
     padding: 0 16px;
     height: 64px; 
     background: #fff;
     position: relative;
     display: flex;
     display: box;
+    /* autoprefixer: off */
     -webkit-box-align: center;
+    /* autoprefixer: on */
     box-align: center
 }
 
@@ -682,10 +692,12 @@ a {
     display: box;
     display: -webkit-box;
     display: -moz-box;
+    /* autoprefixer: off */
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -webkit-box-align: center;
     -moz-box-align: center;
+    /* autoprefixer: on */
     color: #fff;
     font-size: 14px;
     font-weight: 700;
@@ -787,10 +799,12 @@ a {
     display: box;
     display: -webkit-box;
     display: -moz-box;
+    /* autoprefixer: off */
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -webkit-box-align: center;
     -moz-box-align: center
+    /* autoprefixer: on */
 }
 
 .slider-seckill .lists-pro .item {
@@ -862,10 +876,12 @@ a {
     display: box;
     display: -webkit-box;
     display: -moz-box;
+    /* autoprefixer: off */
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -webkit-box-align: center;
     -moz-box-align: center
+    /* autoprefixer: on */
 }
 
 .slider-seckill .more-seckill .more-txt {
@@ -1146,7 +1162,9 @@ a {
     height: 140px;
     margin-right: 8px;
     display: -webkit-box;
+    /* autoprefixer: off */
     -webkit-box-align: center;
+    /* autoprefixer: on */
     position: relative
 }
 
@@ -1371,10 +1389,12 @@ a {
     display: box;
     display: -webkit-box;
     display: -moz-box;
+    /* autoprefixer: off */
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -webkit-box-align: center;
     -moz-box-align: center
+    /* autoprefixer: on */
 }
 
 .shop-one-list .shop-item .item-img img {
@@ -1522,10 +1542,12 @@ a {
     display: box;
     display: -webkit-box;
     display: -moz-box;
+    /* autoprefixer: off */
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -webkit-box-align: center;
     -moz-box-align: center
+    /* autoprefixer: on */
 }
 
 .shop-two-list .shop-item .item-img img {
@@ -1547,8 +1569,10 @@ a {
 
 .shop-two-list .shop-item .item-price {
     display: -webkit-box;
+    /* autoprefixer: off */
     -webkit-box-pack: start;
     -webkit-box-align: center;
+    /* autoprefixer: on */
     height: 18px
 }
 
@@ -1661,10 +1685,12 @@ a {
     display: box;
     display: -webkit-box;
     display: -moz-box;
+    /* autoprefixer: off */
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -webkit-box-align: center;
     -moz-box-align: center;
+    /* autoprefixer: on */
     height: 20px;
     line-height: 20px;
     color: #fff;
@@ -1786,10 +1812,12 @@ a {
     display: box;
     display: -webkit-box;
     display: -moz-box;
+    /* autoprefixer: off */
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -webkit-box-align: center;
     -moz-box-align: center
+    /* autoprefixer: on */
 }
 
 .lists-pro-brand li.slider-error .error-box {

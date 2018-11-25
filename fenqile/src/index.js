@@ -12,8 +12,7 @@ import * as serviceWorker from './serviceWorker';
 
 
 // 路由功能
-import { HashRouter  } from "react-router-dom";
-import { Router , Route , Redirect,Switch,withRouter } from  "react-router-dom";
+import { HashRouter , Route , Redirect,Switch,withRouter } from  "react-router-dom";
 import {createHashHistory} from 'history';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 // 状态管理
