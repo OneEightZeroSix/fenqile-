@@ -1,4 +1,11 @@
 .rab{
+  vertical-align: middle !important;
+  div{
+    vertical-align: middle !important;
+  }
+  img{
+    vertical-align: middle !important;
+  }
   .queue-demo-wrapper {
     position: relative;
     background: #CCE9F9;
@@ -30,7 +37,7 @@
     background: #fff;
     display: inline-block;
     position: relative;
-    vertical-align: middle;
+    vertical-align: middle !important;
     margin-left: 10px;
     top: -2px;
   }

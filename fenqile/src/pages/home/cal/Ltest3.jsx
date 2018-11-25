@@ -90,7 +90,7 @@ class Ltest3 extends Component {
     let value = this.refs.value.value
     let remark = this.refs.value2.value
     if(remark==""){
-      remark="1"
+      remark="支出"
     }
     localStorage.activeValue = value
     localStorage.activeRemark = remark
@@ -373,7 +373,7 @@ class Ltest3 extends Component {
       <input placeholder="开始记账" ref="value" onChange={this.monnycont.bind(this)} value={`￥${this.state.monny}`} type="text" style={{ paddingLeft: '5vw', fontWeight: 'bold', fontSize: '20px', width: '100%', height: '8vh', border: 'none' }} />
       <input placeholder="备注" ref="value2" type="text" style={{ paddingLeft: '5vw', fontWeight: 'bold', fontSize: '20px', width: '100%', height: '8vh', border: 'none' }} />
       <p className="buttons">
-        <Button onClick={this.onClose}>点啊</Button>
+        <Button onClick={this.onClose}>确定</Button>
       </p>
     </div>);
 

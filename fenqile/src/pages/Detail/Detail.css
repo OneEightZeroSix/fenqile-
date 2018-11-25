@@ -7692,7 +7692,11 @@ html.fragment-con-html {
     width: auto;
     margin: 0 auto;
     padding: 12px 12px 16px;
-    overflow: hidden;
+	overflow: hidden;
+	height: auto;
+}
+#top_pic_wrap .am-tabs-pane-wrap  .imgauto{
+		width:80%;
 }
 
 #top_pic_wrap .am-tabs-default-bar-tab {
