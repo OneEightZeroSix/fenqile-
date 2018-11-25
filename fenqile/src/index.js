@@ -230,7 +230,7 @@ ReactDOM.render(
                                                             <Route  path="/registe" component={Registe}/>
                                                             <Route  path="/phone" component={Phone}/>
                                                             <Route path="/exchangeRate" component={ExchangeRate}/>
-                                                            <Route path="/cart/" component={Cart}/>
+                                                            <Route path="/cart" component={Cart}/>
                                                             <Redirect history={history} from="/" exact to="/home/mainPage1" />
                                                         </Switch> 
                                                 </div>
