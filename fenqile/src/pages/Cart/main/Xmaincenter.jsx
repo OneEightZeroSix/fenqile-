@@ -5,16 +5,28 @@ import {
 	SwipeAction,
 	List
 } from 'antd-mobile';
-
+import {Provider, connect} from 'react-redux';
 import "./Xmain.css"
 class Xmaincenter extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			isShowCancel:false
+			isShowCancel:false,
+			qty:1
 		}
 	}
-	
+	qtyup(e){
+		e.stopPropagation();
+		let qty = this.props.qty;
+		this.setState({qty:qty++})
+		this.props.qtys(qty++);
+	}
+	qtybt(e){
+		e.stopPropagation();
+		let qty = this.props.qty;
+		this.setState({qty:qty--})
+		qty<=1? this.props.qtys(1):this.props.qtys(qty--);
+	}
 	render() {
 		return (
 			<div>
@@ -99,7 +111,18 @@ class Xmaincenter extends Component {
 							                                                <p className="price-sign weex-el weex-text">¥</p>
 							                                                <p className="price weex-el weex-text">9199</p>
 							                                            </div>
-							                                            <p className="item-num weex-el weex-text">x1</p>
+							                                            {(()=>{
+							                                            	if(this.props.qtyshow){
+							                                            			return (<div  className="btn-operate weex-ct weex-div">
+																									    <p onClick={this.qtybt.bind(this)} className=" weex-el weex-text btn-minus btn-none">－</p>
+																									    <p className="edit-num weex-el weex-text">{this.state.qty}</p>
+																									    <p onClick={this.qtyup.bind(this)} className=" weex-el weex-text btn-plus">＋</p>
+																									</div>)
+							                                            		}else{
+							                                            			return(<p className="item-num weex-el weex-text">x{this.state.qty}</p>)
+							                                            		}
+							                                            })()
+							                                            }
 							                                        </div>
 						                                    	</div>
 						                                	}
@@ -162,4 +185,15 @@ class Xmaincenter extends Component {
 	}
 }
 
-export default Xmaincenter;
+export default connect((state)=>{
+    return state
+},(dispatch)=>{
+    return {
+        qtys(qt){
+        	 dispatch({
+                type:"qty",
+                qty:qt
+            })
+        }
+    }
+})( Xmaincenter);

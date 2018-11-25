@@ -12,7 +12,8 @@ import * as serviceWorker from './serviceWorker';
 
 
 // 路由功能
-import { HashRouter , Router, Route , Redirect,Switch,withRouter } from "react-router-dom";
+import { HashRouter  } from "react-router-dom";
+import { Router , Route , Redirect,Switch,withRouter } from  "react-router-dom";
 import {createHashHistory} from 'history';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 // 状态管理
@@ -70,8 +71,9 @@ const store = createStore(function(state={
     nowpic:"",
     sliceprice:"",
     holdingAbbreviate: 'USD',
-    exchangeAbbreviate: 'CNY'
-
+    exchangeAbbreviate: 'CNY',
+    qty:'1',
+    qtyshow:false
 }, action){
     switch (action.type) {
       case 'toggleTab':
@@ -159,6 +161,16 @@ const store = createStore(function(state={
             return {
                 ...state,
                 exchangeAbbreviate: action.exchangeAbbreviate
+            }
+        case 'qty':
+            return {
+                ...state,
+                qty: action.qty
+            }
+        case 'qtyshow':
+            return {
+                ...state,
+                qtyshow: action.qtyshow
             }
 
       default:

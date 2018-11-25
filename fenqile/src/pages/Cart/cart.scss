@@ -880,4 +880,77 @@
 .title-wrap{
     display: none;
 }
+.btn-operatex {
+    width: 88px;
+    height: 24px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    /* autoprefixer: off */
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e8eaee;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    /* autoprefixer: on */
+    align-items: center;
+    border-radius: 2px;
+}
+.btn-none {
+    color: #c9cfd8;
+}
+.btn-minus{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    color: #767f8a;
+    font-size: 16px;
+    border-right-width: 1;
+    border-style: solid;
+    border-color: #E5E8ED;
+    text-align: center;
+}
+.edit-num {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    color: #394050;
+    font-size: 14px;
+    text-align: center;
+}
+.btn-plus {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    color: #979DAB;
+    font-size: 16px;
+    border-left-width: 1;
+    border-style: solid;
+    border-color: #E5E8ED;
+    text-align: center;
+}
+.btn-operate {
+    width: 88px;
+    height: 24px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+     /* autoprefixer: off */
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e8eaee;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+     /* autoprefixer: on */
+    align-items: center;
+    border-radius: 2px;
+}
 }

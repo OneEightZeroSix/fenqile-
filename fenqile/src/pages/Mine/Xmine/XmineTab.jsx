@@ -28,7 +28,7 @@ class XmineTab extends Component {
         		icon:''
         	}],
         	nav:[{
-        		hrefurl:"//item.m.fenqile.com/cart/index.html",
+        		herfurl:"/cart",
         		title:"我的购物车",
         		content:"",
         		star:'shopping_cart',
