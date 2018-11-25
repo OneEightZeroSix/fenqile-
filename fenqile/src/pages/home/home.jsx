@@ -7,6 +7,7 @@ import './antd-mobile.css';
 import './antd.css';
 import { Route } from "react-router-dom";
 import {Provider, connect} from 'react-redux';
+import {createHashHistory} from 'history';
 
 
 // 页面组件 容器组件
@@ -17,6 +18,7 @@ import cal from './cal/cal.jsx';
 import creditCard from './creditCard/creditCard.jsx';
 import Xfooter from '../../components/Xfooter/Xfooter.jsx';
 
+const history = createHashHistory();
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -49,10 +51,10 @@ class Home extends Component {
             <div>
                      {this.props.tab<=1? <XsearchBar  />:<div></div>}
                      
-					<Route path="/home/mainPage1" component={mainPage1} />
-                    <Route path="/home/classify" component={classify} />
-                    <Route path="/home/cal" component={cal} />
-                    <Route path="/home/creditCard" component={creditCard} />
+					<Route history={history} path="/home/mainPage1" component={mainPage1} />
+                    <Route history={history} path="/home/classify" component={classify} />
+                    <Route history={history} path="/home/cal" component={cal} />
+                    <Route history={history} path="/home/creditCard" component={creditCard} />
                     
                     <Xfooter/>
             </div>

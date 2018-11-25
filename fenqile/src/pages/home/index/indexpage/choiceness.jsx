@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 // 页面组件 容器组件
 
 class choiceness extends Component {
@@ -39,9 +39,9 @@ class choiceness extends Component {
                                         this.state.Aimg.map((item,index)=> {
                                             return (
                                                     <li key={index}>
-                                                        <a href="javascript:void(0)" >
+                                                        <Link to={`/list`}>
                                                             <img src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                 )
                                         })
@@ -61,9 +61,9 @@ class choiceness extends Component {
                                         this.state.Bimg.map((item,index)=> {
                                             return (
                                                     <li key={index}>
-                                                        <a href="javascript:void(0)" >
+                                                        <Link  to={`/list`} >
                                                             <img src={`${item}`} className="imgauto" alt="#" style={{opacity: 1}}/>
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                 )
                                         })

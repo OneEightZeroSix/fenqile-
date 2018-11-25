@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import {Provider, connect} from 'react-redux';
 
 // 页面组件 容器组件
+import {createHashHistory} from 'history';
 
+
+const history = createHashHistory();
 class Mheader extends Component {
     constructor(props) {
         super(props);
@@ -14,7 +17,7 @@ class Mheader extends Component {
             <div className="header-top-spacing js-top-wrapper" id="search_header">
             <div className="header">
                 <div className="search-header" id="search_wrap">
-                    <a href="javascript:void(0)" className="g-return" id="global_header_url"></a>
+                    <a onClick={history.goBack} className="g-return" id="global_header_url"></a>
                     <div className="search-wrap">
                         <i className="iconfont wf-new-search"></i>
                         <div className="search-inner">

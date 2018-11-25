@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Tabs, Badge } from 'antd-mobile';
 import Lazyload from 'r-img-lazyload';
-
+import { Link } from "react-router-dom";
 // 页面组件 容器组件
 const tabs = [
     {
@@ -80,7 +80,7 @@ class XitemFloorMobile extends Component {
           crr.map((item, index) => {
                 return(
                        <li key={index} className="js-nav-sku-list-PRFL201801300030002">
-								<a className="item" href="javascript:void(0)">
+								<Link className="item" to={`/detail/${item.id}`}>
 									<div className="item-img">
 										<img src={`${item.fe_sku_pic}`} alt="#" className="imgauto" />
 									</div>
@@ -111,7 +111,7 @@ class XitemFloorMobile extends Component {
 			                                </span>{item.sku_list[0].fq_num_str}
 										</div>
 									</div>
-								</a>
+								</Link>
 							</li>
                     )
                 

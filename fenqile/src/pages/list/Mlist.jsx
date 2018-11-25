@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { PullToRefresh, ListView, Button } from 'antd-mobile';
 import Lazyload from 'r-img-lazyload';
 
+
 const data = [
     {
         img: 'https://zos.alipayobjects.com/rmsportal/dKbkpPXKfvZzWCM.png',
@@ -47,15 +48,6 @@ class Mlist extends React.Component {
         };
     }
 
-    // If you use redux, the data maybe at props, you need use `componentWillReceiveProps`
-    // componentWillReceiveProps(nextProps) {
-    //   if (nextProps.dataSource !== this.props.dataSource) {
-    //     this.setState({
-    //       dataSource: this.state.dataSource.cloneWithRows(nextProps.dataSource),
-    //     });
-    //   }
-    // }
-
     componentDidUpdate() {
         if (this.state.useBodyScroll) {
             document.body.style.overflow = 'auto';
@@ -79,7 +71,7 @@ class Mlist extends React.Component {
             });
         }, 1500);
     }
-
+    
     onRefresh = () => {
         this.setState({ refreshing: true, isLoading: true });
         // simulate initial Ajax
@@ -92,10 +84,8 @@ class Mlist extends React.Component {
             });
         }, 600);
     };
-
+//当所有的数据都已经渲染过，并且列表被滚动到距离最底部不足onEndReachedThreshold时调用
     onEndReached = (event) => {
-        // load new data
-        // hasMore: from backend data, indicates whether it is the last page, here is false
         if (this.state.isLoading && !this.state.hasMore) {
             return;
         }

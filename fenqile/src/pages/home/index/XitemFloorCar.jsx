@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import '../antd-mobile.css'
 import { Tabs, Badge } from 'antd-mobile';
 import Lazyload from 'r-img-lazyload';
+import { Link } from "react-router-dom";
 // 页面组件 容器组件
 
 const tabs = [
@@ -80,7 +81,7 @@ class XitemFloorCar extends Component {
             brr.sku_list.map((item, index) => {
                 return(
                         <li key={index} className="swiper-slide js-nav-sku-list-PRFL201811050042004 swiper-slide-active">
-                            <a className="item" href="javascript:void(0)">
+                            <Link className="item" to={`/detail/${item.sku_id}`}>
                                 <div className="item-img">
                                     <Lazyload src={`${item.sku_pic[0]}`} className="imgauto" />
                                 </div>
@@ -89,7 +90,7 @@ class XitemFloorCar extends Component {
                                     <div className="item-car-price">{item.mon_pay_str}</div>
                                     <div className="item-car-brand">{item.product_name}</div>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     )
                 

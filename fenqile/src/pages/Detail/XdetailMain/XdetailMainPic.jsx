@@ -106,7 +106,7 @@ class XdetailMainPic extends Component {
 					
 
 						<div className="guide-bcard">
-							<a className="guide-inner " data-href="https://vip.m.fenqile.com/lecard/index.html" id="vip_next_url">
+							<a className="guide-inner "  id="vip_next_url">
 			
 								<div className="guide-price">
 									<i className="i-bcard" style={{backgroundImage: 'url(https://cimg1.fenqile.com/product/M00/F1/BC/hRoGAFqzdX2ANPS_AAAFjmyUyZ0955.png)'}}></i>
@@ -142,7 +142,7 @@ class XdetailMainPic extends Component {
 							<div className="info-des">
 								<p className="txt-des">免息！分期乐是苹果授权经销商，正品有保障！</p>
 								
-								<p><a className="surprise-more" href="https://sale.fenqile.com/VlVdTUlUVFlFSVZQXEZO/index.html" data-fql-stat="LINK_SUBTITLE_S201809130018237">
+								<p><a className="surprise-more"  data-fql-stat="LINK_SUBTITLE_S201809130018237">
 								19-20日手机爆款12期免息，领券下单立减100！</a></p>
 							
 							</div>

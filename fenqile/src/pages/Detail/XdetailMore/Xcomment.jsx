@@ -74,7 +74,7 @@ class Xcomment  extends Component {
 	                </div>          
 		            <div className="comment-hd comment-btm">
 		                <p className="t1">{this.state.otherInformation.title}</p>
-		                <Link className="t2 js-data-report" data-hottag="LINK_advice_" to={`${this.state.otherInformation.url}`}>{this.state.otherInformation.url_name}</Link>
+		                <Link className="t2 js-data-report"  to={`${this.state.otherInformation.url}`}>{this.state.otherInformation.url_name}</Link>
 		            </div>
 	        	</section>
 		)

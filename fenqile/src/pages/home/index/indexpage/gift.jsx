@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 // 页面组件 容器组件
 
 class gift extends Component {
@@ -41,9 +41,9 @@ class gift extends Component {
                     {(()=>{
                         return this.state.gift.Aimg.map((item,index)=> {
                             return (<li key={index}>
-                                        <a href="javascript:void(0)" >
+                                        <Link to={`/list`} >
                                             <img className="imgauto" src={`${item}`} alt="#"  style={{opacity: 1}}/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     )
                         })
@@ -55,7 +55,7 @@ class gift extends Component {
                         return this.state.gift.list.map((item,index)=> {
                             return ( 
                                     <li key={index}>
-                                        <a className="item" href="javascript:void(0)" >
+                                        <Link className="item" to={`/detail/${item.id}`} >
                                             <div className="item-img">
                                             <img src={`${item.Image}`} alt="#"  className="imgauto" style={{opacity: 1}}/>
                                             </div>
@@ -73,13 +73,13 @@ class gift extends Component {
                                                         <div className="num-sales">已售{item.sales}件</div>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </li>
                                 )
                         })
                     })()}
                 </ul>
-                <a href="javascript:void(0)" className="more"> 查看更多 </a>
+                <Link to={`/list`} className="more"> 查看更多 </Link>
             </section>
             <section className="hot-classNamees spacing">
                 <div className="title-wrap">
@@ -88,19 +88,19 @@ class gift extends Component {
                 <section className="banner-wrap">
                     <ul className="banner-three clear js-need-handle">
                         <li>
-                            <a href="javascript:void(0)" >
+                            <Link to={`/list`} >
                                 <img src="https://cimgs1.fenqile.com/ibanner2/M00/32/5B/jqgHAFvpOU-AWjvNAAAuEss-iLg041_436x352.jpg" alt="#" className="imgauto" style={{opacity: 1}}/>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" >
+                            <Link to={`/list`} >
                                 <img src="https://cimgs1.fenqile.com/ibanner2/M00/00/10/j6gHAFtMclaAM2s7AABXZ0m--nI193_436x352.jpg" alt="#"  className="imgauto" style={{opacity: 1}}/>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="javascript:void(0)">
+                            <Link to={`/list`}>
                                 <img src="https://cimgs1.fenqile.com/ibanner2/M00/32/13/jagHAFsLwVSAc8VDAAAmgDW-lqc031_436x352.png" alt="#" className="imgauto" style={{opacity: 1}}/>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </section>

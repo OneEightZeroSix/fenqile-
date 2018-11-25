@@ -178,7 +178,7 @@ class XdetailMainSpecification extends Component {
 													<div className="js-attach-sku-wrap">
 														<dl className="option-sec op-server"><dt className="option-title">
 																<div className="option-main">增值服务</div>
-																<a href="https://sale.fenqile.com/VlVdQkhdV1lFSFNTWU1I/index.html">
+																<a >
 																	<div className="i-screen">
 																		<img src="//cres1.fenqile.cn/item_m/img/product/tip_server--0d308ddf36.png" className="imgauto" />
 																	</div>
