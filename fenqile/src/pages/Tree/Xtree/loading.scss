@@ -1,0 +1,232 @@
+.ntr{
+
+.tree-loading {
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	bottom: 50%;
+	margin: auto;
+	left: 50%;
+	margin-left: -50px;
+	right: 0;
+	-webkit-transform-origin: bottom center;
+	transform-origin: bottom center;
+	-webkit-animation: tree-loading 1s steps(4, end) infinite;
+	animation: tree-loading 1s steps(4, end) infinite
+}
+
+@-webkit-keyframes tree-loading {
+	0% {
+		-webkit-transform: scale(0.66);
+		transform: scale(0.66)
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+@keyframes tree-loading {
+	0% {
+		-webkit-transform: scale(0.66);
+		transform: scale(0.66)
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+.show-at-25 {
+	-webkit-animation: show-at-25 1s steps(4, end) infinite;
+	animation: show-at-25 1s steps(4, end) infinite
+}
+
+@-webkit-keyframes show-at-25 {
+	0% {
+		visibility: hidden
+	}
+	25% {
+		visibility: visible
+	}
+}
+
+@keyframes show-at-25 {
+	0% {
+		visibility: hidden
+	}
+	25% {
+		visibility: visible
+	}
+}
+
+.show-at-50 {
+	-webkit-animation: show-at-50 1s steps(4, end) infinite;
+	animation: show-at-50 1s steps(4, end) infinite
+}
+
+@-webkit-keyframes show-at-50 {
+	0% {
+		visibility: hidden
+	}
+	25% {
+		visibility: hidden
+	}
+	50% {
+		visibility: visible
+	}
+}
+
+@keyframes show-at-50 {
+	0% {
+		visibility: hidden
+	}
+	25% {
+		visibility: hidden
+	}
+	50% {
+		visibility: visible
+	}
+}
+
+.show-at-75 {
+	-webkit-animation: show-at-75 1s steps(4, end) infinite;
+	animation: show-at-75 1s steps(4, end) infinite
+}
+
+@-webkit-keyframes show-at-75 {
+	0% {
+		visibility: hidden
+	}
+	50% {
+		visibility: hidden
+	}
+	75% {
+		visibility: visible
+	}
+}
+
+@keyframes show-at-75 {
+	0% {
+		visibility: hidden
+	}
+	50% {
+		visibility: hidden
+	}
+	75% {
+		visibility: visible
+	}
+}
+
+.tree-trunk,
+.tree-branch,
+.tree-leaf {
+	position: absolute;
+	background-color: #7d380e
+}
+
+.tree-trunk {
+	width: 17%;
+	height: 50%;
+	bottom: 0;
+	left: 40%;
+	background: -webkit-radial-gradient(at 100% 50%, #985715 10%, #7d380e);
+	background: radial-gradient(at 100% 50%, #985715 10%, #7d380e)
+}
+
+.tree-branch {
+	width: 30%;
+	height: 6%;
+	top: 70%;
+	left: 13%;
+	-webkit-transform-origin: right center;
+	transform-origin: right center;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.tree-branch.tree-branch-right {
+	width: 30%;
+	height: 6%;
+	top: 80%;
+	left: 50%;
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}
+
+.tree-leaf {
+	width: 40%;
+	height: 40%;
+	top: 20%;
+	left: 30%;
+	border-radius: 50%;
+	background-color: #a4d33c;
+	background: -webkit-linear-gradient(#a4d33c, #12410c);
+	background: linear-gradient(#a4d33c, #12410c)
+}
+
+.tree-leaf-1 {
+	width: 25%;
+	height: 25%;
+	top: 35%;
+	left: 10%
+}
+
+.tree-leaf-2 {
+	top: 25%;
+	left: 60%
+}
+
+.tree-leaf-3 {
+	width: 40%;
+	height: 40%;
+	top: 18%;
+	left: 10%
+}
+
+.tree-leaf-4 {
+	width: 25%;
+	height: 25%;
+	top: 18%;
+	left: 50%
+}
+
+.tree-leaf-5 {
+	width: 60%;
+	height: 60%;
+	top: 5%;
+	left: 20%
+}
+
+.tree-apple {
+	width: 15%;
+	height: 15%;
+	position: absolute;
+	top: 32%;
+	left: 43%;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAACaUlEQVQ4T8WSXUhTcRjGn//ccWc76ubGdGuTvjAz0dQI7QMsDEMpEDUjMOjKq0oKuugi6KKLKMKLbkIiKOjKbhyUYJZIaFC7qMQKJDLnJn7Meb52dj7+58SWhUrQZe/d+/D+nveF9yHYUg0hZ2MJ42203VoecTD5zwziwIQ7eXDxJOSts2SjMHWuuXTuh8I+nF/Yk7y4fK2okj3iiRX2dTwoj3R8Gln6K2xdanXMJqwrDovpYRTDJvJybLR46bDbtMs7ZmwLOoE94yuMhPf5bu99FBF/m+Q2z/ecuur0he95Gw4APA9EPwLTs8jwIgQ9A4FSSFwBzF3Bu/U93HXSPUizHEndbPcoM2QsWF9Xi+oqQFOBD1NAdBpKYhECL0DUDSi2fEghf5yrCTXuv/90PgfP9bbvZlJksjQcKCHh0qwEK5aA8S0OKb6ANV6ApBtI21kIXrduCxXXnhga/pyDv54/vZNN0cltnCtAPC6YFkBTEozFZQgrSaxKMkRqQmGcUHxetShQUNf0fPTL+tkXPImJ2OugYdblsQxMasJIp5ERRPCyjKSiQjIJMg4nSMCXqKgoO1T1ZHAuB8MCedfS3M+tCn2cacCwTGiajrSmgVd1rGo6ZBAYrAvusD/SddbdTS4Pq79gANEzbdXC95VXLM/7KTWgUgOiRsFTijVKkbHZwfm8mZqKYGfT0MsXm16Vbd60HO9di6/0p0XJlbWV8oiS1KlTVnW4Czi9vMx/p3N88gbJ3rpefxJmWRZ523qsi5e1bi3f/t5y2MdlWa2n1Dzq45ixtu2Vj8nAgL4xZZviuTV+/+r/H/wT6rAUHxcbq4UAAAAASUVORK5CYII=) center no-repeat;
+	background-size: cover
+}
+
+.tree-apple-2 {
+	top: 25%;
+	left: 20%;
+	-webkit-transform: rotate(-40deg);
+	transform: rotate(-40deg)
+}
+
+.tree-apple-3 {
+	top: 40%;
+	left: 75%;
+	-webkit-transform: rotate(20deg);
+	transform: rotate(20deg)
+}
+
+.tree-apple-4 {
+	top: 10%;
+	left: 50%
+}
+	
+}

@@ -34,6 +34,8 @@ import Cart from './pages/Cart/Cart.jsx';
 import Phone from './pages/phone/phone.jsx';
 import ExchangeRate from './pages/ExchangeRate/ExchangeRate.jsx';
 
+import House from './pages/House/House.jsx';
+import Tree from './pages/Tree/Tree.jsx';
 
 React.axios = axios;
 // 创建仓库  试验 可删除
