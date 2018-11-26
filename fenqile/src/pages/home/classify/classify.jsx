@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./classify.scss"
+import { Link } from "react-router-dom";
 import { Tabs } from 'antd-mobile';
 // 页面组件 容器组件
 
@@ -55,10 +56,10 @@ class classify extends Component {
         for (let i = 0; i <arr.length; i++) {
             html.push(
                      <li key={i}>
-                        <a  href="javascript:void">
+                        <Link  to={`/list`}>
                             <img src={`${arr[i].fe_pic_url}`} className="imgauto" width="52" height="52" style={{opacity: 1}}/>
                             <p>{arr[i].name}</p>
-                        </a>
+                        </Link>
                     </li>
                 )
         }

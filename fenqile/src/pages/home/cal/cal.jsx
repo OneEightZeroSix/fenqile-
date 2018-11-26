@@ -6,6 +6,9 @@ import Lsev from './Lsev.jsx';
 import Lrights from './Lrights.jsx';
 import Lbottom from './Lbottom.jsx';
 import Ltest from './Ltest.jsx';
+import Ltest2 from './Ltest2.jsx';
+import './animate.css';
+import Ltest3 from './Ltest3.jsx';
 // import './cal.css';
 
 
@@ -30,7 +33,8 @@ class cal extends Component {
         //         <Lsev/>
         //         <Lrights/>
         //         <Lbottom/> */}
-                <Ltest/>
+                 <Ltest3/>
+                // <Ltest3/>
         //     </div>
         // </div>
            

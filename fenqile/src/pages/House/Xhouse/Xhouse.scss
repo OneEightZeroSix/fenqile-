@@ -1,0 +1,128 @@
+.newhouse{
+	
+	/*main部分*/
+	.ant-radio-button-wrapper{
+		background: #148dea;
+    	color:#fff;
+    	border: 1px solid #d9d9d9;
+    	width: 100px;
+	}
+	.ant-radio-button-wrapper:first-child{
+		border-right: 0 none;
+	}
+	
+	.ant-radio-button-wrapper:last-child{
+		border-left: 0 none;
+	}
+	
+	.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
+		border-color: #d9d9d9;
+		background: #Fff;
+    	color: rgba(0, 0, 0, 0.65);
+	}
+	
+	.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover{
+		border-color: #d9d9d9;
+		background: #Fff;
+    	color: rgba(0, 0, 0, 0.65);
+	}
+	
+	.ant-radio-group{
+		margin-top: 20px;
+	}
+	
+	
+	.allmain{
+		height:250px;
+		width:100vw;
+		background:#148dea;
+		text-align:center;
+	}
+	
+	.monthpay{
+		color: #fff;
+		font-size: 16px;
+		display:block;
+		height:90px;
+		width:100vw;
+		line-height: 30px;
+		text-align: left;
+		padding: 20px 0 20px 20px ;
+		font-weight: 400;
+	}
+	.monthpay p:last-child{
+		font-size: 32px;
+		font-weight: 700;
+	}
+	
+	
+	
+	.money{
+		display:inline-block;
+		height:90px;
+		width:50vw;
+		color: #fff;
+		font-size: 16px;
+		line-height: 30px;
+		text-align: left;
+		padding: 20px 0 20px 20px;
+		font-weight: 400;
+	}
+
+	.money p:last-child{
+		font-size: 26px;
+		font-weight: 700;
+	}
+	
+	.money p:last-child{
+		font-size: 26px;
+		font-weight: 700;
+	}
+	
+	.newmonthpay div:first-child{
+		border-right:1px solid #ccc;
+	}
+	
+	.i-jiantouo-right{
+        content: '';
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        display: inline-block;
+        width: .8rem;
+        vertical-align: middle;
+        height: .8rem;
+        margin-top: -.3rem;
+        border-top: 1px solid #b9b9b9;
+        border-right: 1px solid #b9b9b9;
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+	}
+	.inputmoney{
+	    float: right;
+        border: 0 none;
+        width: 200px;
+        height: 42px;
+        margin-top: 2px;
+        text-align: right;
+        padding-right: 6px;
+	}
+
+    .am-picker-col-item{
+        color:red;
+        border:1px solid red;
+
+    }
+
+    .am-picker{
+        border:1px solid yellow;
+    }
+
+    .toChooseType{
+        width:100vw;
+        height:300px;
+    }
+}

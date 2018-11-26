@@ -23,7 +23,7 @@ class Xbanner extends Component {
                         if(this.props.Aimg){
                             return this.props.Aimg.map((item, index)=> {
                                 return (
-                                        <li>
+                                        <li key={index}>
                                             <Link to={`/phone`}>
                                                 <img className="imgauto" src={item} alt="#" />
                                             </Link>
@@ -33,7 +33,7 @@ class Xbanner extends Component {
                         }else{
                             return this.state.Aimg.map((item, index)=> {
                                 return (
-                                        <li>
+                                        <li key={index}>
                                             <Link to={`/phone`}>
                                                 <img className="imgauto" src={item} alt="#" />
                                             </Link>

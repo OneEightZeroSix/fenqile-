@@ -16,7 +16,7 @@ class Carbottom extends Component {
 			                <div  className="item-cost weex-ct weex-div">
 			                    <p   className="cost-total weex-el weex-text">合计 : </p>
 			                    <p  className="cost-sign weex-el weex-text">¥</p>
-			                    <p  className="cost-color weex-el weex-text">9199</p>
+			                    <p  className="cost-color weex-el weex-text">12799</p>
 			                    
 			                </div>
 			            </div>

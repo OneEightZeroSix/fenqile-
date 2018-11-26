@@ -3,7 +3,7 @@ import React, {
 } from "react";
 
 import { Link } from "react-router-dom";
-import { Carousel, WingBlank } from 'antd-mobile';
+import { Carousel } from 'antd';
 import axios from 'axios';
 
 
@@ -16,9 +16,7 @@ class XmainFoot extends Component {
 		this.props = props;
 		this.state = {
 			goods: [],
-			imgHeight: '180px',
-			news: [],
-			result: []
+			news: []
 		}
 	}
 
@@ -37,7 +35,7 @@ class XmainFoot extends Component {
 				goods: res,
 				news: cos
 			})
-			return this.state.result
+			return this.state.goods
 		}).catch(function(error) {
 			console.log(error);
 		})
@@ -46,10 +44,10 @@ class XmainFoot extends Component {
 	render() {
 		return(
 		    <section className="my-item like-item-box" id="newgoodslist" style={{height:'220px'}}>
-                <Carousel autoplay effect="fade" beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)} style={{height:'180px', marginBottom: '50px',background:'#fff',width:'100%',position:'absolute',left:'0'}}>
+                <Carousel autoplay infinite style={{height:'180px', marginBottom: '50px',background:'#fff',width:'100%',position:'absolute',left:'0'}}>
                 {this.state.goods.map((item,idx)=>{
                     return (
-                        <ul className = "part-ul js-banner-item" key={idx} data-index ={idx} style = {{width: '100%', left: '-375px'}} >
+                        <ul className = "part-ul js-banner-item" key={idx} data-index ={idx} style = {{width: '100%'}} >
                         {
                             item.map(function(item1,number){
                                 return (
@@ -62,7 +60,7 @@ class XmainFoot extends Component {
                                             <div className = "part-price" style={{background: '#fe4979', color: '#fff', fontSize: '1rem',whiteSpace: 'nowrap',textAlign:'center'}}>月供：¥{item1.price}</div>
                                         </Link>
                                     </li>
-                                 )
+                                )
                             })
                         }
                         </ul>
@@ -74,12 +72,7 @@ class XmainFoot extends Component {
 
 	}
 	componentDidMount() {
-		setTimeout(() => {
-			this.getGood()
-			this.setState({
-				news: this.state.goods
-			});
-		}, 100);
+		this.getGood()
 	}
 
 }

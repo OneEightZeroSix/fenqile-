@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/login');
 var rateRouter = require('./routes/rate');
 
+
 var app = express();
 
 // view engine setup
@@ -33,21 +34,22 @@ app.use('/users', usersRouter);
 app.use('/login', loginRouter);
 app.use('/rate', rateRouter);
 
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
 });
 
-//// 跨域设置
-//app.all('*', function (req, res, next) {
-//  res.header("Access-Control-Allow-Credentials", true)
-//  res.header("Access-Control-Allow-Origin", "*")
-//  res.header("Access-Control-Allow-Headers", "X-Requested-With")
-//  res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS")
-//  res.header("X-Powered-By", ' 3.2.1')
-//  res.header("Content-Type", "application/json;charset=utf-8")
-//  next()
-//})
+// 跨域设置
+app.all('*', function (req, res, next) {
+  res.header("Access-Control-Allow-Credentials", true)
+  res.header("Access-Control-Allow-Origin", "*")
+  res.header("Access-Control-Allow-Headers", "X-Requested-With")
+  res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS")
+  res.header("X-Powered-By", ' 3.2.1')
+  res.header("Content-Type", "application/json;charset=utf-8")
+  next()
+})
 
 // error handler
 app.use(function(err, req, res, next) {

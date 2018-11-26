@@ -19,6 +19,7 @@ class Registe extends Component {
             </div>
         )
     }
+
 }
 
 export default Registe;

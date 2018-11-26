@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import CountDown from 'ant-design-pro/lib/CountDown';
 
+
+import { Link } from "react-router-dom";
+const targetTime = new Date().getTime() + 390000;
 
 // 页面组件 容器组件
 

@@ -24,7 +24,7 @@ class Xfooter extends Component {
                 backgroundImage1:`url(//cres.fenqile.cn/mobile/img/nav/list/class.png)`
 
             },{
-                title:"乐卡",
+                title:"记账",
                 href:"/home/cal",
                 dot:false,
                 backgroundImage:`url(//cres.fenqile.cn/mobile/img/nav/list/lecard_on.png)`,

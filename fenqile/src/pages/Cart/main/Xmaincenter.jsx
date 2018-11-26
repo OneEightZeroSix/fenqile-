@@ -109,7 +109,7 @@ class Xmaincenter extends Component {
 							                                        <div className="item-detail-btm weex-ct weex-div">
 							                                            <div className="price-wrap weex-ct weex-div">
 							                                                <p className="price-sign weex-el weex-text">¥</p>
-							                                                <p className="price weex-el weex-text">9199</p>
+							                                                <p className="price weex-el weex-text">12799</p>
 							                                            </div>
 							                                            {(()=>{
 							                                            	if(this.props.qtyshow){

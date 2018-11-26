@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var db = require('../public/lib/mongodb.js');
 var Cookie = require('../public/lib/cookie.js');
+const nodemailer = require('nodemailer');
+const smtpTransport = require('nodemailer-smtp-transport')
 var res;
 
 
@@ -122,12 +124,51 @@ router.post('/registe', function(req, res, next) {
 
 
 
+//邮箱验证
+router.post('/email', function(req, res, next) {
+    // res.send("ok");
+    console.log(req.body);
+   	var nowemail = req.body.email
+    function getRandomNum(min,max){
+	    var randomNum = parseInt(Math.random()*(max-min+1))+min;
+	    return randomNum;
+	}
+    var nowyzm = "";
+    for(var i=0;i<4;i++){
+    	nowyzm += getRandomNum(0,9).toString();
+    }
+    console.log(nowyzm);
+    console.log(nowemail);
+    
+    const params = {
+	  service: 'qq', // 设置服务
+	  port: 465, // 端口
+	  sercure: true, // 是否使用TLS，true，端口为465，否则其他或者568
+	  auth: {
+	    user: '532987966@qq.com', // 邮箱和密码
+	    pass: 'uddrstkgvzuibghd'
+	  }
+	}
 
-
-
-
-
-
+    // 邮件信息
+	const mailOptions = {
+	  from:'532987966@qq.com', // 发送邮箱
+	  to:nowemail, // 接受邮箱
+	  subject: '欢迎注册分期乐', // 标题
+	  html: '<p>你好！</p><p>感谢你注册分期乐。</p><p>你的验证码是：<strong style="color: #ff4e2a;">'+nowyzm+'</strong></p><p>***该验证码5分钟内有效***</p><a href="http://localhost:3000/home">跳转首页</a>' // html 内容 
+	}
+    
+    
+	    // 发送邮件
+	const transporter = nodemailer.createTransport(params)
+	transporter.sendMail(mailOptions, (error, info) => {
+	  if (error) {
+	    res.send(-1)
+	  }
+	  res.send(nowyzm)
+	})
+})
+   
 
 
 module.exports = router;
