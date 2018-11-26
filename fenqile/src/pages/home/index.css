@@ -814,7 +814,8 @@ a {
 }
 
 .slider-seckill .lists-pro .item-img {
-    background-image: url(../../assets/images/imgbg.png);
+    background:url(../../assets/images/imgbg.png) no-repeat;
+    background-size:100% 100%;
     width: 78px;
     height: 78px;
     margin: 0 auto;
@@ -1010,6 +1011,8 @@ a {
 }
 
 .lists-pro-three .item-img {
+    background:url(../../assets/images/imgbg.png) no-repeat;
+    background-size:100% 100%;
     position: relative;
     width: 85px;
     height: 85px;
@@ -1158,6 +1161,8 @@ a {
 }
 
 .lists-gifts .item-img {
+    background:url(../../assets/images/imgbg.png) no-repeat;
+    background-size:100% 100%;
     width: 140px;
     height: 140px;
     margin-right: 8px;
@@ -1534,6 +1539,8 @@ a {
 }
 
 .shop-two-list .shop-item .item-img {
+    background:url(../../assets/images/imgbg.png) no-repeat;
+    background-size:100% 100%;
     position: relative;
     width: 140px;
     height: 140px;
@@ -1546,7 +1553,7 @@ a {
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -webkit-box-align: center;
-    -moz-box-align: center
+    -moz-box-align: center;
     /* autoprefixer: on */
 }
 
@@ -1865,6 +1872,7 @@ a {
 
 .lists-pro-brand .item-img {
     background-image: url(../../assets/images/imgbg.png);
+    background-size:100% 100%;
     width: 104px;
     height: 104px;
     position: relative;
