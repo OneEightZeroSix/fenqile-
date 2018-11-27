@@ -56,7 +56,7 @@ router.post('/userlist', function(req, res, next) {
 
 // 删除用户
 router.post('/deluser', function(req, res, next) {
-    console.log(req.body.user);
+    // console.log(req.body.user);
     db.query(function(db) {
         db.collection("login").deleteOne({ "user": req.body.user }, function(err, result) {
             if (err) {
@@ -71,18 +71,16 @@ router.post('/deluser', function(req, res, next) {
 
 // 更新数据库  
 router.post('/updateuser', function(req, res, next) {
-    var username = req.body.user;
-    var beizhu = req.body.beizhu;
-    var password = req.body.pass;
+    var phonenumber = req.body.phonenumber;
+    var userimg = req.body.userimg;
 
-    console.log(username, beizhu, password)
+    console.log(phonenumber,userimg)
     db.query(function(db) {
         db.collection("login").update({
-            "user": username
+            "phonenumber": phonenumber
         }, {
             $set: {
-                beizhu: beizhu,
-                pass: password
+                userimg: userimg,
             }
         }, function(err, result) {
             if (err) {
@@ -98,7 +96,7 @@ router.post('/updateuser', function(req, res, next) {
 // 查看一条
 router.post('/registe', function(req, res, next) {
     // res.send("ok");
-    console.log(req.body);
+    // console.log(req.body);
 
     var phone = req.body.phonenumber;
     var pass = req.body.password;
@@ -107,12 +105,12 @@ router.post('/registe', function(req, res, next) {
     db.query(function(db) {
         db.collection("login").find({ phonenumber: phone }).toArray(function(err, docs) {
             if (docs.length > 0) {
-            	console.log(docs[0].password,pass)
                 if(docs[0].password === pass){
-                	let userinformation = {'username':docs[0].username,'phonenumber':docs[0].phonenumber}
+                	let userinformation = {'username':docs[0].username,'phonenumber':docs[0].phonenumber,"userimg":docs[0].userimg}
+                	console.log(docs[0].username)
+                	console.log(userinformation)
                 	res.send(userinformation);
                 }else{
-                	console.log(99)
                 	res.send("err");
                 }
             } else {
@@ -127,7 +125,7 @@ router.post('/registe', function(req, res, next) {
 //邮箱验证
 router.post('/email', function(req, res, next) {
     // res.send("ok");
-    console.log(req.body);
+    // console.log(req.body);
    	var nowemail = req.body.email
     function getRandomNum(min,max){
 	    var randomNum = parseInt(Math.random()*(max-min+1))+min;

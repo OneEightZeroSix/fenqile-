@@ -10,7 +10,7 @@ import { Radio } from 'antd';
 import "./Xhouse.scss"
 
 
-class XhouseHeader extends Component {
+class XhouseMain extends Component {
 	constructor(props) {
 		super(props);
 		this.props = props;
@@ -50,5 +50,5 @@ class XhouseHeader extends Component {
 }
 
 
-export default XhouseHeader;
+export default XhouseMain;
 	
