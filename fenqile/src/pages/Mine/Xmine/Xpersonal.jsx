@@ -30,12 +30,17 @@ class Xpersonal extends Component {
 		if(allinfor.length==0){
 			this.setState({
 				userinfor:'',
+				userimg:'',
+				hasImage:false
 			})
 		}else{
 			console.log(allinfor)
 			var nowphone = allinfor[0].phonenumber;
+			var nowimg = window.localStorage.userimg?window.localStorage.userimg:'https://cres2.fenqile.cn/home_m/online/img/cc66e33f6b05c0ad30d9fe31b4040fc8.png';
 			this.setState({
-				userinfor:nowphone
+				userinfor:nowphone,
+				userimg:nowimg,
+				hasImage:true
 			})
 			
 		}
@@ -52,10 +57,6 @@ class Xpersonal extends Component {
             reader.onload = function(e) {
                 img.src = this.result;
             }
-            this.setState({
-            	usertouxiang : img.src
-            })
-            
         var datar = new FormData();
         datar.append('userimg', files);       
         if (files.type.indexOf('image') === 0) {       
@@ -72,10 +73,11 @@ class Xpersonal extends Component {
                         }
                 })
                 .then((response) => {
-                    this.setState({
-                        usertouxiang:response.data
-                    })
-                    this.updateUser(); 
+      				console.log(response.data)
+		            this.setState({
+		                usertouxiang:img.src
+		            })
+		            window.localStorage.userimg = img.src
                 })
                 .catch(function(error) {
                     console.log(error);
@@ -86,30 +88,31 @@ class Xpersonal extends Component {
         }
         
     }
-    updateUser(){
-        var zz = qs.stringify({
-              'userimg': this.state.usertouxiang,
-              'phonenumber': this.state.userinfor,
-            });
-        React.axios.post("http://localhost:12345/login/updateuser",zz,{
-            headers: {
-                    'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'
-                }
-        })
-        .then((response) => {
+//  updateUser(){
+//      var zz = qs.stringify({
+//            'userimg': this.state.usertouxiang,
+//            'phonenumber': this.state.userinfor,
+//          });
+//      React.axios.post("http://localhost:12345/login/updateuser",zz,{
+//          headers: {
+//                  'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'
+//              }
+//      })
+//      .then((response) => {
+//      	console.log(response.data.userimg)
 //          this.setState({
 //              usertouxiang:response.data.userimg
 //          })
-			console.log(this.state.usertouxiang);
-            var totalinfor = Cookie.getCookie("userinformation");
-            totalinfor[0].userimg = response.data.userimg
-            console.log(totalinfor,8888)
-            Cookie.setCookie("userinformation",totalinfor);
-        })
-        .catch(function(error) {
-            console.log(error);
-        })
-    }
+//			console.log(this.state.usertouxiang);
+//          var totalinfor = Cookie.getCookie("userinformation");
+//          totalinfor[0].userimg = response.data.userimg
+//          console.log(totalinfor,8888)
+//          Cookie.setCookie("userinformation",totalinfor);
+//      })
+//      .catch(function(error) {
+//          console.log(error);
+//      })
+//  }
    
 
 
@@ -138,7 +141,7 @@ class Xpersonal extends Component {
                         <li className="base-info-item">
                             <span className="base-info-title">个人头像</span> 
                                 <span className="base-info-tip">
-                                    <img src={this.state.hasImage?"":'https://cres2.fenqile.cn/home_m/online/img/cc66e33f6b05c0ad30d9fe31b4040fc8.png'} className="user-avatar" id="userpic" /> 
+                                    <img src={this.state.hasImage?this.state.userimg:'https://cres2.fenqile.cn/home_m/online/img/cc66e33f6b05c0ad30d9fe31b4040fc8.png'} className="user-avatar" id="userpic" /> 
                                     <svg viewBox="0 0 1024 1024" className="i-jiantouo-right" style={{stroke: 'rgb(185, 189, 198)', fill: 'rgb(185, 189, 198)'}}>
                                         <path></path>
                                     </svg>
@@ -174,7 +177,6 @@ class Xpersonal extends Component {
     }
     componentDidMount(){
         this.getUser();
-        this.updateUser();
     }
 
 

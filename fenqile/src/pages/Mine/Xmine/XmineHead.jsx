@@ -30,11 +30,10 @@ class XmineHead extends Component {
 				isShowLogin:true
 			})
 		}else{
-			console.log(allinfor)
 			var nowuser = allinfor[0].username;
 			var nowphone = allinfor[0].phonenumber;
-			var nowimg = allinfor[0].userimg?allinfor[0].userimg:""
-			console.log(nowimg)
+			var nowimg = window.localStorage.userimg?window.localStorage.userimg:""
+			console.log(123789,window.localStorage.userimg)
 			if(nowuser){
 				this.setState({
 					userinfor:nowuser,
