@@ -182,7 +182,7 @@ class Xregiste extends Component {
 	
 	
 	toLogin(){
-		window.location.href = "http://localhost:3000/#/login"
+		this.props.history.push('/login');
 	}
 	render() {
 		return( 

@@ -1,40 +1,22 @@
 import React, {
     Component
 } from "react";
-
+import {createHashHistory} from 'history';
 
 import Xlogin from './Xlogin/Xlogin.jsx';
-//import { TransitionGroup, CSSTransition } from "react-transition-group";
-
+const history = createHashHistory();
 
 
 
 class Login extends Component {
     constructor(props) {
         super(props);
-//      this.state= { 
-//      	in: true ,
-//      	isShow:true
-//      };
     }
-//  setShow(){
-//  	console.log(123456)
-//  	this.setState({
-//      	isShowJia:false
-//     	})
-//  }
+
     
     render() {
         return (
-        	<Xlogin />
-//          <TransitionGroup>
-//				 <CSSTransition
-//			      appear={true}
-//			      classNames="appAppear"
-//			      timeout={500}>
-//			      <Xlogin />
-//			    </CSSTransition>
-//	        </TransitionGroup>
+        	<Xlogin history={history} />
         )
     }
 }

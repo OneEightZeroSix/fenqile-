@@ -44,7 +44,7 @@ class Xrecommend  extends Component {
                             {
                                 this.state.suggestGood.map((item,idx)=>{
                                     return < li key={idx}>
-                                        <Link to={`${item.url}`} className = "js-data-report item" data-hottag = "LINK_RECOMMEND_SKU_0_" > 
+                                        <Link to={`/detail`} className = "js-data-report item" data-hottag = "LINK_RECOMMEND_SKU_0_" > 
                                             <div className = "item-img" > 
                                                 <img className = "imgauto" src ={item.sku_pic[0]} alt = "" /> 
                                             </div> 
@@ -77,7 +77,7 @@ class Xrecommend  extends Component {
                             {
                                 this.state.suggestGood.map((item,idx)=>{
                                     return <li key={idx}>
-                                        <Link to={`${item.url}`} className = "js-data-report item" data-hottag = "LINK_RECOMMEND_SKU_0_" > 
+                                        <Link to={`/detail`} className = "js-data-report item" data-hottag = "LINK_RECOMMEND_SKU_0_" > 
                                             <div className = "item-img" > 
                                                 <img className = "imgauto" src ={item.sku_pic[0]} alt = "" /> 
                                             </div> 

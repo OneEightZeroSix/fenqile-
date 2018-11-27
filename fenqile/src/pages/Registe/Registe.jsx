@@ -1,10 +1,10 @@
 import React, {
     Component
 } from "react";
-
+import {createHashHistory} from 'history';
 
 import Xregiste from './Xregiste/Xregiste.jsx';
-
+const history = createHashHistory();
 
 class Registe extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class Registe extends Component {
     render() {
         return (
             <div>
-            	<Xregiste />
+            	<Xregiste  history={history}/>
             </div>
         )
     }

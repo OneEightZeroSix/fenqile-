@@ -26,7 +26,7 @@ class Xfooter extends Component {
 	                            <i className="item-icons icon-server"></i>
 	                            <p id="customer_txt">客服</p>
 	                        </Link>
-	                        <Link className="icon-part v vm js-data-report" data-hottag="LINK_CART_" data-href="//item.m.fenqile.com/cart/index.html?show_title_return=1" to="#">
+	                        <Link to={`/cart/`} className="icon-part v vm js-data-report" data-hottag="LINK_CART_" data-href="//item.m.fenqile.com/cart/index.html?show_title_return=1">
 	                            <i className="item-icons icon-cart"><em id="cart_num" className="hide"></em></i>
 	                            <p>购物车</p>
 	                        </Link>

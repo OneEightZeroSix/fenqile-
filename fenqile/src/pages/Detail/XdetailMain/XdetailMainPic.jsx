@@ -180,7 +180,7 @@ class XdetailMainPic extends Component {
 					</li>
 			 
 			        <li id="recycle_info_wrap" className="">
-						<a href="" className="wrap-recycle js-data-report" data-hottag="LINK_RECYCLING_">
+						<a  className="wrap-recycle js-data-report" data-hottag="LINK_RECYCLING_">
 							<img src="https://cimg1.fenqile.com/ibanner2/M00/31/79/jqgHAFsop1mAFRMaAAAHIUIBO50219.png" className="imgauto" />
 							<div className="fx1 vh">
 								<div className="form-text">

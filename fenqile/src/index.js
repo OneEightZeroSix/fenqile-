@@ -217,8 +217,8 @@ ReactDOM.render(
                                                             <Route  path="/comment/" component={Comment} /> 
                                                             <Route  path="/mine/" component={Mine} />
                                                             <Route  path="/list" component={List}/>
-                                                            <Route  path="/login" component={Login}/>
-                                                            <Route  path="/registe" component={Registe}/>
+                                                            <Route  history={history}  path="/login" component={Login}/>
+                                                            <Route  history={history} path="/registe" component={Registe}/>
                                                             <Route  path="/phone" component={Phone}/>
                                                             <Route path="/exchangeRate" component={ExchangeRate}/>
                                                             <Route path="/cart/" component={Cart}/>

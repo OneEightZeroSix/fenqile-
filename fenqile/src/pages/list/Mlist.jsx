@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom';
 import { PullToRefresh, ListView, Button } from 'antd-mobile';
 import Lazyload from 'r-img-lazyload';
-
+import { Link } from "react-router-dom";
 
 const data = [
     {
@@ -126,7 +126,7 @@ class Mlist extends React.Component {
                 >
                     <ul className="shop-list" id="sku_list">
                         <li className="shop-item js-sku-item">
-                            <a href="javascript:;">
+                            <Link to={`/detail/`}>
                                 <div className="item-img" style={{background:'url(https://cres.fenqile.com/res/mobile/res/img/app/imgbg.png) no-repeat',backgroundPositionX:'40%',backgroundPositionY:'30%'}}>
                                         <Lazyload throttleWait='5000' className="imgauto" src="https://cimg1.fenqile.com/product3/M00/0B/DF/RrQHAFsPs22AckAwAAIpuE0kkMg901.jpg" />
                                 </div>
@@ -159,7 +159,7 @@ class Mlist extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

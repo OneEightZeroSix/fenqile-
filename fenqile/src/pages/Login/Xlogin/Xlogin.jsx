@@ -91,7 +91,10 @@ class Xlogin extends Component {
 		}
 	}
 	toRegiste(){
-		window.location.href = "http://localhost:3000/#/registe"
+		this.props.history.push('/registe');
+	}
+	tuichu(){
+		this.props.history.push('/home/mainPage1');
 	}
 	
 	render() {
@@ -100,14 +103,14 @@ class Xlogin extends Component {
 			<div id="app" style={{background:'#fff'}}>
 				<div className = "app-header-placeholder" >
 					<div className = "app-header" style = {{backgroundColor: 'rgb(59, 155, 255)',color: 'rgb(255, 255, 255)'}} >
-						<h1 className = "app-header-title" style = {{color: 'rgb(255, 255, 255)'}}> 登录分期乐 < /h1>  
-						<a href = "#" className = "app-header-right" > < /a>
+						<h1 onClick={this.tuichu.bind(this)}  className = "app-header-title" style = {{color: 'rgb(255, 255, 255)'}}> 登录分期乐 </h1>  
+						<a href = "#" className = "app-header-right" > </a>
 						<div className = "app-header-line" style = {{display: 'none'}} > 
-						< /div> 
+						</div> 
 					</div>
 				</div>
 				<section className = "main-wrap" > 
-					< div className = "login-banner" > < /div> 
+					< div className = "login-banner" > </div> 
 					<ul className="input-wrap">
 						<li className="input-item">
 							<i className="i-icon i-phone"></i >
@@ -119,16 +122,16 @@ class Xlogin extends Component {
 							makephone.bind(this)}/>
 						</li >
 						<p className = "wrap protocol-wrap" > 
-							<span className = "agree-text agree" > 同意 < /span> 
+							<span className = "agree-text agree" > 同意 </span> 
 							<a href="javascript:;">分期乐用户服务协议 </a>
 						</p >
 					</ul>
 					<div className="btn-wrap">
 						<button className={this.state.canPress?'lego-button':'lego-button button-disabled'} disabled={!this.state.canPress} style={{height: '44px'}}  onClick={this.makeSureuser.bind(this)}>
 							<span className="button-text">登录</span >
-						< /button>
+						</button>
 					</div>
-					<div className = "link-box" onClick={this.toRegiste.bind(this)}> 没有账号？ 极速注册 < /div>
+					<div className = "link-box" onClick={this.toRegiste.bind(this)}> 没有账号？ 极速注册 </div>
 				</section >
 			</div>
 			</div>

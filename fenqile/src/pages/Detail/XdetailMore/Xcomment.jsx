@@ -41,7 +41,7 @@ class Xcomment  extends Component {
 			<section className="assessment">
 	                <div className="floor-head ">
 	                    <h2 className="floor-title">{this.state.userComment.title}</h2>
-	                    <Link className="floor-link js-data-report"  to='comment'>{this.state.userComment.url_name}</Link>
+	                    <Link className="floor-link js-data-report"  to='/comment'>{this.state.userComment.url_name}</Link>
 	                </div>
 	                <div className="assess-list">
 	                    <ul>  
@@ -74,7 +74,7 @@ class Xcomment  extends Component {
 	                </div>          
 		            <div className="comment-hd comment-btm">
 		                <p className="t1">{this.state.otherInformation.title}</p>
-		                <Link className="t2 js-data-report"  to={`${this.state.otherInformation.url}`}>{this.state.otherInformation.url_name}</Link>
+		                <Link className="t2 js-data-report"  to={`/detail`}>{this.state.otherInformation.url_name}</Link>
 		            </div>
 	        	</section>
 		)

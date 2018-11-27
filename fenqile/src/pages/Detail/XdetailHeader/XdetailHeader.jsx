@@ -11,6 +11,9 @@ class XdetailHeader extends Component {
 			title:"商品详情"
 		}
 	}
+	home(){
+		history.push('/home/mainPage1')
+	}
 	render(){
 		return (
 			<div id="global_header_top" className="headerpt">
@@ -23,7 +26,7 @@ class XdetailHeader extends Component {
 			                    <em id="g_cart_count" className="hide">0</em>
 			                </i>
 			            </a>
-						<div className="g-right-w">
+						<div onClick={this.home.bind(this)} className="g-right-w">
 							<span className="g-right" id="g_right_ico">
 								<i className="item-icons i-home"></i>
 							</span>

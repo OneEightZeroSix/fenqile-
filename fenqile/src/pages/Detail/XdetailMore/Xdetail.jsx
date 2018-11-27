@@ -33,7 +33,7 @@ class Xdetail extends Component {
 				{/*规格参数&&包装售后&&资质保障*/}
 				<ul className="pro-info">
 		            <li>
-		                <Link to="param" className="wrap-hot-sale js-data-report" data-hottag="LINK_SKU_PARAMETER_5_" id="sku_parameter_wrap">
+		                <Link to="/param" className="wrap-hot-sale js-data-report" data-hottag="LINK_SKU_PARAMETER_5_" id="sku_parameter_wrap">
 		                    <div className="fx1 db">
 		                        <div className="form-text fx1">
 		                            <p className="txt-hide f14">规格参数/包装售后/资质保证</p>
