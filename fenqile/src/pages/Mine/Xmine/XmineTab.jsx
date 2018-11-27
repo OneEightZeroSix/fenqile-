@@ -28,7 +28,7 @@ class XmineTab extends Component {
         		icon:''
         	}],
         	nav:[{
-        		herfurl:"/cart",
+        		hrefurl:"//item.m.fenqile.com/cart/index.html",
         		title:"我的购物车",
         		content:"",
         		star:'shopping_cart',
@@ -42,7 +42,7 @@ class XmineTab extends Component {
         		iconclassName:'i-account-favor',
         		icon:'http://cres.fenqile.cn/mobile/img/app/wallet_index/invite_ico.png'
         	},{
-        		herfurl:"/exchangeRate",
+        		herfurl:"https://home.m.fenqile.com/index.html#/bankcard/index",
         		title:"我的银行卡",
         		content:"",
         		star:'my_bank',
@@ -63,7 +63,7 @@ class XmineTab extends Component {
         		iconclassName:'i-account-favor',
         		icon:'http://m.mall.fenqile.com/res/img/app/wallet_index/i_safe.png'
         	},{
-        		hrefurl:"/exchangeRate",
+        		hrefurl:"//helper.fenqile.com",
         		title:"客服支持",
         		content:"",
         		star:'feedback',

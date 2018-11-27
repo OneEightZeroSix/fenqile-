@@ -31,6 +31,7 @@ import Login from './pages/Login/Login.jsx';
 import Registe from './pages/Registe/Registe.jsx';
 import Cart from './pages/Cart/Cart.jsx';
 import Phone from './pages/phone/phone.jsx';
+import Personal from './pages/Mine/personal.jsx';
 import ExchangeRate from './pages/ExchangeRate/ExchangeRate.jsx';
 
 import House from './pages/House/House.jsx';
@@ -232,6 +233,7 @@ ReactDOM.render(
                                                             <Route  path="/phone" component={Phone}/>
                                                             <Route path="/exchangeRate" component={ExchangeRate}/>
                                                             <Route path="/cart/" component={Cart}/>
+                                                            <Route path="/personal/" component={Personal}/>
                                                             <Redirect history={history} from="/" exact to="/home/mainPage1" />
                                                         </Switch> 
                                                 </div>
