@@ -1,0 +1,751 @@
+{
+    "result": 0,
+    "system":
+    {
+        "new_version": "3.1.0",
+        "uid": "",
+        "auth_status": 0,
+        "session_id": "02otf94qa8p9pmi2qiot5hib44",
+        "need_login": 0,
+        "email": "",
+        "redirect": 0,
+        "controller": "",
+        "token_id": "",
+        "time_stamp": 1542712596
+    },
+    "data":
+    {
+        "result": 0,
+        "result_rows": [
+        {
+            "attr_descp": "类目",
+            "has_sub": 1,
+            "arr_idx": -1,
+            "attr_info": [
+            {
+                "field": "category_id_1",
+                "id": 66,
+                "sub_attrs": [
+                {
+                    "field": "category_id_2",
+                    "id": 597,
+                    "sub_attrs": [],
+                    "name": "Android",
+                    "value": "597"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 1268,
+                    "sub_attrs": [],
+                    "name": "二手手机",
+                    "value": "1268"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 598,
+                    "sub_attrs": [],
+                    "name": "其他",
+                    "value": "598"
+                }],
+                "name": "手机通讯",
+                "value": "66"
+            },
+            {
+                "field": "category_id_1",
+                "id": 217,
+                "sub_attrs": [
+                {
+                    "field": "category_id_2",
+                    "id": 845,
+                    "sub_attrs": [],
+                    "name": "智能设备",
+                    "value": "845"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 839,
+                    "sub_attrs": [],
+                    "name": "影音娱乐",
+                    "value": "839"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 843,
+                    "sub_attrs": [],
+                    "name": "外设产品",
+                    "value": "843"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 2315,
+                    "sub_attrs": [],
+                    "name": "手机配件",
+                    "value": "2315"
+                }],
+                "name": "智能数码",
+                "value": "217"
+            },
+            {
+                "field": "category_id_1",
+                "id": 472,
+                "sub_attrs": [
+                {
+                    "field": "category_id_2",
+                    "id": 485,
+                    "sub_attrs": [],
+                    "name": "电视影音",
+                    "value": "485"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 510,
+                    "sub_attrs": [],
+                    "name": "个护健康",
+                    "value": "510"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 487,
+                    "sub_attrs": [],
+                    "name": "生活电器",
+                    "value": "487"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 486,
+                    "sub_attrs": [],
+                    "name": "厨房小电",
+                    "value": "486"
+                }],
+                "name": "家电家居",
+                "value": "472"
+            },
+            {
+                "field": "category_id_1",
+                "id": 65,
+                "sub_attrs": [
+                {
+                    "field": "category_id_2",
+                    "id": 767,
+                    "sub_attrs": [],
+                    "name": "电脑整机",
+                    "value": "767"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 768,
+                    "sub_attrs": [],
+                    "name": "电脑配件",
+                    "value": "768"
+                }],
+                "name": "电脑办公",
+                "value": "65"
+            },
+            {
+                "field": "category_id_1",
+                "id": 1161,
+                "sub_attrs": [
+                {
+                    "field": "category_id_2",
+                    "id": 1163,
+                    "sub_attrs": [],
+                    "name": "休闲食品",
+                    "value": "1163"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 1473,
+                    "sub_attrs": [],
+                    "name": "尝鲜",
+                    "value": "1473"
+                }],
+                "name": "食品",
+                "value": "1161"
+            },
+            {
+                "field": "category_id_1",
+                "id": 2045,
+                "sub_attrs": [
+                {
+                    "field": "category_id_2",
+                    "id": 2048,
+                    "sub_attrs": [],
+                    "name": "买就捐",
+                    "value": "2048"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 2047,
+                    "sub_attrs": [],
+                    "name": "青年榜样",
+                    "value": "2047"
+                }],
+                "name": "公益购物",
+                "value": "2045"
+            },
+            {
+                "field": "category_id_1",
+                "id": 67,
+                "sub_attrs": [
+                {
+                    "field": "category_id_2",
+                    "id": 784,
+                    "sub_attrs": [],
+                    "name": "摄影摄像",
+                    "value": "784"
+                }],
+                "name": "相机单反",
+                "value": "67"
+            },
+            {
+                "field": "category_id_1",
+                "id": 1291,
+                "sub_attrs": [
+                {
+                    "field": "category_id_2",
+                    "id": 1292,
+                    "sub_attrs": [],
+                    "name": "黄金饰品",
+                    "value": "1292"
+                }],
+                "name": "珠宝首饰",
+                "value": "1291"
+            },
+            {
+                "field": "category_id_1",
+                "id": 179,
+                "sub_attrs": [
+                {
+                    "field": "category_id_2",
+                    "id": 183,
+                    "sub_attrs": [],
+                    "name": "骑行运动",
+                    "value": "183"
+                },
+                {
+                    "field": "category_id_2",
+                    "id": 185,
+                    "sub_attrs": [],
+                    "name": "户外装备",
+                    "value": "185"
+                }],
+                "name": "运动户外",
+                "value": "179"
+            },
+            {
+                "field": "category_id_1",
+                "id": 2085,
+                "sub_attrs": [
+                {
+                    "field": "category_id_2",
+                    "id": 2087,
+                    "sub_attrs": [],
+                    "name": "礼品",
+                    "value": "2087"
+                }],
+                "name": "礼品",
+                "value": "2085"
+            }],
+            "is_arr_val": 0
+        },
+        {
+            "attr_descp": "品牌",
+            "has_sub": 0,
+            "arr_idx": -1,
+            "attr_info": [
+            {
+                "field": "brand_id",
+                "id": 12,
+                "sub_attrs": [],
+                "name": "小米（MI）",
+                "value": "12"
+            },
+            {
+                "field": "brand_id",
+                "id": 2159,
+                "sub_attrs": [],
+                "name": "米家（MIJIA）",
+                "value": "2159"
+            },
+            {
+                "field": "brand_id",
+                "id": 2330,
+                "sub_attrs": [],
+                "name": "良品铺子",
+                "value": "2330"
+            },
+            {
+                "field": "brand_id",
+                "id": 4483,
+                "sub_attrs": [],
+                "name": "自闭症儿童帮扶",
+                "value": "4483"
+            },
+            {
+                "field": "brand_id",
+                "id": 3929,
+                "sub_attrs": [],
+                "name": "Amazfit",
+                "value": "3929"
+            },
+            {
+                "field": "brand_id",
+                "id": 4730,
+                "sub_attrs": [],
+                "name": "渡哲特DZAT",
+                "value": "4730"
+            },
+            {
+                "field": "brand_id",
+                "id": 1407,
+                "sub_attrs": [],
+                "name": "洛克(ROCK)",
+                "value": "1407"
+            },
+            {
+                "field": "brand_id",
+                "id": 470,
+                "sub_attrs": [],
+                "name": "新贵（Newmen）",
+                "value": "470"
+            },
+            {
+                "field": "brand_id",
+                "id": 5014,
+                "sub_attrs": [],
+                "name": "Hot link",
+                "value": "5014"
+            },
+            {
+                "field": "brand_id",
+                "id": 5035,
+                "sub_attrs": [],
+                "name": "Mi Li米力",
+                "value": "5035"
+            },
+            {
+                "field": "brand_id",
+                "id": 5085,
+                "sub_attrs": [],
+                "name": "独到DUDAO",
+                "value": "5085"
+            },
+            {
+                "field": "brand_id",
+                "id": 5036,
+                "sub_attrs": [],
+                "name": "MIPOW",
+                "value": "5036"
+            },
+            {
+                "field": "brand_id",
+                "id": 1031,
+                "sub_attrs": [],
+                "name": "品胜（PISEN）",
+                "value": "1031"
+            },
+            {
+                "field": "brand_id",
+                "id": 1123,
+                "sub_attrs": [],
+                "name": "唱吧",
+                "value": "1123"
+            },
+            {
+                "field": "brand_id",
+                "id": 4036,
+                "sub_attrs": [],
+                "name": "全程通",
+                "value": "4036"
+            },
+            {
+                "field": "brand_id",
+                "id": 447,
+                "sub_attrs": [],
+                "name": "飞毛腿（SCUD）",
+                "value": "447"
+            },
+            {
+                "field": "brand_id",
+                "id": 2692,
+                "sub_attrs": [],
+                "name": "世纪美亚珠宝",
+                "value": "2692"
+            },
+            {
+                "field": "brand_id",
+                "id": 87,
+                "sub_attrs": [],
+                "name": "台电（Teclast）",
+                "value": "87"
+            },
+            {
+                "field": "brand_id",
+                "id": 181,
+                "sub_attrs": [],
+                "name": "飞利浦（PHILIPS）",
+                "value": "181"
+            },
+            {
+                "field": "brand_id",
+                "id": 191,
+                "sub_attrs": [],
+                "name": "JBL",
+                "value": "191"
+            },
+            {
+                "field": "brand_id",
+                "id": 488,
+                "sub_attrs": [],
+                "name": "先锋（Pioneer）",
+                "value": "488"
+            },
+            {
+                "field": "brand_id",
+                "id": 831,
+                "sub_attrs": [],
+                "name": "Airwheel爱尔威",
+                "value": "831"
+            },
+            {
+                "field": "brand_id",
+                "id": 2011,
+                "sub_attrs": [],
+                "name": "土曼（TOMOON）",
+                "value": "2011"
+            },
+            {
+                "field": "brand_id",
+                "id": 2015,
+                "sub_attrs": [],
+                "name": "小蚁（Yi）",
+                "value": "2015"
+            },
+            {
+                "field": "brand_id",
+                "id": 2109,
+                "sub_attrs": [],
+                "name": "郎客",
+                "value": "2109"
+            },
+            {
+                "field": "brand_id",
+                "id": 2609,
+                "sub_attrs": [],
+                "name": "科大讯飞（iFLYTEK）",
+                "value": "2609"
+            },
+            {
+                "field": "brand_id",
+                "id": 3513,
+                "sub_attrs": [],
+                "name": "ZHDA",
+                "value": "3513"
+            },
+            {
+                "field": "brand_id",
+                "id": 4172,
+                "sub_attrs": [],
+                "name": "素士(SOOCAS)",
+                "value": "4172"
+            },
+            {
+                "field": "brand_id",
+                "id": 4384,
+                "sub_attrs": [],
+                "name": "GOC IN C",
+                "value": "4384"
+            },
+            {
+                "field": "brand_id",
+                "id": 4783,
+                "sub_attrs": [],
+                "name": "oksense",
+                "value": "4783"
+            }],
+            "is_arr_val": 0
+        },
+        {
+            "attr_descp": "分辨率",
+            "doc_count": 24,
+            "has_sub": 0,
+            "arr_idx": 0,
+            "attr_info": [
+            {
+                "field": "attr_val_list",
+                "id": 1,
+                "sub_attrs": [],
+                "name": "4K超清",
+                "value": "分辨率:4K超清",
+                "doc_count": 15
+            },
+            {
+                "field": "attr_val_list",
+                "id": 2,
+                "sub_attrs": [],
+                "name": "全高清",
+                "value": "分辨率:全高清",
+                "doc_count": 6
+            },
+            {
+                "field": "attr_val_list",
+                "id": 3,
+                "sub_attrs": [],
+                "name": "高清",
+                "value": "分辨率:高清",
+                "doc_count": 3
+            }],
+            "is_arr_val": 1
+        },
+        {
+            "attr_descp": "屏幕尺寸",
+            "doc_count": 24,
+            "has_sub": 0,
+            "arr_idx": 1,
+            "attr_info": [
+            {
+                "field": "attr_val_list",
+                "id": 1,
+                "sub_attrs": [],
+                "name": "32英寸及以下",
+                "value": "屏幕尺寸:32英寸及以下",
+                "doc_count": 3
+            },
+            {
+                "field": "attr_val_list",
+                "id": 2,
+                "sub_attrs": [],
+                "name": "39-40英寸",
+                "value": "屏幕尺寸:39-40英寸",
+                "doc_count": 2
+            },
+            {
+                "field": "attr_val_list",
+                "id": 3,
+                "sub_attrs": [],
+                "name": "42-43英寸",
+                "value": "屏幕尺寸:42-43英寸",
+                "doc_count": 3
+            },
+            {
+                "field": "attr_val_list",
+                "id": 4,
+                "sub_attrs": [],
+                "name": "49-50英寸",
+                "value": "屏幕尺寸:49-50英寸",
+                "doc_count": 4
+            },
+            {
+                "field": "attr_val_list",
+                "id": 5,
+                "sub_attrs": [],
+                "name": "55英寸",
+                "value": "屏幕尺寸:55英寸",
+                "doc_count": 7
+            },
+            {
+                "field": "attr_val_list",
+                "id": 6,
+                "sub_attrs": [],
+                "name": "65英寸",
+                "value": "屏幕尺寸:65英寸",
+                "doc_count": 5
+            }],
+            "is_arr_val": 1
+        },
+        {
+            "attr_descp": "电视类型",
+            "doc_count": 35,
+            "has_sub": 0,
+            "arr_idx": 2,
+            "attr_info": [
+            {
+                "field": "attr_val_list",
+                "id": 1,
+                "sub_attrs": [],
+                "name": "4K超清电视",
+                "value": "电视类型:4K超清电视",
+                "doc_count": 15
+            },
+            {
+                "field": "attr_val_list",
+                "id": 2,
+                "sub_attrs": [],
+                "name": "曲面电视",
+                "value": "电视类型:曲面电视",
+                "doc_count": 1
+            },
+            {
+                "field": "attr_val_list",
+                "id": 3,
+                "sub_attrs": [],
+                "name": "超薄电视",
+                "value": "电视类型:超薄电视",
+                "doc_count": 2
+            },
+            {
+                "field": "attr_val_list",
+                "id": 4,
+                "sub_attrs": [],
+                "name": "智能电视",
+                "value": "电视类型:智能电视",
+                "doc_count": 15
+            },
+            {
+                "field": "attr_val_list",
+                "id": 5,
+                "sub_attrs": [],
+                "name": "普通电视",
+                "value": "电视类型:普通电视",
+                "doc_count": 2
+            }],
+            "is_arr_val": 1
+        },
+        {
+            "attr_descp": "观看距离",
+            "doc_count": 24,
+            "has_sub": 0,
+            "arr_idx": 3,
+            "attr_info": [
+            {
+                "field": "attr_val_list",
+                "id": 1,
+                "sub_attrs": [],
+                "name": "2米以内",
+                "value": "观看距离:2米以内",
+                "doc_count": 1
+            },
+            {
+                "field": "attr_val_list",
+                "id": 2,
+                "sub_attrs": [],
+                "name": "2-3米",
+                "value": "观看距离:2-3米",
+                "doc_count": 15
+            },
+            {
+                "field": "attr_val_list",
+                "id": 3,
+                "sub_attrs": [],
+                "name": "3-4米",
+                "value": "观看距离:3-4米",
+                "doc_count": 8
+            }],
+            "is_arr_val": 1
+        },
+        {
+            "attr_descp": "颜色",
+            "doc_count": 421,
+            "has_sub": 0,
+            "arr_idx": -1,
+            "attr_info": [
+            {
+                "field": "sku_key_1",
+                "id": 2,
+                "sub_attrs": [],
+                "name": "黑色",
+                "value": "黑色",
+                "doc_count": 70
+            },
+            {
+                "field": "sku_key_1",
+                "id": 3,
+                "sub_attrs": [],
+                "name": "白色",
+                "value": "白色",
+                "doc_count": 44
+            },
+            {
+                "field": "sku_key_1",
+                "id": 4,
+                "sub_attrs": [],
+                "name": "金色",
+                "value": "金色",
+                "doc_count": 35
+            },
+            {
+                "field": "sku_key_1",
+                "id": 5,
+                "sub_attrs": [],
+                "name": "蓝色",
+                "value": "蓝色",
+                "doc_count": 21
+            },
+            {
+                "field": "sku_key_1",
+                "id": 6,
+                "sub_attrs": [],
+                "name": "银色",
+                "value": "银色",
+                "doc_count": 16
+            },
+            {
+                "field": "sku_key_1",
+                "id": 7,
+                "sub_attrs": [],
+                "name": "灰色",
+                "value": "灰色",
+                "doc_count": 13
+            },
+            {
+                "field": "sku_key_1",
+                "id": 8,
+                "sub_attrs": [],
+                "name": "樱花粉",
+                "value": "樱花粉",
+                "doc_count": 10
+            },
+            {
+                "field": "sku_key_1",
+                "id": 9,
+                "sub_attrs": [],
+                "name": "红色",
+                "value": "红色",
+                "doc_count": 7
+            },
+            {
+                "field": "sku_key_1",
+                "id": 10,
+                "sub_attrs": [],
+                "name": "陶瓷黑",
+                "value": "陶瓷黑",
+                "doc_count": 7
+            }],
+            "is_arr_val": 0
+        },
+        {
+            "attr_descp": "版本",
+            "doc_count": 65,
+            "has_sub": 0,
+            "arr_idx": -1,
+            "attr_info": [
+            {
+                "field": "sku_key_3",
+                "id": 1,
+                "sub_attrs": [],
+                "name": "全网通",
+                "value": "全网通",
+                "doc_count": 31
+            },
+            {
+                "field": "sku_key_3",
+                "id": 3,
+                "sub_attrs": [],
+                "name": "套餐版",
+                "value": "套餐版",
+                "doc_count": 12
+            },
+            {
+                "field": "sku_key_3",
+                "id": 4,
+                "sub_attrs": [],
+                "name": "标配版",
+                "value": "标配版",
+                "doc_count": 10
+            }],
+            "is_arr_val": 0
+        }],
+        "res_info": "ok"
+    },
+    "res_info": "ok"
+}
