@@ -1,0 +1,502 @@
+{
+	"result": 0,
+	"system": {
+		"new_version": "3.1.0",
+		"uid": "",
+		"auth_status": 0,
+		"session_id": "p3hfbsrdgdi91leut0qov1oi00",
+		"need_login": 0,
+		"email": "",
+		"redirect": 0,
+		"controller": "",
+		"token_id": "",
+		"time_stamp": 1542439883
+	},
+	"data": {
+		"recommend_flag": "0",
+		"limit": 6,
+		"result": "0",
+		"total_num": 6,
+		"res_info": "ok",
+		"result_rows": [
+			{
+				"valid": true,
+				"product_id": "P201609080123923",
+				"product_name": "iPhone 7 Plus 国行正品 全网通4G手机",
+				"fq_num": 36,
+				"state": 0,
+				"product_desc": "双摄像头，拍人拍景更好看，苹果官网授权经销商，100%正品！",
+				"is_product_up_down": 1,
+				"product_flag": 2,
+				"sale_type": 100,
+				"is_active_fee_free_flag": 1,
+				"id": "S201609080375863",
+				"amount": "5599",
+				"recommend_flag": "0",
+				"sku_num": 1,
+				"sku_id": "S201609080375863",
+				"fq_num_str": "x36期",
+				"show_amount": "5599",
+				"active_flag": 0,
+				"vip_amount": "-1",
+				"merch_id": "MC20170504000011224153",
+				"real_amount": "5599",
+				"sku_tag": [
+					"黑色",
+					"128G",
+					"全网通"
+				],
+				"brand_id": 11,
+				"category_id": 99,
+				"fee_category_id": 786,
+				"new_user_amount": "-1",
+				"pic_extra": {
+					"bp_pic_single": [],
+					"bp_pic_multi": []
+				},
+				"url": "https://item.m.fenqile.com/S201609080375863.html",
+				"channel_type": 2,
+				"shopping_cart_flag": 1,
+				"mart_amount": "6388",
+				"fee_id": 786,
+				"sku_pic": [
+					"http://cimg1.fenqile.com/product/M00/BF/63/hBoGAFmWT2eAMt17AAA48JJsBL4789.jpg"
+				],
+				"update_time": 1542439625480,
+				"op_flags": {
+					"sku_label_list": [
+						{
+							"text_multi": "自营",
+							"label_type": 1,
+							"user_type": 0,
+							"text_single": "自营",
+							"label_weight": 10,
+							"is_has_multi": 0
+						}, {
+							"text_multi": "免息",
+							"label_type": 3,
+							"user_type": 0,
+							"text_single": "免息",
+							"label_weight": 20,
+							"is_has_multi": 0
+						}
+					],
+					"create_time": 1542439814360,
+					"is_real_label_data": 1,
+					"sku_atmosphere_bean_list": []
+				},
+				"mon_pay_str": "￥231.60",
+				"fq_list": [
+					0,
+					2,
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					24,
+					36
+				],
+				"mon_pay": "231.60",
+				"product_info": "iPhone 7 Plus 国行正品 全网通4G手机",
+				"min_fp_ratio": 0,
+				"h5_enable": 0,
+				"vip_icon": "https://cimg1.fenqile.com/ibanner/M00/01/4B/wicJAFlL2eeATlxKAAAD0MJQ6ko659.png",
+				"line_amount": "6388"
+			}, {
+				"valid": true,
+				"product_id": "P201609070120984",
+				"product_name": "Apple iPhone 7 国行正品 4G智能手机",
+				"fq_num": 36,
+				"state": 0,
+				"product_desc": "苹果官方授权经销商，100%正品！",
+				"is_product_up_down": 1,
+				"product_flag": 6,
+				"sale_type": 100,
+				"is_active_fee_free_flag": 1,
+				"id": "S201609070375078",
+				"amount": "3799",
+				"recommend_flag": "0",
+				"sku_num": 1,
+				"sku_id": "S201609070375078",
+				"fq_num_str": "x36期",
+				"show_amount": "3799",
+				"active_flag": 0,
+				"vip_amount": "-1",
+				"merch_id": "MC20170504000011224153",
+				"real_amount": "3799",
+				"sku_tag": [
+					"黑色",
+					"32G",
+					"全网通"
+				],
+				"brand_id": 11,
+				"category_id": 99,
+				"fee_category_id": 786,
+				"new_user_amount": "-1",
+				"pic_extra": {
+					"bp_pic_single": [],
+					"bp_pic_multi": []
+				},
+				"url": "https://item.m.fenqile.com/S201609070375078.html",
+				"channel_type": 2,
+				"shopping_cart_flag": 1,
+				"mart_amount": "4799",
+				"fee_id": 786,
+				"sku_pic": [
+					"http://cimg1.fenqile.com/product2/M00/20/6A/oWgGAFfQfjGAKA3QAAA9_XPFwv8318.jpg"
+				],
+				"update_time": 1542439743929,
+				"op_flags": {
+					"sku_label_list": [
+						{
+							"text_multi": "自营",
+							"label_type": 1,
+							"user_type": 0,
+							"text_single": "自营",
+							"label_weight": 10,
+							"is_has_multi": 0
+						}, {
+							"text_multi": "免息",
+							"label_type": 3,
+							"user_type": 0,
+							"text_single": "免息",
+							"label_weight": 20,
+							"is_has_multi": 0
+						}
+					],
+					"create_time": 1542439665458,
+					"is_real_label_data": 1,
+					"sku_atmosphere_bean_list": []
+				},
+				"mon_pay_str": "￥157.15",
+				"fq_list": [
+					0,
+					2,
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					24,
+					36
+				],
+				"mon_pay": "157.15",
+				"product_info": "Apple iPhone 7 国行正品 4G智能手机",
+				"min_fp_ratio": 0,
+				"h5_enable": 0,
+				"vip_icon": "https://cimg1.fenqile.com/ibanner/M00/01/4B/wicJAFlL2eeATlxKAAAD0MJQ6ko659.png",
+				"line_amount": "4799"
+			}, {
+				"valid": true,
+				"product_id": "P20150909009746",
+				"product_name": "iPhone 6s Plus 苹果手机Apple 4G",
+				"fq_num": 36,
+				"state": 0,
+				"product_desc": "6s Plus比官网低千元！超划算！苹果官方授权经销商，100%正品！",
+				"is_product_up_down": 1,
+				"product_flag": 2,
+				"sale_type": 100,
+				"is_active_fee_free_flag": 1,
+				"id": "S201609210384119",
+				"amount": "3099",
+				"recommend_flag": "0",
+				"sku_num": 1,
+				"sku_id": "S201609210384119",
+				"fq_num_str": "x36期",
+				"show_amount": "3099",
+				"active_flag": 0,
+				"vip_amount": "-1",
+				"merch_id": "MC20170504000011224153",
+				"real_amount": "3099",
+				"sku_tag": [
+					"玫瑰金",
+					"32G",
+					"全网通"
+				],
+				"brand_id": 11,
+				"category_id": 99,
+				"fee_category_id": 665,
+				"new_user_amount": "-1",
+				"pic_extra": {
+					"bp_pic_single": [],
+					"bp_pic_multi": []
+				},
+				"url": "https://item.m.fenqile.com/S201609210384119.html",
+				"channel_type": 2,
+				"shopping_cart_flag": 1,
+				"mart_amount": "3599",
+				"fee_id": 665,
+				"sku_pic": [
+					"http://cimg1.fenqile.com/product/M00/02/59/hRoGAFfiS2GAAM-sAABtPkeewCg051.jpg"
+				],
+				"update_time": 1542439726055,
+				"op_flags": {
+					"sku_label_list": [
+						{
+							"text_multi": "自营",
+							"label_type": 1,
+							"user_type": 0,
+							"text_single": "自营",
+							"label_weight": 10,
+							"is_has_multi": 0
+						}, {
+							"text_multi": "免息",
+							"label_type": 3,
+							"user_type": 0,
+							"text_single": "免息",
+							"label_weight": 20,
+							"is_has_multi": 0
+						}
+					],
+					"create_time": 1542439775871,
+					"is_real_label_data": 1,
+					"sku_atmosphere_bean_list": []
+				},
+				"mon_pay_str": "￥121.59",
+				"fq_list": [
+					0,
+					2,
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					24,
+					36
+				],
+				"mon_pay": "121.59",
+				"product_info": "iPhone 6s Plus 苹果手机Apple 4G",
+				"min_fp_ratio": 0,
+				"h5_enable": 0,
+				"vip_icon": "https://cimg1.fenqile.com/ibanner/M00/01/4B/wicJAFlL2eeATlxKAAAD0MJQ6ko659.png",
+				"line_amount": "3599"
+			}, {
+				"valid": true,
+				"product_id": "P201809120474774",
+				"product_name": "Apple iPhone X 64GB 港版正品 移动联通4G手机",
+				"fq_num": 36,
+				"state": 0,
+				"product_desc": "【原封港版正品】",
+				"is_product_up_down": 1,
+				"product_flag": 256,
+				"sale_type": 100,
+				"is_active_fee_free_flag": 0,
+				"id": "MES201809122287729",
+				"amount": "6999",
+				"recommend_flag": "0",
+				"sku_num": 1,
+				"sku_id": "MES201809122287729",
+				"fq_num_str": "x36期",
+				"show_amount": "6999",
+				"active_flag": 0,
+				"vip_amount": "-1",
+				"merch_id": "MC20180828000711057441",
+				"real_amount": "6999",
+				"sku_tag": [
+					"黑色"
+				],
+				"brand_id": 11,
+				"category_id": 99,
+				"fee_category_id": 689,
+				"new_user_amount": "-1",
+				"pic_extra": {},
+				"url": "https://item.m.fenqile.com/MES201809122287729.html",
+				"channel_type": 2,
+				"shopping_cart_flag": 1,
+				"mart_amount": "7588",
+				"fee_id": 689,
+				"sku_pic": [
+					"http://cimg1.fenqile.com/product3/M00/33/D4/RrQHAFuYyuGALZ4nAALj1qsT-7o248.jpg"
+				],
+				"update_time": 1542439818764,
+				"op_flags": {
+					"sku_label_list": [
+						{
+							"text_multi": "进口货",
+							"label_type": 2,
+							"user_type": 0,
+							"text_single": "进口货",
+							"label_weight": 10,
+							"is_has_multi": 0
+						}
+					],
+					"create_time": 1542439726428,
+					"is_real_label_data": 1,
+					"sku_atmosphere_bean_list": []
+				},
+				"mon_pay_str": "￥289.51",
+				"fq_list": [
+					0,
+					2,
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					24,
+					36
+				],
+				"mon_pay": "289.51",
+				"product_info": "Apple iPhone X 64GB 港版正品 移动联通4G手机",
+				"min_fp_ratio": 0,
+				"h5_enable": 0,
+				"vip_icon": "https://cimg1.fenqile.com/ibanner/M00/01/4B/wicJAFlL2eeATlxKAAAD0MJQ6ko659.png",
+				"line_amount": "7588"
+			}, {
+				"valid": true,
+				"product_id": "P201809120474821",
+				"product_name": "Apple iPhone X 256GB 港版正品 移动联通4G手机",
+				"fq_num": 36,
+				"state": 0,
+				"product_desc": "【原封港版正品】享受国内官方保修一年，请您放心购买。跨境商品不支持七天无理由退货。",
+				"is_product_up_down": 1,
+				"product_flag": 256,
+				"sale_type": 100,
+				"is_active_fee_free_flag": 0,
+				"id": "MES201809122287788",
+				"amount": "7999",
+				"recommend_flag": "0",
+				"sku_num": 1,
+				"sku_id": "MES201809122287788",
+				"fq_num_str": "x36期",
+				"show_amount": "7999",
+				"active_flag": 0,
+				"vip_amount": "-1",
+				"merch_id": "MC20180828000711057441",
+				"real_amount": "7999",
+				"sku_tag": [
+					"黑色"
+				],
+				"brand_id": 11,
+				"category_id": 99,
+				"fee_category_id": 689,
+				"new_user_amount": "-1",
+				"pic_extra": {},
+				"url": "https://item.m.fenqile.com/MES201809122287788.html",
+				"channel_type": 2,
+				"shopping_cart_flag": 1,
+				"mart_amount": "9288",
+				"fee_id": 689,
+				"sku_pic": [
+					"http://cimg1.fenqile.com/product3/M00/34/3B/RbQHAFuYzR2AdumVAALj1qsT-7o398.jpg"
+				],
+				"update_time": 1542439371729,
+				"op_flags": {
+					"sku_label_list": [
+						{
+							"text_multi": "进口货",
+							"label_type": 2,
+							"user_type": 0,
+							"text_single": "进口货",
+							"label_weight": 10,
+							"is_has_multi": 0
+						}
+					],
+					"create_time": 1542439815829,
+					"is_real_label_data": 1,
+					"sku_atmosphere_bean_list": []
+				},
+				"mon_pay_str": "￥330.87",
+				"fq_list": [
+					0,
+					2,
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					24,
+					36
+				],
+				"mon_pay": "330.87",
+				"product_info": "Apple iPhone X 256GB 港版正品 移动联通4G手机",
+				"min_fp_ratio": 0,
+				"h5_enable": 0,
+				"vip_icon": "https://cimg1.fenqile.com/ibanner/M00/01/4B/wicJAFlL2eeATlxKAAAD0MJQ6ko659.png",
+				"line_amount": "9288"
+			}, {
+				"valid": true,
+				"product_id": "P201811080498265",
+				"product_name": "苹果（Apple）iPhone XS MAX 港版正品 移动联通电信 双卡手机",
+				"fq_num": 36,
+				"state": 0,
+				"product_desc": "",
+				"is_product_up_down": 1,
+				"product_flag": 256,
+				"sale_type": 100,
+				"is_active_fee_free_flag": 0,
+				"id": "MES201811132527302",
+				"amount": "9899",
+				"recommend_flag": "0",
+				"sku_num": 1,
+				"sku_id": "MES201811132527302",
+				"fq_num_str": "x36期",
+				"show_amount": "9899",
+				"active_flag": 0,
+				"vip_amount": "-1",
+				"merch_id": "MC20180828000711057441",
+				"real_amount": "9899",
+				"sku_tag": [
+					"256GB",
+					"黑色"
+				],
+				"brand_id": 11,
+				"category_id": 99,
+				"fee_category_id": 689,
+				"new_user_amount": "-1",
+				"pic_extra": {},
+				"url": "https://item.m.fenqile.com/MES201811132527302.html",
+				"channel_type": 2,
+				"shopping_cart_flag": 1,
+				"mart_amount": "10499",
+				"fee_id": 689,
+				"sku_pic": [
+					"http://cimg1.fenqile.com/product3/M00/94/C9/RbQHAFvqb5iAR5cuAAT5RLgnwL8643.jpg"
+				],
+				"update_time": 1542439302633,
+				"op_flags": {
+					"sku_label_list": [
+						{
+							"text_multi": "进口货",
+							"label_type": 2,
+							"user_type": 0,
+							"text_single": "进口货",
+							"label_weight": 10,
+							"is_has_multi": 0
+						}
+					],
+					"create_time": 1542439815829,
+					"is_real_label_data": 1,
+					"sku_atmosphere_bean_list": []
+				},
+				"mon_pay_str": "￥409.46",
+				"fq_list": [
+					0,
+					2,
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					24,
+					36
+				],
+				"mon_pay": "409.46",
+				"product_info": "苹果（Apple）iPhone XS MAX 港版正品 移动联通电信 双卡手机",
+				"min_fp_ratio": 0,
+				"h5_enable": 0,
+				"vip_icon": "https://cimg1.fenqile.com/ibanner/M00/01/4B/wicJAFlL2eeATlxKAAAD0MJQ6ko659.png",
+				"line_amount": "10499"
+			}
+		],
+		"offset": 0
+	},
+	"res_info": "ok"
+}

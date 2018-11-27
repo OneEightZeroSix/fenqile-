@@ -46,7 +46,7 @@ class Ltest3 extends Component {
       monny: 0,
       dataArray: [
         {
-          img: 'http://localhost:3000/images/settings-budget.png',
+          img: './images/settings-budget.png',
           text: '本日支出',
           price: '￥100',
           key: 0,
@@ -342,15 +342,15 @@ class Ltest3 extends Component {
 
 
     const tabs = [
-      { classify: 'food', img: 'http://localhost:3000/images/fc-category-food.png', title: <div><img src='http://localhost:3000/images/fc-category-food.png' width='50' height='50' /><p>食物</p></div>, data: <img src='http://localhost:3000/images/builds/food-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '食品店' },
-      { classify: 'drink', img: 'http://localhost:3000/images/fc-category-drink.png', title: <div><img src='http://localhost:3000/images/fc-category-drink.png' width='50' height='50' /><p>饮品</p></div>, data: <img src='http://localhost:3000/images/builds/drink-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '饮品店' },
-      { classify: 'tra', img: 'http://localhost:3000/images/fc-category-traffic.png', title: <div><img src='http://localhost:3000/images/fc-category-traffic.png' width='50' height='50' /><p>交通</p></div>, data: <img src='http://localhost:3000/images/builds/tra-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '公交站' },
-      { classify: 'shopping', img: 'http://localhost:3000/images/fc-category-shopping.png', title: <div><img src='http://localhost:3000/images/fc-category-shopping.png' width='50' height='50' /><p>消费</p></div>, data: <img src='http://localhost:3000/images/builds/shopping-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '百货中心' },
-      { classify: 'ent', img: 'http://localhost:3000/images/fc-category-entertain.png', title: <div><img src='http://localhost:3000/images/fc-category-entertain.png' width='50' height='50' /><p>娱乐</p></div>, data: <img src='http://localhost:3000/images/builds/ent-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '游戏中心' },
-      { classify: 'housing', img: 'http://localhost:3000/images/fc-category-housing.png', title: <div><img src='http://localhost:3000/images/fc-category-housing.png' width='50' height='50' /><p>居家</p></div>, data: <img src='http://localhost:3000/images/builds/house-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '住所' },
-      { classify: 'threeC', img: 'http://localhost:3000/images/fc-category-threec.png', title: <div><img src='http://localhost:3000/images/fc-category-threec.png' width='50' height='50' /><p>3C</p></div>, data: <img src='http://localhost:3000/images/builds/threec-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '电器店' },
-      { classify: 'med', img: 'http://localhost:3000/images/fc-category-medical.png', title: <div><img src='http://localhost:3000/images/fc-category-medical.png' width='50' height='50' /><p>医药</p></div>, data: <img src='http://localhost:3000/images/builds/med-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '医院' },
-      { classify: 'misc', img: 'http://localhost:3000/images/fc-category-misc.png', title: <div><img src='http://localhost:3000/images/fc-category-misc.png' width='50' height='50' /><p>其他</p></div>, data: <img src='http://localhost:3000/images/builds/misc-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '杂货店' },
+      { classify: 'food', img: './images/fc-category-food.png', title: <div><img src='./images/fc-category-food.png' width='50' height='50' /><p>食物</p></div>, data: <img src='./images/builds/food-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '食品店' },
+      { classify: 'drink', img: './images/fc-category-drink.png', title: <div><img src='./images/fc-category-drink.png' width='50' height='50' /><p>饮品</p></div>, data: <img src='./images/builds/drink-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '饮品店' },
+      { classify: 'tra', img: './images/fc-category-traffic.png', title: <div><img src='./images/fc-category-traffic.png' width='50' height='50' /><p>交通</p></div>, data: <img src='./images/builds/tra-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '公交站' },
+      { classify: 'shopping', img: './images/fc-category-shopping.png', title: <div><img src='./images/fc-category-shopping.png' width='50' height='50' /><p>消费</p></div>, data: <img src='./images/builds/shopping-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '百货中心' },
+      { classify: 'ent', img: './images/fc-category-entertain.png', title: <div><img src='./images/fc-category-entertain.png' width='50' height='50' /><p>娱乐</p></div>, data: <img src='./images/builds/ent-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '游戏中心' },
+      { classify: 'housing', img: './images/fc-category-housing.png', title: <div><img src='./images/fc-category-housing.png' width='50' height='50' /><p>居家</p></div>, data: <img src='./images/builds/house-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '住所' },
+      { classify: 'threeC', img: './images/fc-category-threec.png', title: <div><img src='./images/fc-category-threec.png' width='50' height='50' /><p>3C</p></div>, data: <img src='./images/builds/threec-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '电器店' },
+      { classify: 'med', img: './images/fc-category-medical.png', title: <div><img src='./images/fc-category-medical.png' width='50' height='50' /><p>医药</p></div>, data: <img src='./images/builds/med-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '医院' },
+      { classify: 'misc', img: './images/fc-category-misc.png', title: <div><img src='./images/fc-category-misc.png' width='50' height='50' /><p>其他</p></div>, data: <img src='./images/builds/misc-1.png' width='160px' style={{ position: "absolute", transform: 'translate(-50%, -11%)' }} />, name: '杂货店' },
     ];
 
     const sidebar = (<div style={{ position: 'relative', zIndex: '10' }}>
@@ -385,16 +385,16 @@ class Ltest3 extends Component {
 
     const sidebar3 = (
       <div style={{ width: '100vw', height: '70vh', background: 'skyblue', paddingTop: '5vh', paddingLeft: '7vw' }}>
-        <div style={{ height: '70vh', position: 'relative', background: 'url(http://localhost:3000/images/builds/mainground.png)no-repeat' }}>
-          <img style={{ position: 'absolute', bottom: '44vh', width: '28vw', height: '28vh' }} src={`http://localhost:3000/images/builds/prefix-food${this.state.food}.png`} alt="" />
-          <img style={{ position: 'absolute', bottom: '44vh', left: '28.5vw', width: '28vw', height: '28vh' }} src={`http://localhost:3000/images/builds/prefix-drink${this.state.drink}.png`} width='120' alt="" />
-          <img style={{ position: 'absolute', bottom: '44.5vh', left: '58vw', width: '28vw', height: '28vh' }} src={`http://localhost:3000/images/builds/prefix-traffic${this.state.tra}.png`} width='120' alt="" />
-          <img style={{ position: 'absolute', bottom: '28vh', width: '28vw', height: '28vh' }} src={`http://localhost:3000/images/builds/prefix-shopping${this.state.shopping}.png`} width='120' alt="" />
-          <img style={{ position: 'absolute', bottom: '28vh', left: '29vw', width: '28vw', height: '28vh' }} src={`http://localhost:3000/images/builds/prefix-entertain${this.state.ent}.png`} width='120' alt="" />
-          <img style={{ position: 'absolute', bottom: '27.5vh', left: '58vw', width: '28vw', height: '28vh' }} src={`http://localhost:3000/images/builds/prefix-housing${this.state.housing}.png`} width='120' alt="" />
-          <img style={{ position: 'absolute', bottom: '13vh', width: '28vw', height: '28vh' }} src={`http://localhost:3000/images/builds/prefix-threec${this.state.threeC}.png`} width='120' alt="" />
-          <img style={{ position: 'absolute', bottom: '13vh', left: '29vw', width: '28vw', height: '28vh' }} src={`http://localhost:3000/images/builds/prefix-medical${this.state.med}.png`} width='120' alt="" />
-          <img style={{ position: 'absolute', bottom: '13vh', left: '58vw', width: '28vw', height: '28vh' }} src={`http://localhost:3000/images/builds/prefix-misc${this.state.misc}.png`} width='120' alt="" />
+        <div style={{ height: '70vh', position: 'relative', background: 'url(./images/builds/mainground.png)no-repeat' }}>
+          <img style={{ position: 'absolute', bottom: '44vh', width: '28vw', height: '28vh' }} src={`./images/builds/prefix-food${this.state.food}.png`} alt="" />
+          <img style={{ position: 'absolute', bottom: '44vh', left: '28.5vw', width: '28vw', height: '28vh' }} src={`./images/builds/prefix-drink${this.state.drink}.png`} width='120' alt="" />
+          <img style={{ position: 'absolute', bottom: '44.5vh', left: '58vw', width: '28vw', height: '28vh' }} src={`./images/builds/prefix-traffic${this.state.tra}.png`} width='120' alt="" />
+          <img style={{ position: 'absolute', bottom: '28vh', width: '28vw', height: '28vh' }} src={`./images/builds/prefix-shopping${this.state.shopping}.png`} width='120' alt="" />
+          <img style={{ position: 'absolute', bottom: '28vh', left: '29vw', width: '28vw', height: '28vh' }} src={`./images/builds/prefix-entertain${this.state.ent}.png`} width='120' alt="" />
+          <img style={{ position: 'absolute', bottom: '27.5vh', left: '58vw', width: '28vw', height: '28vh' }} src={`./images/builds/prefix-housing${this.state.housing}.png`} width='120' alt="" />
+          <img style={{ position: 'absolute', bottom: '13vh', width: '28vw', height: '28vh' }} src={`./images/builds/prefix-threec${this.state.threeC}.png`} width='120' alt="" />
+          <img style={{ position: 'absolute', bottom: '13vh', left: '29vw', width: '28vw', height: '28vh' }} src={`./images/builds/prefix-medical${this.state.med}.png`} width='120' alt="" />
+          <img style={{ position: 'absolute', bottom: '13vh', left: '58vw', width: '28vw', height: '28vh' }} src={`./images/builds/prefix-misc${this.state.misc}.png`} width='120' alt="" />
         </div>
       </div>
     );
@@ -487,10 +487,10 @@ class Ltest3 extends Component {
       >
       </Drawer>
       <div onClick={this.onBuildingClose} style={{ position: 'absolute', top: '79%', right: '2%', zIndex: '2' }}>
-        <img src='http://localhost:3000/images/settings-lang.png' width='50' height='50' />
+        <img src='./images/settings-lang.png' width='50' height='50' />
       </div>
       {/* <div style={{ position: 'absolute', top: '70%', right: '2%', zIndex: '2', transform: 'rotate(45deg)' }}>
-        <img src='http://localhost:3000/images/vg_close.png' width='50' height='50' />
+        <img src='./images/vg_close.png' width='50' height='50' />
       </div> */}
 
       <div ref="card" onClick={this.onCardClose} className={this.state.isShowLevelUp?"mask-wrap":"mask-wrap hide"}>
@@ -504,16 +504,16 @@ class Ltest3 extends Component {
           console.log(this.state.activeLevel)
           if(this.state.activeLevel>=6){
               return(<div>
-              <img style={{marginLeft:'15vw'}} src={`http://localhost:3000/images/builds/prefix-${this.state.activeClassify}${this.state.activeLevel*1-1}.png`} width='150' alt="" />
+              <img style={{marginLeft:'15vw'}} src={`./images/builds/prefix-${this.state.activeClassify}${this.state.activeLevel*1-1}.png`} width='150' alt="" />
                       <p style={{marginLeft:'10vw',fontSize:'18px',fontWeight:'bold'}}>建筑物已到达最高等级！</p>
                       </div>
               )
           }else{
             return(
               <div>
-                 <img src={`http://localhost:3000/images/builds/prefix-${this.state.activeClassify}${this.state.activeLevel*1-1}.png`} width='100' alt="" />
-            <img src="http://localhost:3000/images/arrow.png" alt="" width='50' style={{transform:`translate(0,-5vh)`}}/>
-            <img src={`http://localhost:3000/images/builds/prefix-${this.state.activeClassify}${this.state.activeLevel*1}.png`} width='100' alt="" />
+                 <img src={`./images/builds/prefix-${this.state.activeClassify}${this.state.activeLevel*1-1}.png`} width='100' alt="" />
+            <img src="./images/arrow.png" alt="" width='50' style={{transform:`translate(0,-5vh)`}}/>
+            <img src={`./images/builds/prefix-${this.state.activeClassify}${this.state.activeLevel*1}.png`} width='100' alt="" />
               <p style={{marginLeft:'10vw',fontSize:'18px',fontWeight:'bold'}}>建筑物已到达{this.state.activeLevel*1}级！</p> 
               </div>
             )

@@ -69,13 +69,14 @@ class Xlogin extends Component {
 			if(response.data === 'no'){
 				message.error('该用户不存在，请注册后登陆');
 			}else if(response.data === 'err'){
-				console.log(789)
 				message.error('密码有误');
 				this.refs.inforpass.value = "";
 				this.refs.inforpass.focus();
 			}else{
-				var infor = [{username:response.data.username,phonenumber:response.data.phonenumber}]
+				var infor = [{username:response.data.username,phonenumber:response.data.phonenumber,userimg:response.data.userimg}]
+				console.log(infor)
 				Cookie.setCookie("userinformation", JSON.stringify(infor));
+				console.log(Cookie.getCookie("userinformation"))
 				window.location.href="http://localhost:3000/#/mine";
 			}})
 		.catch(function(error) {
