@@ -190,14 +190,14 @@ class Xregiste extends Component {
 			<div id="app" style={{background:'#fff'}}>
 				<div className = "app-header-placeholder" >
 					<div className = "app-header" style = {{backgroundColor: 'rgb(59, 155, 255)',color: 'rgb(255, 255, 255)'}} >
-						<h1 className = "app-header-title" style = {{color: 'rgb(255, 255, 255)'}}> 注册分期乐账号 < /h1>
-						<a href = "#" className = "app-header-right" > < /a>
+						<h1 className = "app-header-title" style = {{color: 'rgb(255, 255, 255)'}}> 注册分期乐账号 </h1>
+						<a href = "#" className = "app-header-right" > </a>
 						<div className = "app-header-line" style = {{display: 'none'}} > 
-						< /div> 
+						</div> 
 					</div>
 				</div>
 				<section className = "main-wrap"> 
-					< div className = "login-banner" > < /div> 
+					< div className = "login-banner" > </div> 
 					<ul className="input-wrap">
 						<li className="input-item">
 							<i className="i-icon i-phone"></i >
@@ -222,16 +222,16 @@ class Xregiste extends Component {
 							<span style={{fontSize:'16px',color:this.state.yzmright==='×'?'red':'green',display:this.state.isShowyzmErr?'inline-block':'none'}}>{this.state.yzmright}</span>
 						</li >
 						<p className = "wrap protocol-wrap" > 
-							<span className = "agree-text agree" > 同意 < /span> 
+							<span className = "agree-text agree" > 同意 </span> 
 							<a href="javascript:;">分期乐用户服务协议 </a>
 						</p >
 					</ul>
 					<div className="btn-wrap">
 						<button className={this.state.canPress?'lego-button':'lego-button button-disabled'} disabled={!this.state.canPress} style={{height: '44px'}}  onClick={this.makeSureuser.bind(this)}>
 							<span className="button-text">登录</span >
-						< /button>
+						</button>
 					</div>
-					<div className = "link-box" onClick={this.toLogin.bind(this)}> 已有账号？ 极速登陆 < /div>
+					<div className = "link-box" onClick={this.toLogin.bind(this)}> 已有账号？ 极速登陆 </div>
 				</section >
 			</div>
 			</div>

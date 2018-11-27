@@ -36,5 +36,7 @@
     background-color: #e6f7ff;
 }
 #exchangeMain .ant-alert-success .ant-alert-icon {
+    overflow: hidden;
+    height: 14px;
     color: #1890ff;
 }
