@@ -1,6 +1,7 @@
 {
   "name": "fenqile",
   "version": "0.1.0",
+  "homepage":"./",
   "private": true,
   "dependencies": {
     "ant-design-pro": "^2.1.1",
