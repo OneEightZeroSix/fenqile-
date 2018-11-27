@@ -12,7 +12,7 @@ class XmineTab extends Component {
         // model  data
         this.state = {
         	bill:[{
-        		hrefurl:"#",
+        		herfurl:"/cart/",
         		title:"本月账单",
         		content:"全部",
         		star:'js-bill-all',
@@ -20,7 +20,7 @@ class XmineTab extends Component {
         		icon:''
         	}],
         	order:[{
-        		hrefurl:"#",
+        		herfurl:"/cart/",
         		title:"我的订单",
         		content:"全部",
         		star:'ORDER_LIST',
@@ -28,42 +28,42 @@ class XmineTab extends Component {
         		icon:''
         	}],
         	nav:[{
-        		hrefurl:"//item.m.fenqile.com/cart/index.html",
+        		herfurl:"/cart/",
         		title:"我的购物车",
         		content:"",
         		star:'shopping_cart',
         		iconclassName:'i-account-favor',
         		icon:'http://help.fenqile.com/res/img/m/help/i_help_service--0ec6e096ce.png'
         	},{
-        		herfurl:"//mall.m.fenqile.com/app/friend/index.html",
+        		herfurl:"/cart/",
         		title:"邀好友得返现",
         		content:"瓜分200万现金",
         		star:'invite_friend',
         		iconclassName:'i-account-favor',
         		icon:'http://cres.fenqile.cn/mobile/img/app/wallet_index/invite_ico.png'
         	},{
-        		herfurl:"https://home.m.fenqile.com/index.html#/bankcard/index",
+        		herfurl:"/exchangeRate",
         		title:"我的银行卡",
         		content:"",
         		star:'my_bank',
         		iconclassName:'i-account-favor',
         		icon:'http://cc.m.fenqile.com/res/img/v1/card/card-icon.png'
         	},{
-        		hrefurl:"https://home.m.fenqile.com/index.html#/bankcard/index",
+        		herfurl:"/exchangeRate",
         		title:"我的预约",
         		content:"",
         		star:'my_appointment',
         		iconclassName:'i-account-favor',
         		icon:'http://m.mall.fenqile.com/res/img/app/wallet_index/i_sub.png'
         	},{
-        		hrefurl:"//m.mall.fenqile.com/app/safe/index.html",
+        		herfurl:"//m.mall.fenqile.com/app/safe/index.html",
         		title:"安全中心",
         		content:"",
         		star:'safe_center',
         		iconclassName:'i-account-favor',
         		icon:'http://m.mall.fenqile.com/res/img/app/wallet_index/i_safe.png'
         	},{
-        		hrefurl:"//helper.fenqile.com",
+        		herfurl:"/exchangeRate",
         		title:"客服支持",
         		content:"",
         		star:'feedback',
@@ -72,22 +72,22 @@ class XmineTab extends Component {
         	}],
         	nowhtml:"",
         	orderlist:[{
-        		hrefurl:"//order.m.fenqile.com/order/list.html?state_filter=unpay",
+        		herfurl:"/cart/",
         		title:"待付款",
         		star:'UNPAY',
         		iconclassName:'i-order-notpaid',
         	},{
-        		hrefurl:"//order.m.fenqile.com/order/list.html?state_filter=unapproval",
+        		herfurl:"/cart/",
         		title:"待审核",
         		star:'UNAPPROVAL',
         		iconclassName:'i-order-check',
         	},{
-        		hrefurl:"//order.m.fenqile.com/order/list.html?state_filter=unconfirm",
+        		herfurl:"/cart/",
         		title:"待收货",
         		star:'UNDELIVERY_CONFIRM',
         		iconclassName:'i-order-receive',
         	},{
-        		hrefurl:"//trade.m.fenqile.com/comment/list.html",
+        		herfurl:"/cart/",
         		title:"待评价",
         		star:'UNEVALUATE',
         		iconclassName:'i-order-evaluate',

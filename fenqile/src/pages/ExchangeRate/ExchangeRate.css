@@ -32,8 +32,13 @@
 }
 
 #exchangeMain .ant-alert-success {
+    
     border: 1px solid #91d5ff;
     background-color: #e6f7ff;
+}
+#exchangeMain .ant-alert-warning .ant-alert-icon{
+    overflow: hidden;
+    height: 14px;
 }
 #exchangeMain .ant-alert-success .ant-alert-icon {
     overflow: hidden;

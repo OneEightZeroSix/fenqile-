@@ -32,7 +32,6 @@ code {
 
 .fade-enter {
   opacity: 0;
-
    transform: translate(100%,0px);
 }
 
